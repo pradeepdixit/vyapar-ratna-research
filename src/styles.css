@@ -107,3 +107,13 @@ td, td.mono { color: #1e2d23; font-size: 13px; }
 .sbc-legend { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0 4px; font-size:11px; color:#334a38; }
 .legend-green { color:#18794e; font-weight:700; } .legend-red { color:#b33b32; font-weight:700; } .legend-gold { color:#98661c; font-weight:700; }
 .sbc-rule-results { margin-top:18px; }
+
+.planet-subgroup { margin:12px 0; border:1px solid #c7d0bf; border-radius:5px; background:#f7f9f0; color:#243128; }
+.planet-subgroup summary { cursor:pointer; padding:10px 12px; font-size:12px; font-weight:700; }
+.planet-subgroup summary strong { float:right; color:#27533c; }
+.subgroup-tags { max-height:180px; overflow:auto; border-top:1px solid #dce2d4; }
+.sbc-planet small { display:block; font-size:8px; color:#36513c; }
+.sbc-planet.market-relevant { color:#145e8c; background:#d9edf8; border-radius:3px; padding:1px 3px; }
+.market-highlight { color:#145e8c; }
+.market-context { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:8px 0 14px; padding:9px 11px; background:#edf4f7; border-left:3px solid #2e7199; color:#23445a; font-size:11px; }
+.market-context strong { font-size:14px; color:#124c73; }
