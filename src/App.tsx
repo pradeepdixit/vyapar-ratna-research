@@ -42,6 +42,6 @@ export default function App(){
  <section className="bottom-callout"><div><span className="eyebrow">ONE WORKSPACE. EVERY COMMODITY.</span><h2>पूरी पुस्तक। केवल Gold नहीं।</h2><p>एक ही ग्रह-गणना, अलग-अलग पदार्थों के source-linked नियम।</p></div><button className="button secondary" onClick={()=>go('source')}>मूल पाठ पढ़ें <BookOpen size={16}/></button></section>
  </>}
  </>}
- <footer className="app-footer"><span>व्यापार रत्न शोध केंद्र</span><p>पुस्तक-आधारित संकेत · कोई live market feed नहीं · लाभ की गारंटी नहीं</p><a href="https://www.astro.com/swisseph/sweph_e.htm" target="_blank" rel="noreferrer">Swiss Ephemeris · AGPL</a></footer>
+ <footer className="app-footer"><span>व्यापार रत्न शोध केंद्र</span><p>पुस्तक-आधारित संकेत · कोई live market feed नहीं · लाभ की गारंटी नहीं</p><a href="https://github.com/pradeepdixit/vyapar-ratna-research" target="_blank" rel="noreferrer">GitHub · पूरा source</a><a href="https://www.astro.com/swisseph/sweph_e.htm" target="_blank" rel="noreferrer">Swiss Ephemeris · AGPL</a></footer>
  </main></div></div>;
 }
