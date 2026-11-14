@@ -1,0 +1,37 @@
+# व्यापार रत्न — पुस्तक आधारित शोध केंद्र
+
+User has explicitly authorized full review of supplied BOOKofvyaparratna and website delivery on GitHub. Earlier cancelled Blueprint has no approved choices. Full supplied attachment, every commodity and planetary search are mandatory; no live price feeds, no paid APIs. Distinguish source completeness, rule indexing and actual executable coverage. Original document is a Word compilation with 53 tables and no embedded pictures, not proof of original book completeness.
+
+## Architecture
+React + TypeScript + Vite static frontend, browser-side Swiss Ephemeris WASM and Lahiri sidereal calculations; tropical longitudes retained for Western angle rules. No paid runtime services/database/login. Free AGPL-compatible source distribution with copyright notices. Original supplied source blocks retained in browser dataset with search and sources; rule metadata extracted section by section and source-linked, not invented. Library should have all source content searchable even where rules need manual interpretation. Strict declarative AND condition evaluator; unsupported rules remain reference/missing, never automatically marked true. Timeline is sampled and reports sampling resolution, not exact onset. UI shows observed astronomical condition, not guaranteed market prediction. Week/month view groups matching samples; book timeframes remain separate.
+
+## Pages/features
+Hash navigation: dashboard/current rules; rule library filtered by planets, commodities, timeframe and section; date-range analysis; chart and planets; full source reader; coverage/review/settings. Current local date defaults with Mumbai IST. Arbitrary past/future dates within ephemeris supported range; current-time button and optional browser-open auto refresh. From/to continuous or daily windows, inclusive minute selection. At most practical bounded samples per job, explicit limit/progress/cancel. CSV/Excel exports; no exact legacy 80-column claim without user schema. Lagna and whole-sign sidereal North Indian chart, angular pairs and sunrise/hora where implemented. Timestamp uses IANA timezones, not browser default accidentally.
+
+## Structure
+- src/App.tsx and src/components: app shell, section views, cards and chart.
+- src/lib/astro.ts: Swiss Ephemeris initialization, planetary/ascendant/panchanga computations.
+- src/lib/rules.ts: typed source-bound conditions, matching and filters.
+- src/lib/export.ts: CSV/XLSX downloads.
+- src/data: compiled reviewed book metadata and exact source blocks.
+- public: WASM/ephemeris assets, route manifest, brand mark.
+- research: source extraction, 14 non-overlapping section inputs, reviews and report.
+- scripts: deterministic compilation and checks.
+
+## Design selection
+Three independent directions considered: warm manuscript workbench (0.07), dark observatory terminal (0.04), Swiss editorial research desk (0.06). Selected warm manuscript workbench for Hindi book readability with clear scientific separation.
+- Design movement: contemporary editorial archive with restrained Indian almanac identity.
+- Core principles: source traceability, honest computational boundaries, commodity-neutral navigation, legible dense Hindi data.
+- Palette: ivory #f7f5ef, ink #25332e, deep evergreen #244f43, brass #b48a4e; status colors reserved for findings, not trading promises.
+- Layout: fixed left archive rail, generous horizontal workspace, editorial headers, right-aligned operational controls; responsive drawer/navigation for mobile.
+- Signature elements: fine rule dividers, numbered source citations, orbital-book monogram; no decorative stock hero.
+- Interaction: deterministic filters, expandable original source, keyboard-accessible controls, explicit empty/loading/error/cancel states.
+- Animation: restrained 150ms feedback and small loading spinner only; no entrance animation delaying data.
+- Typography: Noto Sans Devanagari for Hindi, IBM Plex Sans for Latin UI, monospace numerical columns; large compact display title, roomy body leading.
+- Brand essence: पुस्तक से शर्त तक—हर नियम का पता, हर गणना का आधार। Personality: गंभीर, स्पष्ट, उपयोगी.
+- Voice: 'मूल नियम खोजें' and 'इस समय पूरी होने वाली शर्तें'; not definitive Buy/Sell claims.
+- Wordmark/logo: open-page orbital monogram with brass accent; brand name व्यापार रत्न शोध केंद्र.
+- Signature color: evergreen.
+
+## GitHub/publication
+Save managed checkpoint first, then use owner-confirmed platform GitHub transfer (no gh-created canonical repo). Transfer creates private repository; GitHub Pages Free would require public source with owner-authorized visibility. Do not bypass platform GitHub confirmation. Source bundle and README include static build instructions and GitHub Pages deployment; material account/publication constraints reported honestly. No need to re-confirm already authorized ordinary coding actions.

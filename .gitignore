@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+research/sections/
+research/paragraphs.json
+research/source.txt
+research/book-blocks.txt

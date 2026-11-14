@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { DateTime } from 'luxon';
+import { makeTimes } from '../src/lib/range';
+import { searchRules, matchesRule, conditionMatches, type BookData, type BookRule } from '../src/lib/rules';
+import type { AstroSnapshot } from '../src/lib/astro';
+import { exportRows, snapshotRow } from '../src/lib/export';
+const d:BookData=JSON.parse(readFileSync('public/book-data.json','utf8'));
+const blocks=new Map(d.blocks.map(b=>[b.id,b]));
+const base={from:'2026-11-15T09:15',to:'2026-11-15T15:15',startTime:'09:15',endTime:'15:15',mode:'daily' as const,interval:1,zone:'Asia/Kolkata'};
+const one=makeTimes(base);assert.equal(one.length,361);assert.equal(one[0].toISOString(),'2026-11-15T03:45:00.000Z');assert.equal(one.at(-1)?.toISOString(),'2026-11-15T09:45:00.000Z');
+assert.equal(makeTimes({...base,to:'2026-11-16T15:15'}).length,722);
+assert.equal(makeTimes({...base,interval:5}).length,73);
+assert.equal(makeTimes({...base,mode:'continuous'}).length,361);
+assert.throws(()=>makeTimes({...base,to:'2026-11-14T15:15'}));assert.throws(()=>makeTimes({...base,zone:'Invalid/Zone'}));assert.throws(()=>makeTimes({...base,to:'2027-11-15T15:15'}));
+assert.equal(d.blocks.length,3632);assert.equal(d.stats.tables,53);assert.equal(d.stats.reviewedSections,14);
+assert.equal(new Set(d.blocks.map(b=>b.id)).size,d.blocks.length);
+for(const r of d.rules){assert.ok(r.source_ids.length);assert.ok(r.source_ids.every(id=>blocks.has(id)));if(r.status==='computable')assert.ok(r.conditions.length);}
+for(const q of ['सूर्य','चंद्रमा','सोना','चाँदी','रुई','gold','silver','cotton'])assert.ok(searchRules(d.rules,q,blocks).length>0,`Search works: ${q}`);
+const p={name:'सूर्य',id:0,longitude:5,tropical:29,speed:1,sign:0,nakshatra:0,pada:2,retrograde:false,latitude:0};
+const s:AstroSnapshot={iso:'2026-11-15T03:45:00.000Z',jd:0,ayanamsa:24,planets:[p,{...p,name:'चंद्रमा',id:1,longitude:20,tropical:44}],ascendant:50,ascSign:1,tithi:2,paksha:'शुक्ल',yoga:'',karana:'',weekday:0,sunrise:'06:00',sunset:'18:00',hora:null,engine:'test'};
+assert.ok(conditionMatches({type:'sign',planet:'सूर्य',values:[0]},s));assert.ok(conditionMatches({type:'same_sign',planet:'सूर्य',other:'चंद्रमा'},s));assert.ok(!conditionMatches({type:'angle',planet:'सूर्य',other:'चंद्रमा',value:0,orb:0.5},s));assert.ok(!conditionMatches({type:'unknown'},s));assert.ok(!conditionMatches({type:'sign',planet:'Missing',values:[0]},s));
+const rule:BookRule={id:'test',title:'',summary:'',source_ids:[],planets:[],commodities:[],timeframe:'',signal:'',status:'reference',reason:'',conditions:[{type:'sign',planet:'सूर्य',values:[0]}],section:'01'};
+assert.ok(!matchesRule(rule,s));assert.ok(matchesRule({...rule,status:'computable'},s));assert.ok(!matchesRule({...rule,status:'computable',conditions:[]},s));
+const row=snapshotRow(s,[]);assert.equal(row['चंद्रमा_निरयन'],20);assert.equal(row['सूर्योदय'],'06:00');
+console.log('PASS: ranges, 361/722 inclusive timestamps, IST conversion, limits, source integrity, all commodity/planet aliases, strict supported predicates, false reference/empty conditions and export rows.');

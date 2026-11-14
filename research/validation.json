@@ -1,0 +1,101 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "file": "public/book-data.json; src/lib/rules.ts",
+      "description": "Twenty-one computable Section 05 rules encode only a sign or nakshatra while the exact source requires a planetary phase/event: मंगलोदय (R05-129, R05-130, R05-132, R05-133, R05-134, R05-136), मंगलास्त (R05-141, R05-143, R05-149), गुरु उदय/अस्त (R05-276, R05-277, R05-278, R05-280), or शुक्रोदय (R05-332, R05-333, R05-334, R05-341, R05-342, R05-343, R05-345, R05-346). conditionMatches has no phase/visibility predicate, so these rules match outside the source condition and can present an incomplete source claim as active.",
+      "rule_ids": [
+        "R05-129", "R05-130", "R05-132", "R05-133", "R05-134", "R05-136",
+        "R05-141", "R05-143", "R05-149", "R05-276", "R05-277", "R05-278", "R05-280",
+        "R05-332", "R05-333", "R05-334", "R05-341", "R05-342", "R05-343", "R05-345", "R05-346"
+      ],
+      "suggested_fix": "Downgrade to reference until an exact source-faithful phase/visibility predicate is implemented. Do not add an inferred phase correction. If later supported, encode the phase and retain the stated sign/nakshatra as an AND condition."
+    },
+    {
+      "severity": "high",
+      "file": "public/book-data.json; research/reviews/05.json",
+      "description": "R05-343 and R05-345 also truncate explicit source nakshatra alternatives: R05-343 source says अनुराधा तथा ज्येष्ठा but metadata tests only ज्येष्ठा; R05-345 source says श्रवण, धनिष्ठा, शतभिषा, पूर्वा-भाद्रपद तथा उत्तरा-भाद्रपद but metadata tests only उत्तरा-भाद्रपद. Their phase condition is missing as well.",
+      "rule_ids": ["R05-343", "R05-345"],
+      "suggested_fix": "Downgrade to reference. Do not silently fill the missing values; only restore all source-stated alternatives after adding a faithful phase predicate and verifying the source block."
+    },
+    {
+      "severity": "high",
+      "file": "public/book-data.json; research/reviews/06.json",
+      "description": "R06-106 source requires मंगल in तुला राशि AND retrograde, but the condition contains only retrograde मंगल. R06-121 source requires गुरु in कर्क राशि AND retrograde, but the condition contains only retrograde गुरु. Both can therefore match in every sign.",
+      "rule_ids": ["R06-106", "R06-121"],
+      "suggested_fix": "Downgrade to reference unless the sign predicates are added exactly as stated: तुला for मंगल and कर्क for गुरु, joined with retrograde by AND."
+    },
+    {
+      "severity": "medium",
+      "file": "public/book-data.json; research/reviews/05.json",
+      "description": "R05-167 summary preserves the source branch ‘यदि पाप-ग्रहों से युक्त’ (if joined/associated with malefics), but the computable condition is only बुध in वृषभ. The rule is shown as fully matched while that conditional branch is not evaluated.",
+      "rule_ids": ["R05-167"],
+      "suggested_fix": "Downgrade to reference unless the conditional branch is separately represented with a source-faithful conjunction predicate; do not fabricate a definition of ‘युक्त’."
+    },
+    {
+      "severity": "high",
+      "file": "src/App.tsx; src/components/LocationFields.tsx",
+      "description": "LocationFields mutates the live location state and the location pill changes immediately, but the existing snapshot and active-rule results remain from the old location until ‘स्थान लागू करें’ completes. During this interval the UI can label old astronomy as the newly selected location; Analysis also retains its initial from/to wall-clock state when the location timezone changes.",
+      "rule_ids": [],
+      "suggested_fix": "Use a draft location state and commit it together with a recalculation, or clear/mark the snapshot stale immediately on location edits. Reset or explicitly convert Analysis date fields when the timezone changes."
+    },
+    {
+      "severity": "medium",
+      "file": "src/components/Analysis.tsx",
+      "description": "Any calculation exception after partial progress sets runInfo.cancelled=true, so a failed partial run is labeled ‘अधूरा / रोका गया’ as if the user cancelled it. The error is shown, but the result status is semantically wrong.",
+      "rule_ids": [],
+      "suggested_fix": "Track completed, cancelled, and failed states separately; mark partial results as failed/partial when calculateAstro throws and reserve cancelled for cancel.current."
+    },
+    {
+      "severity": "medium",
+      "file": "research/review-summary.json; public/book-data.json",
+      "description": "The user-visible review overview says ‘कुल 1,778 नियम’, while the compiled dataset stats and the sum of its 14 section rule_count values are 1,822. Section-level counts otherwise reconcile. This creates a contradictory coverage claim in the Review page.",
+      "rule_ids": [],
+      "suggested_fix": "Regenerate or correct the overview text from the compiled dataset count; preserve the distinction between supplied-source coverage and executable coverage."
+    },
+    {
+      "severity": "medium",
+      "file": "scripts/astro-test.ts",
+      "description": "The runtime canonical name is चंद्रमा, but the existing native astro test still searches for name === ‘चंद्र’ at line 51. If this script is run directly it fails the presence assertion despite the implementation using the corrected canonical name.",
+      "rule_ids": [],
+      "suggested_fix": "Update the test lookup to चंद्रमा (and keep all test fixtures aligned with the canonical planet-name map)."
+    }
+  ],
+  "downgrade_ids": [
+    "R05-129", "R05-130", "R05-132", "R05-133", "R05-134", "R05-136",
+    "R05-141", "R05-143", "R05-149", "R05-167", "R05-276", "R05-277", "R05-278", "R05-280",
+    "R05-332", "R05-333", "R05-334", "R05-341", "R05-342", "R05-343", "R05-345", "R05-346",
+    "R06-106", "R06-121"
+  ],
+  "coverage_summary": {
+    "dataset_counts": {
+      "rules": 1822,
+      "computable_checked": 237,
+      "missing": 74,
+      "reviewed_sections": 14,
+      "source_blocks": 3632,
+      "tables": 53,
+      "commodities": 499
+    },
+    "structural_checks": {
+      "all_computable_source_ids_exist": true,
+      "duplicate_rule_or_block_ids": false,
+      "condition_types_valid": true,
+      "condition_values_in_range": true,
+      "canonical_planet_names_in_computable_conditions": true,
+      "same_sign_rules_match_explicit_source_wording": ["R06-109", "R06-147"],
+      "zodiac_and_nakshatra_index_issue_found": false,
+      "source_quotations_are_id_joined": true
+    },
+    "implementation_checks": {
+      "typescript_check": "passed via pnpm check",
+      "build": "not run; build metadata was pending",
+      "browser_testing": "not performed; browser unavailable",
+      "native_tests": "not rerun; existing project note says passed",
+      "sunrise_display": "current Chart rendering uses the HH:mm snapshot value",
+      "financial_disclaimer": "present; source claims are not presented as guarantees"
+    },
+    "scope_note": "Only confirmed material defects are listed. Rules with unsupported ingress, phase, lag, aspect, visibility, strength, or ambiguous source semantics were not given fabricated corrections; affected computable rules are recommended for downgrade."
+  },
+  "checked_rules": 237
+}

@@ -1,0 +1,32 @@
+{
+  "name": "vyapar-ratna-research",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "test": "tsx scripts/test.ts"
+  },
+  "dependencies": {
+    "lucide-react": "0.468.0",
+    "luxon": "3.7.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "sweph-wasm": "2.6.9",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/luxon": "3.7.1",
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "4.7.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "6.4.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "stats": {
+    "totalBlocks": 3632,
+    "tables": 53,
+    "rules": 1822,
+    "computable": 213,
+    "missing": 74,
+    "reviewedSections": 14,
+    "totalSections": 14,
+    "sourceCharacters": 518350
+  },
+  "errors": []
+}

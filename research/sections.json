@@ -1,0 +1,100 @@
+[
+  {
+    "id": "01",
+    "name": "सर्वतोभद्र वेध",
+    "start": 0,
+    "end": 148,
+    "path": "/home/ubuntu/astrominute/research/sections/01.json"
+  },
+  {
+    "id": "02",
+    "name": "ग्रह योग और भाव",
+    "start": 148,
+    "end": 588,
+    "path": "/home/ubuntu/astrominute/research/sections/02.json"
+  },
+  {
+    "id": "03",
+    "name": "चौथा प्रकरण",
+    "start": 588,
+    "end": 783,
+    "path": "/home/ubuntu/astrominute/research/sections/03.json"
+  },
+  {
+    "id": "04",
+    "name": "पांचवाँ प्रकरण",
+    "start": 783,
+    "end": 859,
+    "path": "/home/ubuntu/astrominute/research/sections/04.json"
+  },
+  {
+    "id": "05",
+    "name": "छठा प्रकरण",
+    "start": 859,
+    "end": 1525,
+    "path": "/home/ubuntu/astrominute/research/sections/05.json"
+  },
+  {
+    "id": "06",
+    "name": "पदार्थों के परीक्षित योग",
+    "start": 1525,
+    "end": 1920,
+    "path": "/home/ubuntu/astrominute/research/sections/06.json"
+  },
+  {
+    "id": "07",
+    "name": "आठवाँ प्रकरण",
+    "start": 1920,
+    "end": 2009,
+    "path": "/home/ubuntu/astrominute/research/sections/07.json"
+  },
+  {
+    "id": "08",
+    "name": "नवाँ प्रकरण",
+    "start": 2009,
+    "end": 2134,
+    "path": "/home/ubuntu/astrominute/research/sections/08.json"
+  },
+  {
+    "id": "09",
+    "name": "पाश्चात्य पद्धति पहला प्रकरण",
+    "start": 2134,
+    "end": 2243,
+    "path": "/home/ubuntu/astrominute/research/sections/09.json"
+  },
+  {
+    "id": "10",
+    "name": "पाश्चात्य दूसरा प्रकरण",
+    "start": 2243,
+    "end": 2412,
+    "path": "/home/ubuntu/astrominute/research/sections/10.json"
+  },
+  {
+    "id": "11",
+    "name": "पाश्चात्य तीसरा प्रकरण",
+    "start": 2412,
+    "end": 2549,
+    "path": "/home/ubuntu/astrominute/research/sections/11.json"
+  },
+  {
+    "id": "12",
+    "name": "पाश्चात्य चौथा प्रकरण",
+    "start": 2549,
+    "end": 2612,
+    "path": "/home/ubuntu/astrominute/research/sections/12.json"
+  },
+  {
+    "id": "13",
+    "name": "पाश्चात्य पांचवाँ और मूल्य नियम",
+    "start": 2612,
+    "end": 3050,
+    "path": "/home/ubuntu/astrominute/research/sections/13.json"
+  },
+  {
+    "id": "14",
+    "name": "शेष सामग्री और परिशिष्ट",
+    "start": 3050,
+    "end": 3632,
+    "path": "/home/ubuntu/astrominute/research/sections/14.json"
+  }
+]
