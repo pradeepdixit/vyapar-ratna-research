@@ -427,3 +427,17 @@ export async function calculateAstro(date: Date, lat: number, lon: number, zone:
     engine: `Swiss Ephemeris ${swe.swe_version()} WASM`,
   };
 }
+
+/** Lunar rise/set for this local civil date; absent events remain null. */
+export async function calculateLunarEvents(date: Date, lat: number, lon: number, zone: string): Promise<{moonrise:string|null;moonset:string|null}> {
+  if (!Number.isFinite(lat) || Math.abs(lat)>90 || !Number.isFinite(lon) || Math.abs(lon)>180) throw new RangeError('Invalid coordinates');
+  const local=localDateFor(date,zone),swe=await getEngine(),jd=localMidnightJulianDay(swe,local);
+  const event=(rising:boolean):string|null=>{
+    let value:number;
+    try { value=swe.swe_rise_trans(jd,swe.SE_MOON,null,swe.SEFLG_SWIEPH,(rising?swe.SE_CALC_RISE:swe.SE_CALC_SET)|swe.SE_BIT_DISC_CENTER,[lon,lat,0],0,0); }
+    catch(error:unknown) { const flag=error&&typeof error==='object'&&'flag' in error?(error as {flag?:unknown}).flag:undefined;if(flag===-2)return null;throw error; }
+    const t=dateTimeFromJulian(value,zone);
+    return t&&t.toISODate()===local.toISODate()?t.toISO():null;
+  };
+  return {moonrise:event(true),moonset:event(false)};
+}

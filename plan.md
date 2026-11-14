@@ -35,3 +35,7 @@ Three independent directions considered: warm manuscript workbench (0.07), dark 
 
 ## GitHub/publication
 Save managed checkpoint first, then use owner-confirmed platform GitHub transfer (no gh-created canonical repo). Transfer creates private repository; GitHub Pages Free would require public source with owner-authorized visibility. Do not bypass platform GitHub confirmation. Source bundle and README include static build instructions and GitHub Pages deployment; material account/publication constraints reported honestly. No need to re-confirm already authorized ordinary coding actions.
+
+## Astrology enhancement
+
+Current user requests Sarvatobhadra vedha now and next 2/24 hours, D9 navamsha, expanded panchang and explicit conjunction list. Add source-documented SBC geometry module and minute-sampled change windows; distinguish geometric vedha from full commodity/strength predicates, and do not invent motion speed thresholds. Reuse selected snapshot/location. D9 normalized sidereal longitude ×9 plus D9 lagna; same-sign and degree-orb conjunction modes remain distinct. Expanded panchang: five limbs with end instants, sunrise-based vara and practical solar periods, clearly scoped calendar conventions. New modules sbc.ts/panchang.ts/divisions.ts, new views Sarvatobhadra/Panchang/Conjunctions; dark typography and existing financial/source boundaries retained. No paid service or market feed.

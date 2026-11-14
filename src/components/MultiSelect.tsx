@@ -1,0 +1,7 @@
+import { useState } from 'react';
+import { queryText, normalize } from '../lib/rules';
+export default function MultiSelect({label,options,value,onChange,disabled=false}:{label:string;options:string[];value:string[];onChange:(v:string[])=>void;disabled?:boolean}) {
+ const [query,setQuery]=useState('');
+ const q=queryText(query),filtered=options.filter(o=>normalize(o).includes(q));
+ return <details className="multi-select"><summary>{label} <strong>{value.length?`${value.length} चुने`:'सभी'}</strong></summary><div className="multi-select-body"><input type="search" aria-label={`${label} खोजें`} placeholder={`${label} खोजें…`} value={query} onChange={e=>setQuery(e.target.value)} disabled={disabled}/><div className="button-row"><button type="button" className="text-button" onClick={()=>onChange([])} disabled={disabled}>चयन हटाएँ</button><button type="button" className="text-button" onClick={()=>onChange([...new Set([...value,...filtered])])} disabled={disabled}>दिखते सभी चुनें</button></div><div className="multi-options">{filtered.map(o=><label key={o}><input type="checkbox" checked={value.includes(o)} disabled={disabled} onChange={e=>onChange(e.target.checked?[...value,o]:value.filter(v=>v!==o))}/>{o}</label>)}{!filtered.length&&<p>इस नाम का विकल्प नहीं मिला।</p>}</div></div>{!!value.length&&<div className="selected-tags">{value.map(v=><button type="button" key={v} disabled={disabled} onClick={()=>onChange(value.filter(x=>x!==v))}>{v} ×</button>)}</div>}</details>;
+}

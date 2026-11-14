@@ -17,3 +17,17 @@
 ## Readability update
 
 - [x] सभी pages का हल्का font गहरा करना: main content, छोटे labels, filters, table cells, source quotations और कुंडली text साफ पढ़ने योग्य हों; मौजूदा calculation/data logic अपरिवर्तित रहे। Verified नया version GitHub Pages पर publish करें।
+
+## Requested astrology completion
+
+- [x] सर्वतोभद्र current chakra और planet-to-nakshatra vedha: source documented 28-nakshatra geometry; स्पष्ट motion selection assumptions; missing book strength/commodity rules को fabricated complete triggers न मानें।
+- [x] अगले 2 घंटे/24 घंटे के minute sampled vedha changes, start/end window, export और selected time/location reuse; live browser refresh follows current-time switch.
+- [x] D1 और D9 नवांश chart with corresponding ascendant, per-planet D9 signs and source-documented transform.
+- [x] Explicit युति list: same-sign और degree-orb modes separate, selectable orb, angular distance and applying/separating; no result must show clear message rather than blank.
+- [x] विस्तृत पंचांग: five limbs, ending times, sunrise-based वार and practical solar periods; supported scope and conventions visible; tests and public deployment verify.
+
+- [x] नियम संग्रह, वर्तमान नियम और समय-सीमा विश्लेषण में एक साथ अनेक ग्रह/पदार्थ चयन; सूर्य+बुध जैसे चुने विकल्पों के लिए OR/AND match, searchable checkboxes और visible selected chips; exports में यही filtered results रहें।
+
+## Astrology completion evidence
+
+SBC, D9, conjunction, panchanga, lunar rise/set, and multi-selection focused tests pass; production build passes. SBC UI shows current geometry and minute-sampled 2/24-hour windows. Panchanga UI shows five limbs, end times, sunrise-based vara, solar periods, moonrise and moonset. Remaining religious-calendar features such as regional festivals, lunar month and adhika month are explicitly out of scope.
