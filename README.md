@@ -38,3 +38,11 @@ GitHub Free पर Pages के लिए public repository जरूरी ह�
 Application code: AGPL-3.0-only. Swiss Ephemeris: copyright Astrodienst AG; authors Dieter Koch and Alois Treindl; AGPL/professional dual license. WASM wrapper copyright its maintainers. Free AGPL-compatible distribution selected; full application source is supplied. `LICENSE` and `THIRD_PARTY_NOTICES.md` apply. User-supplied book content has separate original rights and is not relicensed by application code license.
 
 यह वित्तीय सलाह नहीं है। अनुष्ठानिक/रत्न/औषधि-संबंधी पुस्तक दावे भी source reference हैं, स्वास्थ्य या व्यक्तिगत उपाय की सलाह नहीं।
+
+## Published website
+
+Verified public URL: https://pradeepdixit.github.io/vyapar-ratna-research/
+
+Complete source: https://github.com/pradeepdixit/vyapar-ratna-research
+
+Owner explicitly approved public publication of both code and supplied book text. GitHub Pages serves the verified static `gh-pages` branch. Final index: 1,822 source-linked rules/references, 213 automatic condition checks, 74 missing entries; 3,632 supplied source blocks and 53 actual tables. 499 tags include synonyms and general topics, not 499 distinct traded commodities. Location preferences persist in the browser; automatic live refresh works while the page is open. No background notifications or price feed are included.

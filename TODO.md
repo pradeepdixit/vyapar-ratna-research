@@ -8,8 +8,8 @@
 - [x] Readable Hindi responsive interface: original rules distinct from interpretation, mixed signals preserved, clear loading/error/no-results states and accessible search/filter/navigation.
 - [x] Review report and coverage dashboard: chapter summaries, missing tables, count of indexed vs automatically evaluable rules and source traceability.
 - [x] Source validation: typecheck/build, representative calculation and matching checks, one read-only implementation review agent; fix confirmed issues.
-- [ ] Delivery: saved managed checkpoint; GitHub repository transfer by user confirmation and supported publication path; no false GitHub Pages URL claim if blocked.
+- [x] Delivery: saved managed checkpoint; user-confirmed GitHub transfer and explicit public code/book-text approval; verified GitHub Pages publication at https://pradeepdixit.github.io/vyapar-ratna-research/.
 
 ## Evidence
 
-14 reviews compiled; 1,822 index entries, 213 faithful automatic conditions after 24 audit downgrades, 74 missing. Native astronomy checks passed; range/source/alias/predicate/export tests passed; TypeScript and static build passed. Preview health and route/asset HTTP checks passed. GitHub owner confirmation and actual publication pending.
+14 reviews compiled; 1,822 index entries, 213 faithful automatic conditions after 24 audit downgrades, 74 missing. Native astronomy checks passed; range/source/alias/predicate/export tests passed; TypeScript and static build passed. Preview health and route/asset HTTP checks passed. GitHub repository is public after explicit approval; Pages status built. Public HTML, hashed JS/CSS, all 3,632 book blocks, WASM magic and both ephemeris files returned HTTP 200 and expected data.
