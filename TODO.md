@@ -13,3 +13,7 @@
 ## Evidence
 
 14 reviews compiled; 1,822 index entries, 213 faithful automatic conditions after 24 audit downgrades, 74 missing. Native astronomy checks passed; range/source/alias/predicate/export tests passed; TypeScript and static build passed. Preview health and route/asset HTTP checks passed. GitHub repository is public after explicit approval; Pages status built. Public HTML, hashed JS/CSS, all 3,632 book blocks, WASM magic and both ephemeris files returned HTTP 200 and expected data.
+
+## Readability update
+
+- [x] सभी pages का हल्का font गहरा करना: main content, छोटे labels, filters, table cells, source quotations और कुंडली text साफ पढ़ने योग्य हों; मौजूदा calculation/data logic अपरिवर्तित रहे। Verified नया version GitHub Pages पर publish करें।
