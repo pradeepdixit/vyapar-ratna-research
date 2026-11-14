@@ -100,3 +100,10 @@ td, td.mono { color: #1e2d23; font-size: 13px; }
 .sbc-cell > span, .sbc-cell > strong { position:relative; }
 .sbc-layout .table-scroll th,.sbc-layout .table-scroll td { padding:9px 10px; font-size:11px; }
 @media(max-width:560px) { .panchang-limbs, .panchang-periods { grid-template-columns:1fr; } .multi-filter-row > * { min-width:145px; } .sbc-grid { min-width:450px; } .sbc-board { overflow:auto; } .sbc-rays { min-width:450px; } }
+
+.market-input { display:flex; flex-direction:column; gap:7px; color:#243128; font-size:12px; }
+.market-input input { min-width:180px; padding:9px 10px; border:1px solid #c3cdba; border-radius:4px; color:#17251d; background:#fffef9; }
+.market-input small { font-size:10px; color:#425744; line-height:1.4; max-width:260px; }
+.sbc-legend { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0 4px; font-size:11px; color:#334a38; }
+.legend-green { color:#18794e; font-weight:700; } .legend-red { color:#b33b32; font-weight:700; } .legend-gold { color:#98661c; font-weight:700; }
+.sbc-rule-results { margin-top:18px; }
