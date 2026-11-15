@@ -71,6 +71,36 @@
       "kind": "json"
     },
     {
+      "path": "pasted_content.txt",
+      "size": 37746,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_2.txt",
+      "size": 143505,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_3.txt",
+      "size": 50885,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_4.txt",
+      "size": 7015,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_5.txt",
+      "size": 40324,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_6.txt",
+      "size": 115888,
+      "kind": "txt"
+    },
+    {
       "path": "review-summary.json",
       "size": 39066,
       "kind": "json"
