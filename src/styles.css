@@ -117,3 +117,16 @@ td, td.mono { color: #1e2d23; font-size: 13px; }
 .market-highlight { color:#145e8c; }
 .market-context { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:8px 0 14px; padding:9px 11px; background:#edf4f7; border-left:3px solid #2e7199; color:#23445a; font-size:11px; }
 .market-context strong { font-size:14px; color:#124c73; }
+
+.pdf-reference { margin-top:20px; padding-top:18px; border-top:1px solid #e1e4d6; }
+.pdf-plate-link { display:block; max-width:850px; margin:12px auto 0; background:#f0eee5; border:1px solid #c9c5b5; padding:14px; overflow:auto; }
+.pdf-plate { display:block; width:100%; max-height:820px; object-fit:contain; object-position:top center; filter:contrast(1.04); }
+.archive-group { padding:20px; }
+.archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+.archive-file { display:flex; align-items:center; gap:10px; padding:11px 12px; border:1px solid #e0e5d8; border-radius:4px; background:#fbfcf6; color:#243128; }
+.archive-file:hover { border-color:#8da681; background:#f1f5eb; }
+.archive-file-icon { color:#527044; display:flex; }
+.archive-file span:nth-child(2) { min-width:0; flex:1; }
+.archive-file strong,.archive-file small { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.archive-file strong { font-size:11px; } .archive-file small { margin-top:3px; font-size:9px; color:#52614f; }
+@media(max-width:650px){.archive-list{grid-template-columns:1fr}.pdf-plate-link{padding:6px}.pdf-plate{min-width:620px;max-width:none}}
