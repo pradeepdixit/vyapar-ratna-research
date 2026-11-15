@@ -96,6 +96,11 @@
       "kind": "txt"
     },
     {
+      "path": "pasted_content_6.txt",
+      "size": 115888,
+      "kind": "txt"
+    },
+    {
       "path": "review-summary.json",
       "size": 39066,
       "kind": "json"

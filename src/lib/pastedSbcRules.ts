@@ -19,6 +19,14 @@ export const PASTED_SBC_RULES:PastedSbcRule[]=[
  {id:'P5-PANCHAK',title:'देश-काल-पण्य वेध',text:'देश, काल और पण्य के अलग वर्णादि-पञ्चक बनाकर उनके वेध-पाद और राशि-दृष्टि-पाद से शुभ/क्रूर विंशोपक निकालने की प्रक्रिया दी गयी है।',status:'used',source:'pasted_content_5.txt'},
  {id:'P5-DELTA',title:'भावी मूल्य-अंतर',text:'दो अवधियों के फल-विंशोपक के अंतर को current value के साथ त्रैराशिक से जोड़कर/घटाकर भावी मूल्य-अंतर निकालने का source workflow दिया गया है।',status:'used',source:'pasted_content_5.txt'},
  {id:'P5-OCR',title:'उदाहरण और OCR सावधानी',text:'पाँचवें source में ऐतिहासिक मुंबई-चाँदी उदाहरण और OCR-सुधारे हुए अंक हैं; इन्हें research reference के रूप में रखा गया है, live NIFTY/सोना price forecast के रूप में नहीं।',status:'not-present',source:'pasted_content_5.txt'},
+ {id:'P6-MOON',title:'चंद्र-शृंग और चंद्रबल',text:'छठे source में चंद्र को ग्रहों का बलप्रद कहा गया है; शुक्ल द्वितीया की शृंगोन्नति और वाम/दक्षिण शृंग की न्यूनाधिकता को तेजी-मंदी निर्णय में पहले देखने का निर्देश है।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-CHAIN',title:'तीन ग्रहों तक वेध-परम्परा',text:'वस्तु के वेधक चंद्र और उसके वेधक ग्रहों की जाति, उच्च-नीच, स्व-मित्र-सम-शत्रु, गति और बल का विचार तीन वेधक ग्रहों तक किया जाए; चौथे से आगे फलशक्ति नहीं मानी गयी।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-HORN',title:'शुभ/क्रूर चंद्र और शृंगफल',text:'शुभ चंद्र के शुभ वेध और वाम शृंग को मंदी, क्रूर वेध और दक्षिण शृंग को तेजी की दिशा से जोड़ा गया है; मिश्र दशा में मिश्र फल और बलानुसार मात्रा।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-NOVEDHA',title:'वेध न हो तो दृष्टि fallback',text:'यदि SBC वेध न हो तो source स्वतंत्र दृष्टि-विचार की अनुमति देता है; उच्च/नीच ग्रह की दृष्टि को अलग महत्व और अन्य स्थिति में वेध के बिना दृष्टि को निष्फल बताता है।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-PERSIST',title:'सम-विषम भाव की अवधि',text:'सम से विषम के बाद 1 दिन, 2 विषम पर 3 दिन, 3 पर 7 दिन और 4 पर 15 दिन तक तेजी; विपरीत क्रम में मंदी। अधिक संख्या पर अनुमान और चंद्र-शृंगोन्नति आवश्यक।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-HALF',title:'शृंग और भाव का संयुक्त फल',text:'चंद्र शृंगोन्नति और सम-विषम स्थिति एक दिशा में हों तो पूरा फल; विरोध हो तो आधा या शून्य फल source में बताया गया है।',status:'not-present',source:'pasted_content_6.txt'},
+ {id:'P6-ANGLE',title:'अंशान्तर-विभाजन chart',text:'छठे source में 0°/180° से लेकर 35 अंशान्तर-विभाग और 40 दृष्टि-दीप्तांश rows दिये गये हैं; website में दोनों complete tables research tabs में हैं।',status:'used',source:'pasted_content_6.txt'},
+ {id:'P6-NAVAMSA',title:'पाँच नवांश-युति',text:'प्रथम से पंचम नवांश-युति 0°, 40°, 80°, 120° और 160° के अंशान्तर पर; उनका common दीप्तांश 7°46′40″ और अर्धभाग 3°53′20″ source chart में है।',status:'used',source:'pasted_content_6.txt'},
 ];
 export function pastedMarketNote(market:string){
  const q=market.trim().toLowerCase();
