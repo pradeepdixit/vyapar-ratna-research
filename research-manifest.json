@@ -1,0 +1,239 @@
+{
+  "files": [
+    {
+      "path": "BOOK_REVIEW.md",
+      "size": 53077,
+      "kind": "md"
+    },
+    {
+      "path": "BOOKofvyaparratna.docx",
+      "size": 1453010,
+      "kind": "docx"
+    },
+    {
+      "path": "D9_CONJUNCTION_METHOD.md",
+      "size": 1655,
+      "kind": "md"
+    },
+    {
+      "path": "PANCHANG_METHOD.md",
+      "size": 7474,
+      "kind": "md"
+    },
+    {
+      "path": "SBC_METHOD.md",
+      "size": 9200,
+      "kind": "md"
+    },
+    {
+      "path": "TECHNICAL_SOURCES.md",
+      "size": 930,
+      "kind": "md"
+    },
+    {
+      "path": "blocks.json",
+      "size": 1584244,
+      "kind": "json"
+    },
+    {
+      "path": "book-blocks.txt",
+      "size": 1481533,
+      "kind": "txt"
+    },
+    {
+      "path": "build06.py",
+      "size": 16050,
+      "kind": "py"
+    },
+    {
+      "path": "build_review03.py",
+      "size": 72841,
+      "kind": "py"
+    },
+    {
+      "path": "build_review10.py",
+      "size": 17550,
+      "kind": "py"
+    },
+    {
+      "path": "compile-status.json",
+      "size": 224,
+      "kind": "json"
+    },
+    {
+      "path": "compiled-book-data.json",
+      "size": 3517892,
+      "kind": "json"
+    },
+    {
+      "path": "paragraphs.json",
+      "size": 1242821,
+      "kind": "json"
+    },
+    {
+      "path": "review-summary.json",
+      "size": 39066,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/01.json",
+      "size": 122941,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/02.json",
+      "size": 211958,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/03.json",
+      "size": 127938,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/04.json",
+      "size": 95777,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/05.json",
+      "size": 672980,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/06.json",
+      "size": 344941,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/07.json",
+      "size": 41423,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/08.json",
+      "size": 83585,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/09.json",
+      "size": 48688,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/10.json",
+      "size": 160827,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/11.json",
+      "size": 73092,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/12.json",
+      "size": 16845,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/13.json",
+      "size": 218454,
+      "kind": "json"
+    },
+    {
+      "path": "reviews/14.json",
+      "size": 63845,
+      "kind": "json"
+    },
+    {
+      "path": "sections/01.json",
+      "size": 65766,
+      "kind": "json"
+    },
+    {
+      "path": "sections/02.json",
+      "size": 182132,
+      "kind": "json"
+    },
+    {
+      "path": "sections/03.json",
+      "size": 127872,
+      "kind": "json"
+    },
+    {
+      "path": "sections/04.json",
+      "size": 35931,
+      "kind": "json"
+    },
+    {
+      "path": "sections/05.json",
+      "size": 268918,
+      "kind": "json"
+    },
+    {
+      "path": "sections/06.json",
+      "size": 134957,
+      "kind": "json"
+    },
+    {
+      "path": "sections/07.json",
+      "size": 26586,
+      "kind": "json"
+    },
+    {
+      "path": "sections/08.json",
+      "size": 62417,
+      "kind": "json"
+    },
+    {
+      "path": "sections/09.json",
+      "size": 47390,
+      "kind": "json"
+    },
+    {
+      "path": "sections/10.json",
+      "size": 58949,
+      "kind": "json"
+    },
+    {
+      "path": "sections/11.json",
+      "size": 76810,
+      "kind": "json"
+    },
+    {
+      "path": "sections/12.json",
+      "size": 26790,
+      "kind": "json"
+    },
+    {
+      "path": "sections/13.json",
+      "size": 190248,
+      "kind": "json"
+    },
+    {
+      "path": "sections/14.json",
+      "size": 279504,
+      "kind": "json"
+    },
+    {
+      "path": "sections.json",
+      "size": 2697,
+      "kind": "json"
+    },
+    {
+      "path": "source.txt",
+      "size": 1266347,
+      "kind": "txt"
+    },
+    {
+      "path": "validation.json",
+      "size": 7740,
+      "kind": "json"
+    },
+    {
+      "path": "validation.md",
+      "size": 4509,
+      "kind": "md"
+    }
+  ]
+}
