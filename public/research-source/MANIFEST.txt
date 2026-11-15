@@ -1,7 +1,6 @@
 BOOK_REVIEW.md
 BOOKofvyaparratna.docx
 D9_CONJUNCTION_METHOD.md
-MANIFEST.txt
 PANCHANG_METHOD.md
 SBC_METHOD.md
 TECHNICAL_SOURCES.md
@@ -13,6 +12,11 @@ build_review10.py
 compile-status.json
 compiled-book-data.json
 paragraphs.json
+pasted_content.txt
+pasted_content_2.txt
+pasted_content_3.txt
+pasted_content_4.txt
+pasted_content_5.txt
 review-summary.json
 reviews/01.json
 reviews/02.json
@@ -28,7 +32,6 @@ reviews/11.json
 reviews/12.json
 reviews/13.json
 reviews/14.json
-sections.json
 sections/01.json
 sections/02.json
 sections/03.json
@@ -43,6 +46,7 @@ sections/11.json
 sections/12.json
 sections/13.json
 sections/14.json
+sections.json
 source.txt
 validation.json
 validation.md

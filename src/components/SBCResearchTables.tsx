@@ -1,0 +1,20 @@
+import { useMemo, useState } from 'react';
+
+type Row={input:number;self:string;friend:string;same:string;enemy:string};
+function pair(value:number){const rounded=Math.round(value);return `${Math.floor(rounded/60)}.${String(rounded%60).padStart(2,'0')}`;}
+function triple(value:number){const total=Math.round(value*3600);const v=Math.floor(total/3600);const rest=total%3600;const k=Math.floor(rest/60);const vk=rest%60;return `${v}/${k}/${vk}`;}
+function fieldRows():Row[]{return Array.from({length:30},(_,i)=>{const n=i+1,m=Math.min(n,30-n);return {input:n,self:String(m*4),friend:String(m*3),same:String(m*2),enemy:String(m)};});}
+function minuteRows():Row[]{return Array.from({length:60},(_,i)=>{const n=i+1;return {input:n,self:pair(n*4),friend:pair(n*3),same:pair(n*2),enemy:pair(n)};});}
+function navamsaRows():Row[]{return Array.from({length:100},(_,i)=>{const n=i+1;return {input:n,self:pair(n*36),friend:pair(n*27),same:pair(n*18),enemy:pair(n*9)};});}
+const fractions=[['पूर्ण',1],['त्रिपाद',.75],['द्विपाद',.5],['एकपाद',.25]] as const;
+type VishRow={condition:string;values:string[];kind:'शुभ'|'क्रूर'};
+function vishRows():VishRow[]{return (['शुभ','क्रूर'] as const).flatMap(kind=>fractions.flatMap(([vName,v])=>fractions.map(([dName,d])=>({kind,condition:`${vName} वेध + ${dName} दृष्टि`,values:[1,2,3,4,5].map(n=>triple(n*v*d*(kind==='शुभ'?1:.8)))}))));}
+const TABS=[['field','क्षेत्रबल अंश','30 rows'],['minute','कला फल','60 rows'],['navamsa','नवांश बल','100 rows'],['vish','विंशोपक','32 rows']] as const;
+type Tab=(typeof TABS)[number][0];
+export default function SBCResearchTables(){
+ const [tab,setTab]=useState<Tab>('field');
+ const rows=useMemo(()=>tab==='field'?fieldRows():tab==='minute'?minuteRows():navamsaRows(),[tab]);
+ const vish=useMemo(vishRows,[]);
+ const caption=tab==='field'?'१ से ३० अंश: १५ पर बल अधिकतम, ३० पर शून्य।':tab==='minute'?'१ से ६० कला/विकला: input × ४/३/२/१, ६० विकला = १ कला।':tab==='navamsa'?'१ से १०० नवांश कला: स्व ०.६, मित्र ०.४५, सम ०.३०, शत्रु ०.१५; १०० के बाद २०० से घटाकर।':'विंशोपक/कला/विकला: शुभ ग्रह का पूरा वेध्य १ विंशोपक, क्रूर ग्रह का ०.८; वेध और दृष्टि के पाद अनुपात से गुणा।';
+ return <section className="panel sbc-research-tables"><div className="section-title"><div><div className="eyebrow">RESEARCH TABLES • PASTED_CONTENT_3 + 4</div><h2>क्षेत्रबल, नवांश-बल और विंशोपक सारिणियाँ</h2></div><span className="tag">formula + source tags</span></div><p className="note">ये tables आपके pasted_content_3.txt और pasted_content_4.txt में दिये सूत्रों से regenerated हैं। मूल दोनों source files Research archive में भी उपलब्ध हैं। स्व = स्वक्षेत्र, मित्र = ३ पाद, सम = २ पाद, शत्रु = १ पाद।</p><div className="table-tabs">{TABS.map(([id,label,count])=><button key={id} className={`text-button ${tab===id?'active':''}`} onClick={()=>setTab(id)}>{label} <small>{count}</small></button>)}</div><div className="table-caption">{caption}</div>{tab==='vish'?<div className="table-scroll research-table-scroll"><table><thead><tr><th>ग्रह वर्ग / स्थिति</th><th>1 वेध्य</th><th>2 वेध्य</th><th>3 वेध्य</th><th>4 वेध्य</th><th>5 वेध्य</th></tr></thead><tbody>{vish.map((r,i)=><tr key={`${r.kind}-${i}`} className={r.kind==='क्रूर'?'malefic-row':'benefic-row'}><td><strong>{r.kind}</strong> · {r.condition}</td>{r.values.map((x,j)=><td key={j}>{x}</td>)}</tr>)}</tbody></table></div>:<div className="table-scroll research-table-scroll"><table><thead><tr><th>{tab==='field'?'अंश':tab==='minute'?'कला':'नवांश कला'}</th><th>स्वक्षेत्र / पूर्ण</th><th>मित्र / ३ पाद</th><th>सम / २ पाद</th><th>शत्रु / १ पाद</th></tr></thead><tbody>{rows.map(r=><tr key={r.input}><td><strong>{r.input}</strong></td><td>{r.self}</td><td>{r.friend}</td><td>{r.same}</td><td>{r.enemy}</td></tr>)}</tbody></table></div>}<div className="source-tags"><span className="tag source-tag">SOURCE: pasted_content_3.txt</span><span className="tag source-tag">SOURCE: pasted_content_4.txt</span><span className="tag source-tag">क्षेत्रबल</span><span className="tag source-tag">नवांश-बल</span><span className="tag source-tag">विंशोपक</span></div></section>;
+}

@@ -143,6 +143,9 @@ export type SbcVedha = {
   target: string;
   direction: SbcDirection;
   kind: SbcKind;
+  sourcePada?: number;
+  targetPada?: number;
+  navamsaVedha?: boolean;
 };
 
 const GEOMETRIES: Array<{ geometry: Geometry; direction: SbcDirection }> = [
@@ -307,6 +310,9 @@ export function vedhas(snapshot: AstroSnapshot, mode: SbcMode = "all-three"): Sb
         target: diagonalTarget(sourceValue, item.geometry).name,
         direction,
         kind: kindFor(key),
+        sourcePada: Number.isInteger(planet.pada) ? planet.pada : undefined,
+        targetPada: direction === "सम्मुख" && Number.isInteger(planet.pada) ? 5 - planet.pada : undefined,
+        navamsaVedha: direction === "सम्मुख" && Number.isInteger(planet.pada),
       });
     }
   }

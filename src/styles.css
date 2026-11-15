@@ -130,3 +130,63 @@ td, td.mono { color: #1e2d23; font-size: 13px; }
 .archive-file strong,.archive-file small { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .archive-file strong { font-size:11px; } .archive-file small { margin-top:3px; font-size:9px; color:#52614f; }
 @media(max-width:650px){.archive-list{grid-template-columns:1fr}.pdf-plate-link{padding:6px}.pdf-plate{min-width:620px;max-width:none}}
+
+.market-context p { flex-basis:100%; margin:3px 0 0; font-size:10px; line-height:1.7; color:#294b61; }
+.pasted-rule-panel { margin-top:18px; padding:18px 0; border-top:1px solid #e1e4d6; }
+.pasted-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.pasted-rule { padding:13px; border:1px solid #dce5d5; background:#f6f9f0; border-radius:4px; }
+.pasted-rule.not-present { background:#faf4e6; border-color:#eadab8; }
+.pasted-rule .mono { color:#52614f; font-size:10px; }
+.pasted-rule h3 { font-size:13px; margin:4px 0; } .pasted-rule p { font-size:11px; line-height:1.8; }
+@media(max-width:650px){.pasted-rule-grid{grid-template-columns:1fr}}
+
+.table-tabs { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; border-bottom:1px solid #dce3d5; padding-bottom:8px; }
+.table-tabs .text-button { border:1px solid #d4ddce; padding:8px 11px; border-radius:4px; background:#fbfcf6; color:#304532; }
+.table-tabs .text-button.active { background:#244d3d; color:#fff; border-color:#244d3d; }
+.table-tabs small { opacity:.75; margin-left:4px; }
+.table-caption { margin:10px 0; padding:10px 12px; background:#f4f6ec; color:#304532; font-size:11px; }
+.research-table-scroll { max-height:480px; border:1px solid #dfe6da; }
+.research-table-scroll table { min-width:620px; }
+.research-table-scroll th { position:sticky; top:0; z-index:2; background:#eef3e6; }
+.source-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; }
+.source-tag { font-size:9px; background:#edf4f7; color:#25566e; }
+.vedha-pada { display:block; color:#8b5e1c; font-size:8px; font-weight:700; margin-top:2px; }
+
+.research-table-scroll .malefic-row td:first-child { color:#8f3e37; }
+.research-table-scroll .benefic-row td:first-child { color:#1b6b4d; }
+
+/* Deep dark research theme: high-contrast, source-friendly and color-coded. */
+:root { --ink:#e7efe9; --muted:#a8b9ad; --border:#2b4036; --green:#4caf82; --gold:#e3b45a; --paper:#14231d; --side:#0b1511; color:#e7efe9; background:#09120f; }
+html, body, #root, .app-shell { background:#09120f; color:#e7efe9; }
+body { color:#e7efe9; }
+.sidebar { background:#0b1712; border-color:#2b4036; }
+.brand strong, .brand span, .sidebar-label, .sidebar nav a, .sidebar-note p, .sidebar-note span, .sidebar-footer, .sidebar-footer small, .edition, .breadcrumb, .breadcrumb strong, .topbar, .topbar-right, .location-pill, .location-pill span { color:#dce9df; }
+.sidebar nav a:hover { background:#163126; color:#fff; } .sidebar nav a.nav-active { background:#244836; color:#fff; }
+.topbar { background:#0e1b15; border-color:#2b4036; }
+main { background:#09120f; }
+h1,h2,h3,.section-title h2,.rule-card h3,.dashboard-intro h1,.dashboard-intro h1 em { color:#edf6ef; }
+p,.note,.section-explainer,.page-heading p,.dashboard-intro p,.rule-card>p,.source-reader article p,.source-expand blockquote,.review-intro p,.section-reviews details>p,.limitation,.empty p,.market-input,.sbc-controls label,.panchang dt,.panchang dd,.chart-caption,.mini-chart-caption,.angle-grid>div,.angle-grid strong { color:#c7d8cc; }
+.eyebrow,.muted,.rule-meta,.status,.source-heading,.source-heading .mono,.source-expand small,.source-expand .reason,.app-footer,.app-footer p,.app-footer a,.app-footer span,.sidebar-label,.sidebar-footer,.stat>span,.stat>small,.timeline-time,.timeline-time small,.time-strip>label,.live-toggle,.range-fields label,.range-mode,.results-line,.pagination,.table-caption { color:#a9bbae; }
+.panel,.rule-card,.stats-grid,.source-reader,.multi-select,.filters,.location-panel,.range-panel,.table-panel,.mini-chart,.coverage-note,.review-intro,.hero-book { background:#14231d; border-color:#2b4036; }
+.hero-book { box-shadow:0 10px 25px #0006; }
+.search-field,.source-expand,.notice,.empty,.planet-subgroup,.pasted-rule,.archive-file,.limb-card,.period-card,.table-caption { background:#102019; border-color:#2b4036; color:#c7d8cc; }
+input,select,.location-fields input,.market-input input,.multi-select-body > input,.search-field input { background:#0d1914; color:#edf6ef; border-color:#385343; }
+input::placeholder,.search-field input::placeholder { color:#8fa698; }
+.button.secondary { background:#172a21; border-color:#41614e; color:#dce9df; }
+.button.quiet,.text-button { color:#bdd0c1; }
+.button.primary { background:#287d59; border-color:#4caf82; }
+.tag { background:#1b3529; border-color:#385846; color:#d5e6d8; } .tag.commodity { background:#3b2f18; border-color:#735c2b; color:#f0d58f; }
+table { color:#d7e5da; } th { background:#1c3528; color:#e8f4ea; border-color:#385343; } td { color:#cbdccf; border-color:#2a4035; }
+.sbc-grid { background:#0d1c15; border-color:#52705e; } .sbc-cell { background:#14271e; border-color:#3d5948; color:#d7e8da; } .sbc-cell.inner { background:#102119; color:#adc5b2; } .sbc-cell.occupied { background:#2e5d42; } .sbc-cell.target { background:#5a451f; } .sbc-cell.occupied.target { background:#386847; } .sbc-cell strong,.sbc-cell .sbc-planet { color:#e4f2e6; } .sbc-planet.market-relevant { background:#164968; color:#d5f0ff; }
+.sbc-legend,.market-context { color:#c7d8cc; } .market-context { background:#123045; border-color:#3d8bb4; } .market-context strong { color:#e4f3ff; } .market-context p { color:#b9d8e8; }
+.pasted-rule.not-present { background:#3c2b19; border-color:#805e2a; } .pasted-rule-grid .pasted-rule { color:#d9e6dc; }
+.review-intro { background:#173426; } .notice { background:#173025; } .notice.warning { background:#3c301b; border-color:#765d2c; color:#f1d692; } .notice.error { background:#42251f; border-color:#874639; color:#f4b9a8; }
+.gap-list { background:#342a1b; } .gap-list p,.signal-neutral { color:#e9d18c; } .signal-up,.status.computable { background:#173d2a; color:#92e0ac; } .signal-down,.status.missing { background:#45241f; color:#f1aa99; }
+.progress-wrap progress::-webkit-progress-bar { background:#243c30; } .progress-wrap progress::-webkit-progress-value { background:#4caf82; }
+.pdf-plate-link { background:#17251f; border-color:#536859; }
+.archive-file:hover { background:#1b3a2b; border-color:#5b9672; } .archive-file strong { color:#e8f5ea; } .archive-file small { color:#a9c0ae; }
+.sbc-research-tables .malefic-row td:first-child { color:#ff9d88; } .sbc-research-tables .benefic-row td:first-child { color:#8be7ad; }
+
+/* Keep wide research tables/boards scrollable inside their panels, never across the whole page. */
+html, body, #root { overflow-x:hidden; }
+.workspace, main, .panel { min-width:0; }
