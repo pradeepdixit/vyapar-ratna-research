@@ -1030,3 +1030,8 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
 .sbc-calculation-time strong { color:#0b2d70; font-size:24px; font-weight:950; }
 .sbc-calculation-time em { color:#234a87; font-size:15px; font-style:normal; font-weight:700; }
 @media(max-width:760px){ .sbc-calculation-time { grid-template-columns:1fr; gap:5px; padding:12px; } .sbc-calculation-time span{font-size:16px}.sbc-calculation-time strong{font-size:21px}.sbc-calculation-time em{font-size:14px;line-height:1.5} }
+
+/* Every angle/conjunction result carries its own calculation timestamp. */
+.angle-calculation-time { margin-top:5px; color:#123b83; font-size:15px; font-weight:800; line-height:1.5; }
+.angle-calculation-time strong { color:#082d74; font-size:17px; font-weight:950; }
+@media(max-width:760px){ .angle-calculation-time{font-size:14px}.angle-calculation-time strong{font-size:16px} }
