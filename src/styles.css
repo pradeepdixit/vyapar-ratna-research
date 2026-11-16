@@ -678,3 +678,9 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
   main p, main li, main td, main label, main summary, main blockquote { font-size:17px !important; line-height:1.75 !important; }
   main small { font-size:14px !important; }
 }
+
+/* One-click copy is available on every route and remains visible while reading long pages. */
+.floating-copy { position:fixed; right:24px; bottom:22px; z-index:45; display:inline-flex; align-items:center; gap:9px; border:2px solid #123b59; border-radius:28px; padding:13px 18px; background:#fff; color:#123b59; box-shadow:0 7px 22px rgba(18,59,89,.2); font-size:17px; font-weight:900; cursor:pointer; }
+.floating-copy:hover { background:#eaf4f7; color:#7d1f1f; border-color:#7d1f1f; }
+.global-copy { min-width:150px; justify-content:center; font-size:16px; }
+@media(max-width:760px){.floating-copy{right:14px;bottom:14px;padding:11px 14px;font-size:15px}.floating-copy span{display:none}.global-copy{min-width:0}}

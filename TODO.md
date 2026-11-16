@@ -1,6 +1,6 @@
 
-## Final no-fade typography pass
+## Copy all text on every page
 
-- [x] सभी pages के paragraph, source text, table cells, labels, notes, metadata, cards और small text के लिए बड़े desktop font sizes लागू किये गये।
-- [x] Faded/low-opacity text हटाकर सभी text roles को opacity 1 किया गया।
-- [x] सामान्य text dark green, headings dark navy और errors/bearish warnings dark red रखे गये।
+- [x] Topbar पर हर route में “Copy all page text” action उपलब्ध है।
+- [x] Long pages के लिए bottom-right floating “Copy all visible text” button भी उपलब्ध है।
+- [x] Clipboard API unavailable होने पर textarea fallback copy जोड़ा गया।
