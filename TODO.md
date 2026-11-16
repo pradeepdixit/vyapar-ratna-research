@@ -1,7 +1,7 @@
 
-## Pasted SBC special charts
+## Jyotish readability theme
 
-- [x] pasted_content_6.txt को public Research archive और manifest में रखा गया; पहले के pasted_content.txt से pasted_content_5.txt तक कोई file हटाई नहीं गयी।
-- [x] अंशान्तर-विभाजन 1–35 और दृष्टि-दीप्तांश/अर्धभाग 1–40 के complete research tabs जोड़े गये; पाँच नवांश-युति rows और क्रान्त्यंश-साम्य note भी visible है।
-- [x] चंद्र-शृंग/चंद्रबल, तीन-ग्रह वेध-परम्परा, शुभ/क्रूर चंद्र, वेध-न होने पर दृष्टि fallback, सम-विषम अवधि और पूर्ण/आधा फल को source-tagged reference rules में जोड़ा गया।
-- [x] पूरी website का dark high-contrast theme, रंगीन SBC cells/arrows, source tables और archive cards लागू किये गये।
+- [x] सभी मुख्य headings, body text, rules, source reader, tables, labels, buttons और inputs का font size बढ़ाया गया तथा line-height सुधारी गई।
+- [x] गहरे नील/indigo night-sky background, स्वर्ण headings, हल्के body text, blue research panels और green/red/gold ग्रह-वेध signals वाला ज्योतिषीय theme लागू किया गया।
+- [x] SBC cells, pada labels, Panchang cards, D9/कुंडली sections, research archive और mobile breakpoints को उसी readable palette में मिलाया गया।
+- [x] Fixed navigation और wide research tables के लिए horizontal overflow रोककर viewport readability सुधारी गई।

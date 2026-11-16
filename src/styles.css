@@ -197,3 +197,155 @@ html, body, #root { overflow-x:hidden; }
 .special-rule-grid p { color:#c7d8cc; font-size:11px; line-height:1.8; margin-top:5px; }
 .special-row td { background:#263c2c; color:#f0d58f; }
 @media(max-width:760px){.special-rule-grid{grid-template-columns:1fr;}}
+
+
+/* Jyotish night-sky reading theme: larger type, calmer contrast and clear astrological signals. */
+:root {
+  --astro-night: #090d1d;
+  --astro-night-2: #0e1530;
+  --astro-panel: #151d3b;
+  --astro-panel-2: #1b2750;
+  --astro-border: #394b78;
+  --astro-gold: #e7c66b;
+  --astro-gold-soft: #f4d98b;
+  --astro-text: #f7f2df;
+  --astro-body: #e4e9f5;
+  --astro-muted: #b8c4de;
+  --astro-blue: #83b9ff;
+  --astro-green: #69dfa0;
+  --astro-red: #ff898c;
+  --astro-purple: #b5a5ff;
+  font-family: 'Noto Sans Devanagari', 'IBM Plex Sans', sans-serif;
+  color: var(--astro-text);
+}
+body {
+  background: radial-gradient(circle at 86% 3%, rgba(82, 67, 151, .22), transparent 31%), linear-gradient(135deg, var(--astro-night), #0c1328 52%, #10152d);
+  color: var(--astro-body);
+  font-size: 16px;
+  line-height: 1.95;
+}
+body, button, input, select, textarea { font-family: 'Noto Sans Devanagari', 'IBM Plex Sans', sans-serif; }
+h1 { font-size: clamp(34px, 3.7vw, 52px); line-height: 1.4; letter-spacing: -.5px; font-weight: 800; }
+h2 { font-size: 26px; line-height: 1.55; font-weight: 750; }
+h3 { font-size: 20px; line-height: 1.6; font-weight: 700; }
+p { font-size: 15px; line-height: 2; }
+small, .small { font-size: 12px; line-height: 1.7; }
+.mono { font-size: 12px; }
+.sidebar { background: #0b1127; border-right-color: var(--astro-border); box-shadow: 8px 0 28px rgba(0,0,0,.18); }
+.brand strong { color: var(--astro-gold-soft); font-size: 21px; }
+.brand span, .sidebar-label, .sidebar-footer, .sidebar-footer small { color: var(--astro-muted); font-size: 12px; }
+.sidebar-label { font-size: 11px; letter-spacing: 1.4px; }
+.sidebar nav { gap: 8px; }
+.sidebar nav a { color: var(--astro-body); font-size: 14px; padding: 13px 14px; }
+.sidebar nav a:hover { background: #1b2851; color: #fff; }
+.sidebar nav a.nav-active { background: linear-gradient(90deg, #354a83, #283863); color: #fff; box-shadow: inset 3px 0 var(--astro-gold); }
+.sidebar-note { border-color: var(--astro-border); }
+.sidebar-note p { color: var(--astro-body); font-size: 15px; }
+.sidebar-note span { color: var(--astro-muted); font-size: 12px; }
+.sidebar-footer { border-color: var(--astro-border); }
+.workspace { background: transparent; }
+.topbar { background: rgba(11, 17, 39, .96); border-color: var(--astro-border); min-height: 78px; }
+.breadcrumb, .breadcrumb strong, .edition, .topbar-right, .location-pill, .location-pill span { color: var(--astro-body); font-size: 13px; }
+.location-pill { border-color: var(--astro-border); background: #151f42; }
+main { background: transparent; }
+.time-strip { border-color: var(--astro-border); }
+.time-strip > label, .live-toggle { color: var(--astro-body); font-size: 13px; }
+.time-strip input[type=datetime-local] { color: var(--astro-text); font-size: 14px; }
+.button { font-size: 14px; padding: 13px 20px; min-height: 44px; }
+.button.primary { background: linear-gradient(135deg, #d9ad4f, #f0cf78); border-color: #f0cf78; color: #171528; box-shadow: 0 5px 16px rgba(231,198,107,.18); }
+.button.primary:hover { background: #f4d98b; }
+.button.secondary { background: #1c2850; border-color: #536a9f; color: var(--astro-text); }
+.button.quiet, .text-button { color: var(--astro-body); font-size: 14px; }
+.text-button:hover { color: var(--astro-gold-soft); }
+.dashboard-intro h1, .dashboard-intro h1 em, h1, h2, h3, .section-title h2 { color: var(--astro-text); }
+.dashboard-intro h1 em { color: var(--astro-gold-soft); }
+.dashboard-intro p, .page-heading p { color: var(--astro-body); font-size: 15px; }
+.hero-book, .panel, .rule-card, .filters, .source-reader, .multi-select, .location-panel, .range-panel, .table-panel, .mini-chart, .coverage-note, .stats-grid { background: linear-gradient(145deg, rgba(24,34,70,.98), rgba(16,24,52,.98)); border-color: var(--astro-border); box-shadow: 0 12px 30px rgba(0,0,0,.12); }
+.hero-book { border-color: #806b39; }
+.hero-book h3, .hero-book p, .hero-book-top, .hero-book-footer { color: var(--astro-gold-soft); }
+.hero-book-footer { border-color: #695b3b; }
+.stat { border-color: var(--astro-border); }
+.stat > span, .stat > small, .muted, .stat > strong small { color: var(--astro-muted); }
+.stat > strong { color: var(--astro-gold-soft); font-size: 39px; }
+.quick-search h2 { color: var(--astro-gold-soft); }
+.search-field, .multi-select, .source-expand, .notice, .empty, .planet-subgroup, .archive-file, .limb-card, .period-card, .table-caption { background: #111b3a; border-color: var(--astro-border); color: var(--astro-body); }
+.search-field input, input, select, .multi-select-body > input, .market-input input, .location-fields input { background: #0b1430; color: var(--astro-text); border-color: #52699a; font-size: 15px; min-height: 44px; }
+input::placeholder, .search-field input::placeholder { color: #aeb9d1; }
+.search-field { padding: 11px 15px; }
+.quick-tags button { background: #17234a; color: var(--astro-body); border-color: #3d568b; font-size: 13px; padding: 8px 11px; }
+.section-title .eyebrow, .eyebrow { color: var(--astro-gold); font-size: 12px; letter-spacing: 1.5px; }
+.section-explainer, .note, .rule-card > p, .source-reader article p, .source-expand blockquote, .review-intro p, .section-reviews details > p, .limitation, .empty p, .market-input, .sbc-controls label, .panchang dt, .panchang dd, .chart-caption, .mini-chart-caption, .angle-grid > div, .angle-grid strong { color: var(--astro-body); }
+.section-explainer, .note { font-size: 14px; }
+.rule-card { padding: 22px; }
+.rule-card h3 { color: var(--astro-gold-soft); font-size: 20px; }
+.rule-card > p { font-size: 16px; line-height: 2; }
+.rule-meta, .status, .source-heading, .source-heading .mono, .source-expand small, .source-expand .reason, .app-footer, .app-footer p, .app-footer a, .app-footer span { color: var(--astro-muted); font-size: 12px; }
+.signal-up, .status.computable { background: #164f3b; color: var(--astro-green); }
+.signal-down, .status.missing { background: #542b38; color: var(--astro-red); }
+.signal-neutral, .notice.warning, .gap-list p { background: #4d3a1d; color: var(--astro-gold-soft); }
+.tag { background: #273766; border-color: #526ca3; color: var(--astro-body); font-size: 12px; padding: 5px 9px; }
+.tag.commodity { background: #47381c; border-color: #8a6d2f; color: var(--astro-gold-soft); }
+.tag.retro { background: #4b2d45; border-color: #85547c; color: #f0b8e7; }
+.table-scroll table, table { color: var(--astro-body); }
+th { background: #263762; color: var(--astro-gold-soft); border-color: var(--astro-border); font-size: 14px; padding: 14px 18px; }
+td { color: var(--astro-body); border-color: #2d3d66; font-size: 14px; padding: 13px 18px; }
+.source-reader article p { font-size: 17px; line-height: 2.15; }
+.source-expand blockquote { font-size: 16px; }
+.archive-file strong { color: var(--astro-text); font-size: 14px; }
+.archive-file small { color: var(--astro-muted); font-size: 12px; }
+.archive-file:hover { background: #1e2d5b; border-color: var(--astro-blue); }
+.market-context { background: #122f58; border-color: #4d9fe1; color: var(--astro-body); font-size: 14px; }
+.market-context strong { color: #b9dcff; font-size: 17px; }
+.market-context p { color: #d3e7ff; font-size: 13px; }
+.sbc-controls label, .market-input { font-size: 14px; }
+.sbc-grid { background: #0e1731; border-color: #526a9c; }
+.sbc-cell { background: #17244a; border-color: #435a8e; color: var(--astro-body); font-size: 12px; min-height: 70px; }
+.sbc-cell.inner { background: #101a38; color: #bdc9e0; }
+.sbc-cell.occupied { background: #39315f; }
+.sbc-cell.target { background: #56451d; }
+.sbc-cell.occupied.target { background: #614229; }
+.sbc-cell strong, .sbc-cell .sbc-planet { color: var(--astro-text); font-size: 11px; }
+.sbc-planet.market-relevant { background: #174d77; color: #d7edff; }
+.sbc-legend { color: var(--astro-body); font-size: 13px; }
+.legend-green { color: var(--astro-green); }.legend-red { color: var(--astro-red); }.legend-gold { color: var(--astro-gold-soft); }
+.market-highlight { color: #9bcaff; }
+.panchang-limbs, .panchang-periods { gap: 15px; }
+.limb-card, .period-card { color: var(--astro-body); }
+.limb-card h3, .period-card h3 { color: var(--astro-gold-soft); font-size: 18px; }
+.limb-card p, .period-card p { color: var(--astro-body); font-size: 14px; }
+.pdf-reference, .pasted-rule-panel { border-color: var(--astro-border); }
+.pasted-rule { background: #162144; border-color: var(--astro-border); }
+.pasted-rule.not-present { background: #49351e; border-color: #8b6c31; }
+.pasted-rule .mono { color: var(--astro-muted); font-size: 12px; }.pasted-rule h3 { color: var(--astro-gold-soft); font-size: 17px; }.pasted-rule p { color: var(--astro-body); font-size: 14px; }
+.table-tabs { border-color: var(--astro-border); }.table-tabs .text-button { background: #17234a; border-color: #4b6090; color: var(--astro-body); font-size: 14px; }.table-tabs .text-button.active { background: #927133; border-color: var(--astro-gold); color: #fff8df; }
+.table-caption { color: var(--astro-body); font-size: 14px; }.research-table-scroll { border-color: var(--astro-border); }.research-table-scroll th { background: #263762; }
+.special-rule-grid article { background: #162144; border-color: var(--astro-border); border-left-color: var(--astro-gold); }.special-rule-grid strong { color: var(--astro-gold-soft); font-size: 14px; }.special-rule-grid p { color: var(--astro-body); font-size: 14px; }
+.source-tags .source-tag { background: #20355e; color: #b9d7ff; }
+.button:focus-visible, a:focus-visible, summary:focus-visible, input:focus, select:focus { outline-color: var(--astro-gold); }
+@media (max-width: 760px) {
+  body { font-size: 15px; }
+  h1 { font-size: 31px; } h2 { font-size: 22px; } h3 { font-size: 18px; }
+  p, .rule-card > p, .note, .section-explainer { font-size: 14px; }
+  .sidebar nav a { font-size: 15px; padding: 14px; }
+  .topbar { min-height: 68px; }
+  .breadcrumb, .breadcrumb strong, .location-pill { font-size: 12px; }
+  .button { font-size: 14px; min-height: 46px; }
+  .panel { padding: 18px; }
+  .source-reader article p { font-size: 15px; }
+  th, td { font-size: 13px; }
+  .sbc-cell { font-size: 11px; min-height: 62px; }
+  .sbc-cell strong, .sbc-cell .sbc-planet { font-size: 10px; }
+}
+@media (max-width: 560px) {
+  h1 { font-size: 28px; } h2 { font-size: 21px; }
+  .dashboard-intro h1 { font-size: 31px; }
+  .dashboard-intro p, .page-heading p { font-size: 14px; }
+  .rule-card h3 { font-size: 18px; }
+  .rule-card > p, .source-expand blockquote { font-size: 14px; }
+  input, select, .market-input input { font-size: 15px; min-height: 46px; }
+  .eyebrow { font-size: 11px; }
+}
+
+/* Keep the fixed navigation and wide astrology tables inside the viewport. */
+html, body { overflow-x: hidden !important; }
+main { min-width: 0; }
