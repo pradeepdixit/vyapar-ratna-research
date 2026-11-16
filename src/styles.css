@@ -815,3 +815,25 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
  .sbc-exact-pdf .sbc-frame-side { display:flex; }
  .sbc-exact-pdf .sbc-board { position:relative; width:100%; height:auto; left:auto; top:auto; }
 }
+
+/* NIFTY 50 SBC view: all columns wrap; never make the user drag sideways. */
+.nifty-sbc-list .table-scroll { overflow:visible; }
+.nifty-sbc-list table { table-layout:fixed; width:100%; }
+.nifty-sbc-list th,.nifty-sbc-list td { overflow-wrap:anywhere; word-break:break-word; }
+.nifty-sbc-list th:nth-child(1),.nifty-sbc-list td:nth-child(1){width:5%;}
+.nifty-sbc-list th:nth-child(2),.nifty-sbc-list td:nth-child(2){width:16%;}
+.nifty-sbc-list th:nth-child(3),.nifty-sbc-list td:nth-child(3){width:21%;}
+.nifty-sbc-list th:nth-child(4),.nifty-sbc-list td:nth-child(4){width:11%;}
+.nifty-sbc-list th:nth-child(5),.nifty-sbc-list td:nth-child(5),.nifty-sbc-list th:nth-child(6),.nifty-sbc-list td:nth-child(6){width:7%;}
+.nifty-sbc-list th:nth-child(7),.nifty-sbc-list td:nth-child(7){width:18%;}
+.nifty-sbc-list th:nth-child(8),.nifty-sbc-list td:nth-child(8){width:9%;}
+@media(max-width:760px){
+ .nifty-sbc-list .table-scroll { overflow:visible; }
+ .nifty-sbc-list table,.nifty-sbc-list tbody,.nifty-sbc-list tr,.nifty-sbc-list td { display:block; width:100%; }
+ .nifty-sbc-list thead { display:none; }
+ .nifty-sbc-list tr { margin:0 0 12px; padding:10px; border:1px solid #d8dfcc; border-radius:6px; background:#fffef9; }
+ .nifty-sbc-list td { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; padding:7px 2px; border-bottom:1px solid #edf0e6; text-align:right; }
+ .nifty-sbc-list td:last-child { border-bottom:0; }
+ .nifty-sbc-list td::before { content:attr(data-label); color:#243a29; font-weight:800; text-align:left; flex:0 0 42%; }
+ .nifty-sbc-list td small { font-size:10px; }
+}

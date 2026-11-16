@@ -1,6 +1,5 @@
 
-## Clear live vector SBC plate
+## NIFTY table no-scroll layout
 
-- [x] Live screen पर supplied PDF scan को chart के ऊपर से हटाया गया; अब साफ vector SBC grid, बाहरी bands, live ग्रह-पाद और colored arrows सीधे दिखते हैं।
-- [x] Supplied PDF केवल reference/download asset है; PDF/Save mode में केवल live SBC plate print होती है, पूरी website नहीं।
-- [x] Horizontal drag हटाकर board को available width में fit किया गया; mobile और desktop दोनों के लिए compact sizing रखा गया।
+- [x] NIFTY 50 SBC market-view table को fixed responsive widths और wrapped text दिया गया; desktop पर horizontal scroll नहीं है।
+- [x] छोटे screens पर वही 50 rows labelled cards में बदलती हैं, इसलिए हर share का वेध, शुभ/क्रूर count और signal side-scroll के बिना पढ़ा जा सकता है।
