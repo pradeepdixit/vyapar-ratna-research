@@ -528,3 +528,6 @@ html, body, #root { overflow-x: hidden; }
 .source-note { font-size:13px; }
 @media(min-width:1101px){.nifty-intro h2,.nifty-method h2{font-size:28px}.nifty-intro p,.nifty-method p{font-size:17px}.nifty-table-scroll th,.nifty-table-scroll td{font-size:15px}.nifty-count{font-size:25px}}
 @media(max-width:700px){.nifty-intro,.nifty-filters{display:block}.nifty-intro .button{margin-top:14px}.nifty-filters>label{display:block;margin-bottom:12px}.nifty-filters>label:last-child{min-width:0}.nifty-table-scroll{overflow-x:auto}}
+.nifty-intro + .nifty-stats { margin-top: 18px; }
+.nifty-intro .button-row { flex-shrink: 0; }
+@media(max-width:700px){.nifty-intro .button-row{display:flex;flex-wrap:wrap;margin-top:14px}.nifty-intro .button-row .button{flex:1}}
