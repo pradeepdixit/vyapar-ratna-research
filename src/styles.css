@@ -1035,3 +1035,12 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
 .angle-calculation-time { margin-top:5px; color:#123b83; font-size:15px; font-weight:800; line-height:1.5; }
 .angle-calculation-time strong { color:#082d74; font-size:17px; font-weight:950; }
 @media(max-width:760px){ .angle-calculation-time{font-size:14px}.angle-calculation-time strong{font-size:16px} }
+
+/* Every rule card states when it is active and how its inactive boundary is known. */
+.rule-timing { display:flex; flex-wrap:wrap; gap:5px 12px; margin-top:10px; padding:9px 11px; border-left:4px solid #1f4f8f; background:#f1f6ff; color:#173c73; font-size:14px; line-height:1.5; }
+.rule-timing strong { color:#0b2d70; font-weight:950; }
+.rule-timing span { font-weight:700; }
+.rule-timing .timing-inactive { color:#7a351f; }
+@media(max-width:760px){ .rule-timing{font-size:13px;display:grid;grid-template-columns:1fr;gap:3px} }
+.prediction-timing-note { margin:10px 0; padding:10px 12px; border-left:4px solid #1f4f8f; background:#f1f6ff; color:#173c73; font-weight:700; line-height:1.6; }
+.prediction-timing-note strong { color:#0b2d70; font-weight:950; }
