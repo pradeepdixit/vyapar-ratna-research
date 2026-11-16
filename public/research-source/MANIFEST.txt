@@ -1,53 +1,57 @@
-BOOK_REVIEW.md
-BOOKofvyaparratna.docx
-D9_CONJUNCTION_METHOD.md
-PANCHANG_METHOD.md
-SBC_METHOD.md
-TECHNICAL_SOURCES.md
-blocks.json
-book-blocks.txt
-build06.py
-build_review03.py
-build_review10.py
-compile-status.json
-compiled-book-data.json
-paragraphs.json
-pasted_content.txt
-pasted_content_2.txt
-pasted_content_3.txt
-pasted_content_4.txt
-pasted_content_5.txt
-pasted_content_6.txt
-review-summary.json
-reviews/01.json
-reviews/02.json
-reviews/03.json
-reviews/04.json
-reviews/05.json
-reviews/06.json
-reviews/07.json
-reviews/08.json
-reviews/09.json
-reviews/10.json
-reviews/11.json
-reviews/12.json
-reviews/13.json
-reviews/14.json
-sections/01.json
-sections/02.json
-sections/03.json
-sections/04.json
-sections/05.json
-sections/06.json
-sections/07.json
-sections/08.json
-sections/09.json
-sections/10.json
-sections/11.json
-sections/12.json
-sections/13.json
-sections/14.json
-sections.json
-source.txt
-validation.json
-validation.md
+Research archive files
+======================
+
+BOOK_REVIEW.md	53077 bytes
+BOOKofvyaparratna.docx	1453010 bytes
+D9_CONJUNCTION_METHOD.md	1655 bytes
+PANCHANG_METHOD.md	7474 bytes
+SBC_METHOD.md	9200 bytes
+TECHNICAL_SOURCES.md	930 bytes
+blocks.json	1584244 bytes
+book-blocks.txt	1481533 bytes
+build06.py	16050 bytes
+build_review03.py	72841 bytes
+build_review10.py	17550 bytes
+compile-status.json	224 bytes
+compiled-book-data.json	4099260 bytes
+paragraphs.json	1242821 bytes
+pasted_content.txt	37746 bytes
+pasted_content_2.txt	143505 bytes
+pasted_content_3.txt	50885 bytes
+pasted_content_4.txt	7015 bytes
+pasted_content_5.txt	40324 bytes
+pasted_content_6.txt	115888 bytes
+pasted_content_7.txt	9717 bytes
+review-summary.json	39066 bytes
+reviews/01.json	122941 bytes
+reviews/02.json	211958 bytes
+reviews/03.json	127938 bytes
+reviews/04.json	95777 bytes
+reviews/05.json	672980 bytes
+reviews/06.json	344941 bytes
+reviews/07.json	41423 bytes
+reviews/08.json	83585 bytes
+reviews/09.json	48688 bytes
+reviews/10.json	160827 bytes
+reviews/11.json	73092 bytes
+reviews/12.json	16845 bytes
+reviews/13.json	218454 bytes
+reviews/14.json	63845 bytes
+sections/01.json	65766 bytes
+sections/02.json	182132 bytes
+sections/03.json	127872 bytes
+sections/04.json	35931 bytes
+sections/05.json	268918 bytes
+sections/06.json	134957 bytes
+sections/07.json	26586 bytes
+sections/08.json	62417 bytes
+sections/09.json	47390 bytes
+sections/10.json	58949 bytes
+sections/11.json	76810 bytes
+sections/12.json	26790 bytes
+sections/13.json	190248 bytes
+sections/14.json	279504 bytes
+sections.json	2697 bytes
+source.txt	1266347 bytes
+validation.json	7740 bytes
+validation.md	4509 bytes

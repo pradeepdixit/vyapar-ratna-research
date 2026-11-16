@@ -626,3 +626,21 @@ html, body, #root { overflow-x: hidden; }
   .nifty-table-scroll th, .nifty-table-scroll td { font-size: 18px; }
   .daily-rule-card p { font-size:18px; }
 }
+
+/* Master checklist and high-contrast research palette. */
+.global-copy { display:inline-flex; align-items:center; gap:7px; border:1px solid #173f5b; background:#edf4f7; color:#123b59; border-radius:4px; padding:9px 13px; font:inherit; font-weight:900; cursor:pointer; }
+.global-copy:hover { background:#dcecf2; }
+.master-rules-panel { margin:22px 0; }
+.master-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:18px; }
+.master-rule-card { border:1px solid #b8c6d6; border-left:6px solid #1b5a47; border-radius:5px; padding:18px; background:#fbfcfe; }
+.master-rule-card.active.bearish { border-left-color:#8a2222; background:#fff8f8; }.master-rule-card.active.mixed { border-left-color:#9a6b14; background:#fffdf3; }.master-rule-card.watch { border-left-color:#173f5b; }.master-rule-card.inactive { border-left-color:#7d8a98; opacity:.9; }
+.master-rule-head { display:flex; align-items:flex-start; gap:12px; }.master-rule-icon { color:#145d46; }.master-rule-card.active.bearish .master-rule-icon { color:#8a2222; }.master-rule-card.active.mixed .master-rule-icon { color:#9a6b14; }.master-rule-card h3 { color:#142f5e; font-size:21px; margin:0 0 4px; }.master-status { color:#145d46; font-size:14px; font-weight:900; }.master-rule-card.active.bearish .master-status { color:#8a2222; }.master-rule-card p { color:#164536; font-size:16px; line-height:1.75; margin:9px 0 0; }.master-rule-card .master-interpretation { color:#173f5b; }.master-rule-card small { display:block; color:#38506a; font-size:13px; font-weight:800; margin-top:12px; }
+.nifty-current-signal { font-size:16px; }.nifty-current-signal.bearish { color:#8a2222; }.nifty-current-signal.mixed { color:#9a6b14; }.nifty-current-signal.watch { color:#145d46; }
+
+/* Make every ordinary text role visibly dark green/navy/red on the white theme. */
+.page-heading h1, .section-title h2, .panel h2, .panel h3, .nifty-method h2, .nifty-intro h2 { color:#142f5e; }
+.page-heading p, .section-explainer, .note, .source-note, .panel p, .stat small, .stat span, .table-caption, .empty p { color:#164536; }
+.notice.error, .notice.error p, .notice.warning, .notice.warning p, .error { color:#7d1f1f; }
+strong, th, .bold { color:#142f5e; }.source-id, .mono { color:#174b3e; }
+@media (min-width: 761px) { .global-copy { font-size:16px; }.master-rule-card p { font-size:18px; }.master-rule-card h3 { font-size:23px; }.master-rule-card small { font-size:15px; }.nifty-current-signal { font-size:18px; } }
+@media(max-width:900px){.master-rule-grid{grid-template-columns:1fr}.global-copy{padding:8px}.topbar-right .edition{display:none}}
