@@ -1,7 +1,8 @@
 
-## Daily research rule growth
+## Larger desktop fonts and clearer SBC vedha
 
-- [x] तारीख, शीर्षक, ग्रह, पदार्थ/विषय, समय-सीमा, prediction, observation और source भरकर नया personal rule जोड़ने का form बनाया गया।
-- [x] Daily entries browser local storage में सुरक्षित रहती हैं और search/delete की जा सकती हैं।
-- [x] Personal rules के लिए Copy all, JSON Download और Backup import जोड़े गये।
-- [x] Review में personal daily-rule count दिखता है और नए entries को आगे automatic conditions में encode करने की स्थिति स्पष्ट रहती है।
+- [x] Desktop के dense fonts, ग्रह-कोण, tables, labels, padas, notes और forecast cards को एक और readable size तक बढ़ाया गया।
+- [x] SBC SVG arrows को cells के ऊपर रखा गया ताकि line और arrowhead पूरा दिखाई दे।
+- [x] Benefic, malefic और mixed arrows के रंग, मोटाई, dashed pattern और बड़े arrowheads स्पष्ट किये गये।
+- [x] NIFTY/सोना या चुने share पर relevant arrows मोटे/गहरे और बाकी context arrows हल्के दिखते हैं।
+- [x] Source cell और target cell outline, target pada और direction text chart/table में दिखते हैं।

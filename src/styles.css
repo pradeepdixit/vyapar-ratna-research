@@ -583,3 +583,46 @@ html, body, #root { overflow-x: hidden; }
 .daily-rule-card h3 { color:var(--paper-indigo); font-size:21px; margin:12px 0 7px; }.daily-rule-card p { color:var(--paper-ink-soft); font-size:16px; line-height:1.85; margin-top:8px; }.daily-rule-card small { display:block; color:var(--paper-ink-soft); font-size:13px; margin-top:13px; font-weight:700; }.daily-prediction { background:#fff8e5; border:1px solid #ead59d; border-radius:4px; padding:12px 14px; }.daily-search { margin-top:12px; }.icon-button { display:inline-flex; align-items:center; justify-content:center; border:1px solid var(--paper-border); border-radius:4px; padding:8px; color:var(--paper-ink-soft); background:#fff; }.icon-button.danger:hover { color:#9c3025; border-color:#d58a82; }
 @media(max-width:900px){.review-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.daily-form-grid{grid-template-columns:1fr}.daily-form-grid .daily-wide{grid-column:auto}.daily-form-actions{align-items:flex-end;flex-direction:column}}
 @media(max-width:560px){.review-stats{grid-template-columns:1fr 1fr}.daily-rule-card h3{font-size:19px}.daily-rule-card p{font-size:14px}.daily-form-actions .muted{font-size:12px}}
+
+/* SBC live arrow clarity: keep the SVG above the cells so complete arrowheads are visible. */
+.sbc-board { overflow: visible; }
+.sbc-rays { z-index: 4; overflow: visible; }
+.sbc-cell { z-index: 1; }
+.sbc-cell.market-target { outline: 3px solid #2e7199; outline-offset: -3px; }
+.sbc-cell.source-cell { outline: 3px solid #a26d23; outline-offset: -3px; }
+.sbc-rays marker path { stroke-width: 1; }
+.market-arrow-legend { color:#145e8c; font-weight:900; }
+.vedha-pada { font-size:12px !important; line-height:1.45; font-weight:900; color:#8b5e1c; background:#fff5d6; border-radius:3px; padding:2px 3px; }
+
+/* Second desktop readability pass: all dense research text gets a clearly printable size. */
+@media (min-width: 761px) {
+  body { font-size: 18px; }
+  .page-heading h1 { font-size: 46px; }
+  .page-heading p, .dashboard-intro p, .section-explainer, .note, .market-context p, .review-intro p, .section-reviews details > p, .limitation, .empty p { font-size: 18px !important; }
+  .section-title h2 { font-size: 28px; }
+  .section-title .muted, .section-title > span { font-size: 16px !important; }
+  .eyebrow { font-size: 14px; }
+  .button, .text-button { font-size: 17px; }
+  label, .sbc-controls label, .market-input, .multi-select summary, .multi-options label { font-size: 17px !important; }
+  input, select, .market-input input, .multi-select-body > input, textarea { font-size: 18px !important; min-height: 52px; }
+  .tag, .status, .rule-meta, .source-id { font-size: 15px !important; }
+  table { font-size: 18px; }
+  th { font-size: 17px !important; padding: 18px 20px; }
+  td { font-size: 18px !important; padding: 17px 20px; }
+  td.mono, .mono { font-size: 16px; }
+  .angle-grid > div, .angle-grid strong { font-size: 25px !important; }
+  .angle-grid > div { padding: 19px 0; }
+  .chart-caption, .mini-chart-caption, .panchang dt, .panchang dd { font-size: 18px; }
+  .sbc-cell { font-size: 15px; min-height: 78px; }
+  .sbc-cell strong, .sbc-cell .sbc-planet { font-size: 15px; }
+  .sbc-legend { font-size: 17px; line-height:1.8; }
+  .market-context { font-size: 17px; padding: 14px 16px; }
+  .market-context strong { font-size: 21px; }
+  .market-context p { font-size: 17px !important; }
+  .sbc-layout .table-scroll th, .sbc-layout .table-scroll td { font-size: 17px; padding: 15px 16px; }
+  .table-caption, .table-tabs .text-button { font-size: 18px; }
+  .table-prediction-grid strong { font-size: 22px; }.table-prediction-grid span { font-size: 18px; }
+  .table-forecast-card strong { font-size: 22px; }.table-forecast-card p { font-size: 18px; }.table-forecast-card small { font-size: 17px; }.table-score { font-size: 18px; }
+  .nifty-table-scroll th, .nifty-table-scroll td { font-size: 18px; }
+  .daily-rule-card p { font-size:18px; }
+}
