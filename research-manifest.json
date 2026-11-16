@@ -62,7 +62,7 @@
     },
     {
       "path": "compiled-book-data.json",
-      "size": 3517892,
+      "size": 4099260,
       "kind": "json"
     },
     {
@@ -98,6 +98,11 @@
     {
       "path": "pasted_content_6.txt",
       "size": 115888,
+      "kind": "txt"
+    },
+    {
+      "path": "pasted_content_7.txt",
+      "size": 9717,
       "kind": "txt"
     },
     {
