@@ -644,3 +644,37 @@ html, body, #root { overflow-x: hidden; }
 strong, th, .bold { color:#142f5e; }.source-id, .mono { color:#174b3e; }
 @media (min-width: 761px) { .global-copy { font-size:16px; }.master-rule-card p { font-size:18px; }.master-rule-card h3 { font-size:23px; }.master-rule-card small { font-size:15px; }.nifty-current-signal { font-size:18px; } }
 @media(max-width:900px){.master-rule-grid{grid-template-columns:1fr}.global-copy{padding:8px}.topbar-right .edition{display:none}}
+
+/* FINAL GLOBAL READABILITY OVERRIDE — no faded text on any page. */
+main p, main span, main small, main label, main a, main th, main td, main li, main summary, main blockquote, main button { opacity: 1 !important; }
+main p, main li, main td, main label, main summary, main blockquote { color:#164536 !important; }
+main small, main .muted, main .source-note, main .limitation, main .table-caption { color:#174b3e !important; opacity:1 !important; }
+main a { color:#142f5e !important; }
+main h1, main h2, main h3, main h4, main strong, main th { color:#142f5e !important; opacity:1 !important; }
+main .notice.error, main .notice.error p, main .notice.warning, main .notice.warning p, main .error, main .malefic, main .bearish { color:#7d1f1f !important; opacity:1 !important; }
+main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
+
+@media (min-width: 761px) {
+  main p, main li, main td, main label, main summary, main blockquote { font-size:19px !important; line-height:1.85 !important; }
+  main small { font-size:16px !important; line-height:1.65 !important; }
+  main .note, main .source-note, main .limitation, main .table-caption, main .section-explainer { font-size:19px !important; }
+  main .eyebrow { font-size:15px !important; letter-spacing:.12em; }
+  main .tag, main .status { font-size:16px !important; }
+  main h1 { font-size:50px !important; line-height:1.2 !important; }
+  main h2 { font-size:32px !important; line-height:1.3 !important; }
+  main h3 { font-size:25px !important; line-height:1.4 !important; }
+  main th { font-size:19px !important; padding:19px 21px !important; }
+  main td { font-size:19px !important; padding:18px 21px !important; }
+  main input, main select, main textarea { font-size:19px !important; }
+  main .rule-card, main .source-reader article, main .source-expand, main .pasted-rule, main .archive-file, main .limb-card, main .period-card { font-size:19px !important; }
+  main .rule-card > p, main .source-reader article p, main .source-expand blockquote, main .pasted-rule p, main .limb-card p, main .period-card p { font-size:19px !important; line-height:1.9 !important; }
+  main .sbc-cell { font-size:17px !important; line-height:1.7 !important; }
+  main .sbc-cell strong, main .sbc-cell .sbc-planet { font-size:17px !important; }
+  main .vedha-pada { font-size:14px !important; }
+  main .angle-grid > div, main .angle-grid strong { font-size:27px !important; }
+  main .table-forecast-card p, main .table-forecast-card small, main .table-score { font-size:19px !important; }
+}
+@media (max-width: 760px) {
+  main p, main li, main td, main label, main summary, main blockquote { font-size:17px !important; line-height:1.75 !important; }
+  main small { font-size:14px !important; }
+}
