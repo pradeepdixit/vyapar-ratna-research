@@ -1,7 +1,6 @@
 
-## Mobile responsive pass
+## Centered mobile/tablet correction
 
-- [x] Mobile topbar, hamburger navigation, location control, copy button और calculation time strip को narrow screens के लिए fit किया गया।
-- [x] SBC controls single-column हुए; live SBC plate मोबाइल width में fit होती है और side bands छोटे screen पर छिपाकर chart को बड़ा readable रखा गया।
-- [x] SBC वेध table, detailed NIFTY share table, D1/D9 comparison, Panchang, rules, archive, daily research और footer को wrap/card layout दिया गया।
-- [x] 380px तक के screens के लिए अतिरिक्त padding, font और chart-cell adjustments जोड़े गये; build, SBC और D9 tests सफल हैं।
+- [x] 1350px तक के tablet/desktop-mode mobile browsers में fixed sidebar को compact hamburger menu में बदला गया, जिससे content दबता नहीं है।
+- [x] SBC chart को single-column, centered और available width में fit किया गया; detailed share summary को दो compact columns में रखा गया ताकि text एक बहुत लंबी vertical सूची जैसा न लगे।
+- [x] Chart, D1/D9 और SBC context panels अब narrow/tablet width पर एक के नीचे साफ क्रम में आते हैं, बिना chart को side में दबाये।

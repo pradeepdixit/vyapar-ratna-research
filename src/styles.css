@@ -936,3 +936,28 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
   .sbc-exact-pdf .sbc-cell strong { font-size:6px; }
   .sbc-exact-pdf .sbc-cell .sbc-planet { font-size:5px; }
 }
+
+/* Tablet-sized phones and desktop-mode mobile browsers: use the compact centered workspace. */
+@media (max-width:1350px) {
+  :root { --side:0px; }
+  .sidebar { width:248px; transform:translateX(-100%); transition:transform .15s; }
+  .sidebar.open { transform:translateX(0); }
+  .menu-overlay { display:block; position:fixed; inset:0; background:rgba(37,53,43,.4); z-index:25; }
+  .mobile-menu { display:flex; color:#142f5e; padding:0; margin-right:4px; }
+  .workspace { margin-left:0; }
+  .topbar { padding:8px 20px; min-height:68px; }
+  main { padding:18px 22px 0; max-width:1180px; }
+  .dashboard-columns, .chart-layout, .sbc-layout, .d9-layout { grid-template-columns:1fr; }
+  .sbc-layout > *, .chart-layout > *, .d9-layout > * { min-width:0; }
+  .sbc-exact-pdf { width:min(100%, 820px); margin-left:auto; margin-right:auto; }
+  .sbc-exact-pdf .sbc-frame-middle { grid-template-columns:1fr; }
+  .sbc-exact-pdf .sbc-frame-side { display:none; }
+  .sbc-exact-pdf .sbc-board { width:100%; }
+  .nifty-detail-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:560px) {
+  .nifty-detail-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
+  .nifty-detail-grid div { padding:9px; }
+  .nifty-detail-grid strong { font-size:12px; }
+  .nifty-detail-grid span { font-size:12px; line-height:1.55; }
+}
