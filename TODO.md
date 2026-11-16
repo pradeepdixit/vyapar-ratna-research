@@ -1,8 +1,9 @@
 
-## Table-driven prediction and desktop readability
+## NIFTY 50 share-wise research ranking
 
-- [x] “स्रोत / सारणी आवश्यक — गणना में नहीं लगाए गए” को user-facing negative label से बदलकर “स्रोत / सारणी फल-संकेत — सारणी से जाँच योग्य entries” किया गया।
-- [x] Review page पर “पदार्थों के परीक्षित योग” panel जोड़ा गया, जिसमें क्षेत्रबल, नवांश-बल, विंशोपक और पदार्थ-योग sections स्पष्ट हैं।
-- [x] SBC live वेध panel में target पाद अनुपात, पाद-विंशोपक संकेत, वेध वर्ग, दिशा और संबंधित पदार्थ-योग जोड़े गये।
-- [x] अगले 2/24 घंटे की future table और CSV में सारणी फल-संकेत तथा पाद-विंशोपक fields जोड़े गये।
-- [x] Desktop पर संबंधित headings, stats, prediction text और forecast cards का font लगभग दोगुना किया गया।
+- [x] Official NIFTY 50 constituent snapshot के सभी 50 shares website में जोड़े गये; duplicate symbols नहीं हैं।
+- [x] हर share को official industry, book-based research group, research-element lens और पदार्थ tags से जोड़ा गया।
+- [x] Specific book-rule count के आधार पर ranking बनाई गई; broad total-rule count अलग दिखाया गया।
+- [x] नाम, symbol, group और element search/filter वाला नया “NIFTY 50 शोध” page जोड़ा गया।
+- [x] SBC live prediction में ranked NIFTY 50 share selector जोड़ा गया; share चुनने पर matching book rules और research tags filter होते हैं।
+- [x] Ranking backup JSON और official constituent CSV link उपलब्ध किये गये।

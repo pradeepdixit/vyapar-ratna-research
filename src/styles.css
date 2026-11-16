@@ -513,3 +513,18 @@ html, body, #root { overflow-x: hidden; }
 .table-score strong { color: #8a5b08; }
 .table-forecast-card small { font-weight: 700; }
 @media (min-width: 1101px) { .table-score { font-size: 16px; } .table-forecast-card strong { font-size: 19px; } .table-forecast-card p { font-size: 16px; } .table-forecast-card small { font-size: 15px; } }
+
+.nifty-intro { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; border-left:5px solid var(--paper-gold); }
+.nifty-intro h2, .nifty-method h2 { color:var(--paper-indigo); }
+.nifty-intro p, .nifty-method p { color:var(--paper-ink-soft); font-weight:700; line-height:1.8; }
+.nifty-filters { display:flex; gap:18px; align-items:end; margin-bottom:20px; }
+.nifty-filters > label:last-child { min-width:260px; color:var(--paper-ink); font-weight:800; }
+.nifty-filters .search-field { flex:1; display:flex; align-items:center; gap:9px; padding:0 12px; }
+.nifty-filters .search-field input { border:0; flex:1; min-width:0; }
+.nifty-table-scroll th, .nifty-table-scroll td { vertical-align:top; }
+.nifty-table-scroll td:nth-child(2) { min-width:190px; }.nifty-table-scroll td:nth-child(7) { min-width:240px; }
+.nifty-count { color:var(--paper-indigo); font-size:21px; }.nifty-count.specific { color:var(--paper-gold); }
+.nifty-method { margin-top:18px; }
+.source-note { font-size:13px; }
+@media(min-width:1101px){.nifty-intro h2,.nifty-method h2{font-size:28px}.nifty-intro p,.nifty-method p{font-size:17px}.nifty-table-scroll th,.nifty-table-scroll td{font-size:15px}.nifty-count{font-size:25px}}
+@media(max-width:700px){.nifty-intro,.nifty-filters{display:block}.nifty-intro .button{margin-top:14px}.nifty-filters>label{display:block;margin-bottom:12px}.nifty-filters>label:last-child{min-width:0}.nifty-table-scroll{overflow-x:auto}}
