@@ -349,3 +349,97 @@ td { color: var(--astro-body); border-color: #2d3d66; font-size: 14px; padding: 
 /* Keep the fixed navigation and wide astrology tables inside the viewport. */
 html, body { overflow-x: hidden !important; }
 main { min-width: 0; }
+
+
+
+/* Royal Jyotish Observatory: indigo cosmos, antique gold and readable moon-cream text. */
+:root {
+  --astro-night: #080b1b;
+  --astro-night-2: #0e1230;
+  --astro-panel: #171a3b;
+  --astro-panel-2: #202653;
+  --astro-border: #465183;
+  --astro-gold: #e7bd61;
+  --astro-gold-soft: #ffe19a;
+  --astro-text: #fff8e8;
+  --astro-body: #e9edf8;
+  --astro-muted: #c0c8df;
+  --astro-blue: #8bc3ff;
+  --astro-green: #6ee4a7;
+  --astro-red: #ff9297;
+  --astro-purple: #bca9ff;
+}
+html, body, #root, .app-shell, .workspace, main {
+  background-color: var(--astro-night);
+  color: var(--astro-body);
+}
+body {
+  background-image:
+    radial-gradient(circle at 82% 0%, rgba(101, 80, 181, .26), transparent 28%),
+    radial-gradient(circle at 20% 80%, rgba(28, 105, 129, .12), transparent 25%),
+    linear-gradient(135deg, #080b1b 0%, #0c1130 52%, #121530 100%);
+}
+.sidebar { background: linear-gradient(180deg, #0c1028, #101432 78%, #0b0e20); border-right-color: #4a4d7b; }
+.sidebar nav a { color: #eef1fb; }
+.sidebar nav a:hover { background: #242b5d; color: #fff; }
+.sidebar nav a.nav-active { background: linear-gradient(90deg, #3c4a8c, #2a3269); box-shadow: inset 3px 0 #f1c86e, 0 6px 18px rgba(57, 66, 133, .25); }
+.brand strong, .hero-book h3, .quick-search h2, .stat > strong { color: var(--astro-gold-soft); }
+.brand span, .sidebar-label, .sidebar-note span, .sidebar-footer, .sidebar-footer small { color: var(--astro-muted); }
+.sidebar-note p { color: #e9e8f4; }
+.topbar { background: rgba(10, 14, 36, .94); border-color: #404a78; }
+.topbar, .breadcrumb, .breadcrumb strong, .edition, .topbar-right, .location-pill, .location-pill span { color: #edf0fc; }
+.location-pill { background: #1c2450; border-color: #59649a; }
+.panel, .rule-card, .stats-grid, .source-reader, .multi-select, .filters, .location-panel, .range-panel, .table-panel, .mini-chart, .coverage-note, .hero-book {
+  background: linear-gradient(145deg, rgba(27, 31, 72, .98), rgba(17, 21, 52, .99));
+  border-color: #455182;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .2);
+}
+.hero-book { background: linear-gradient(145deg, #242858, #151b42); border-color: #a3833f; }
+.hero-book p, .hero-book-top, .hero-book-footer { color: #f6d989; }
+.hero-book-footer { border-color: #695b49; }
+h1, h2, h3, .section-title h2, .dashboard-intro h1 { color: #fff8e8; }
+.dashboard-intro h1 em { color: var(--astro-gold-soft); }
+p, .note, .section-explainer, .page-heading p, .dashboard-intro p, .rule-card > p, .source-reader article p, .source-expand blockquote, .review-intro p, .section-reviews details > p, .limitation, .empty p, .market-input, .sbc-controls label, .panchang dt, .panchang dd, .chart-caption, .mini-chart-caption, .angle-grid > div, .angle-grid strong { color: var(--astro-body); }
+.muted, .rule-meta, .status, .source-heading, .source-heading .mono, .source-expand small, .source-expand .reason, .app-footer, .app-footer p, .app-footer a, .app-footer span, .stat > span, .stat > small, .timeline-time, .timeline-time small { color: var(--astro-muted); }
+.eyebrow { color: var(--astro-gold); }
+.button.primary { background: linear-gradient(135deg, #d3a647, #f2d17b); border-color: #f4d98b; color: #17152b; }
+.button.primary:hover { background: #ffe09a; }
+.button.secondary, .button.quiet { background: #202a5c; border-color: #6271ad; color: #f2f3fc; }
+.button.quiet { background: transparent; border-color: transparent; }
+.text-button { color: #dbe3fb; }
+.text-button:hover { color: var(--astro-gold-soft); }
+.search-field, .source-expand, .notice, .empty, .planet-subgroup, .pasted-rule, .archive-file, .limb-card, .period-card, .table-caption { background: #171d42; border-color: #46558b; color: var(--astro-body); }
+.search-field input, input, select, .multi-select-body > input, .market-input input, .location-fields input { background: #0d1330; color: #fff9e8; border-color: #5a6ba5; }
+input::placeholder, .search-field input::placeholder { color: #bac5df; }
+.quick-tags button { background: #202a5c; border-color: #56679f; color: #e9edfb; }
+.quick-tags button:hover { background: #2c3875; }
+.stat { border-color: #424e7c; }
+.tag { background: #2b3774; border-color: #6174b4; color: #f0f2fc; }
+.tag.commodity { background: #5a431b; border-color: #af8534; color: #ffe4a0; }
+.tag.retro { background: #513052; border-color: #9660a0; color: #ffd1f7; }
+.rule-card h3, .pasted-rule h3, .limb-card h3, .period-card h3 { color: var(--astro-gold-soft); }
+.signal-up, .status.computable { background: #15533e; color: var(--astro-green); }
+.signal-down, .status.missing { background: #5a2b3b; color: var(--astro-red); }
+.signal-neutral, .notice.warning, .gap-list p { background: #59441d; color: #ffe29a; }
+th { background: #303b78; color: #ffe09a; border-color: #53639a; }
+td { color: #e5eaf8; border-color: #34436f; }
+.market-context { background: linear-gradient(90deg, #173d70, #1d315b); border-color: #5dabe8; color: #edf5ff; }
+.market-context strong { color: #c7e4ff; }.market-context p { color: #d7eaff; }
+.sbc-grid { background: #0d1430; border-color: #6478b7; }
+.sbc-cell { background: #1b2551; border-color: #4d619b; color: #e8edfb; }
+.sbc-cell.inner { background: #131c43; color: #c7d1e9; }
+.sbc-cell.occupied { background: #443373; }.sbc-cell.target { background: #634b1d; }.sbc-cell.occupied.target { background: #68422c; }
+.sbc-cell strong, .sbc-cell .sbc-planet { color: #fff7e6; }
+.sbc-planet.market-relevant { background: #185887; color: #d9efff; }
+.sbc-legend { color: #e6ebf8; }.legend-green { color: var(--astro-green); }.legend-red { color: var(--astro-red); }.legend-gold { color: var(--astro-gold-soft); }
+.pasted-rule { background: #202957; }.pasted-rule.not-present { background: #513a1d; border-color: #a27b32; }.pasted-rule p, .special-rule-grid p, .limb-card p, .period-card p { color: #e6ebf8; }
+.table-tabs { border-color: #46558b; }.table-tabs .text-button { background: #202a5c; border-color: #5b6da7; color: #e9edfb; }.table-tabs .text-button.active { background: #a0782e; border-color: #f1ce71; color: #fff7dc; }
+.table-caption { color: #e8edf9; }.research-table-scroll { border-color: #46558b; }.research-table-scroll th { background: #303b78; }
+.special-rule-grid article { background: #202957; border-color: #46558b; border-left-color: var(--astro-gold); }.special-rule-grid strong { color: var(--astro-gold-soft); }
+.archive-file strong { color: #fff8e8; }.archive-file small { color: #c0c9e0; }.archive-file:hover { background: #2b3670; border-color: #8bbdff; }
+.pdf-plate-link { background: #1a214a; border-color: #59689c; }
+input:focus, select:focus, button:focus-visible, a:focus-visible, summary:focus-visible { outline-color: #f2cc6d; }
+@media (max-width: 760px) {
+  .panel, .rule-card { box-shadow: 0 8px 22px rgba(0,0,0,.18); }
+  .sidebar nav a { font-size: 15px; }
+}
