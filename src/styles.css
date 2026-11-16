@@ -775,3 +775,17 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
   .sbc-exact-pdf { aspect-ratio:576/768; width:82vh; max-width:100%; margin:auto; }
   .sbc-exact-pdf .sbc-board { left:18%; top:27%; width:64%; height:54%; }
 }
+
+/* Keep the supplied plate as a subtle reference, never as an opaque layer over live vedha text. */
+.sbc-exact-pdf .sbc-pdf-template { opacity:.16; }
+.sbc-exact-pdf .sbc-grid { min-width:0 !important; }
+.sbc-exact-pdf .sbc-rays { pointer-events:none; }
+.nifty-sbc-list { margin-top:20px; }
+.nifty-sbc-list table { font-size:13px; }
+.nifty-sbc-list th { font-size:12px; }
+.nifty-sbc-list td { white-space:normal; min-width:90px; }
+.nifty-sbc-list td small { font-size:11px; color:#243128; }
+.nifty-signal-bull { color:#8d2e20; font-weight:800; }
+.nifty-signal-bear { color:#1e5d3b; font-weight:800; }
+.nifty-signal-mixed { color:#8a6514; font-weight:800; }
+@media print { .sbc-exact-pdf .sbc-pdf-template { opacity:.10; } .nifty-sbc-list { display:none; } }
