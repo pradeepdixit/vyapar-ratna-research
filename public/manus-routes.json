@@ -39,6 +39,10 @@
     {
       "path": "/nifty50",
       "title": "NIFTY 50 शोध"
+    },
+    {
+      "path": "/daily",
+      "title": "दैनिक शोध / नये नियम"
     }
   ]
 }

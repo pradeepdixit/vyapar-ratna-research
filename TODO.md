@@ -1,6 +1,7 @@
 
-## Ranking copy action
+## Daily research rule growth
 
-- [x] NIFTY 50 ranking backup के साथ Copy ranking button जोड़ा गया।
-- [x] Copy output में rank, symbol, company, industry, research group, element lens, specific rules, total rules और matched tags tab-separated format में आते हैं।
-- [x] Copy सफल होने पर button “Copied” confirmation दिखाता है और फिर सामान्य label लौटता है।
+- [x] तारीख, शीर्षक, ग्रह, पदार्थ/विषय, समय-सीमा, prediction, observation और source भरकर नया personal rule जोड़ने का form बनाया गया।
+- [x] Daily entries browser local storage में सुरक्षित रहती हैं और search/delete की जा सकती हैं।
+- [x] Personal rules के लिए Copy all, JSON Download और Backup import जोड़े गये।
+- [x] Review में personal daily-rule count दिखता है और नए entries को आगे automatic conditions में encode करने की स्थिति स्पष्ट रहती है।

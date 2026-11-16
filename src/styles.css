@@ -531,3 +531,55 @@ html, body, #root { overflow-x: hidden; }
 .nifty-intro + .nifty-stats { margin-top: 18px; }
 .nifty-intro .button-row { flex-shrink: 0; }
 @media(max-width:700px){.nifty-intro .button-row{display:flex;flex-wrap:wrap;margin-top:14px}.nifty-intro .button-row .button{flex:1}}
+
+/* Final readable typography pass: dense astrology data should be comfortable at desktop size. */
+@media (min-width: 761px) {
+  body { font-size: 16px; }
+  .sidebar nav a { font-size: 16px; padding: 14px 14px; }
+  .sidebar-label { font-size: 12px; }
+  .brand span, .sidebar-note span, .sidebar-footer, .sidebar-footer small { font-size: 12px; }
+  .breadcrumb, .breadcrumb strong, .location-pill, .edition { font-size: 14px; }
+  .page-heading h1 { font-size: 40px; }
+  .page-heading p, .dashboard-intro p, .section-explainer, .note, .market-context p, .review-intro p, .section-reviews details > p, .limitation, .empty p { font-size: 16px !important; line-height: 1.85; }
+  .section-title h2 { font-size: 25px; }
+  .eyebrow { font-size: 13px; }
+  .button, .text-button { font-size: 15px; }
+  label, .sbc-controls label, .market-input, .multi-select summary, .multi-options label { font-size: 15px !important; }
+  input, select, .market-input input, .multi-select-body > input { font-size: 16px !important; min-height: 46px; }
+  .tag, .status, .rule-meta, .source-id { font-size: 13px !important; }
+  .rule-card h3 { font-size: 20px; }
+  .rule-card > p, .source-expand blockquote { font-size: 16px; line-height: 1.9; }
+  .rule-bottom .text-button { font-size: 14px; }
+  table { font-size: 16px; }
+  th { font-size: 15px !important; padding: 16px 18px; }
+  td { font-size: 16px !important; padding: 15px 18px; }
+  td.mono, .mono { font-size: 14px; }
+  .angle-grid > div { font-size: 22px; padding: 17px 0; line-height: 1.6; }
+  .angle-grid strong { font-size: 22px !important; }
+  .angle-grid { gap: 0 32px; }
+  .chart-caption, .mini-chart-caption, .panchang dt, .panchang dd { font-size: 16px; }
+  .sbc-cell { font-size: 13px; }
+  .sbc-cell strong, .sbc-cell .sbc-planet { font-size: 13px; }
+  .sbc-legend { font-size: 15px; }
+  .table-caption, .table-tabs .text-button { font-size: 16px; }
+  .stat > span, .stat > small { font-size: 15px !important; }
+}
+@media (max-width: 760px) {
+  .angle-grid > div { font-size: 17px; padding: 13px 0; }
+  .angle-grid strong { font-size: 17px !important; }
+  .note, .page-heading p { font-size: 14px; }
+}
+.review-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.personal-stat { background: #fff8e5; }
+.daily-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.daily-form-grid label { display:flex; flex-direction:column; gap:7px; color:var(--paper-ink-soft); font-weight:800; }
+.daily-form-grid .daily-wide { grid-column:1 / -1; }
+.daily-form-grid textarea { width:100%; resize:vertical; background:#fafaf5; border:1px solid #dce1d4; border-radius:4px; padding:10px 11px; color:var(--paper-ink); font:inherit; line-height:1.7; }
+.field-hint { font-weight:600; font-size:12px; color:var(--paper-ink-soft); }
+.daily-form-actions { display:flex; justify-content:space-between; align-items:center; gap:20px; border-top:1px solid var(--paper-border); margin-top:20px; padding-top:18px; }
+.daily-rule-list { display:grid; gap:16px; margin-top:18px; }
+.daily-rule-card { border:1px solid var(--paper-border); border-left:5px solid var(--paper-gold); border-radius:5px; padding:20px; background:#fffdf5; }
+.daily-rule-top { display:flex; align-items:center; gap:8px; }.daily-rule-top .icon-button { margin-left:auto; }
+.daily-rule-card h3 { color:var(--paper-indigo); font-size:21px; margin:12px 0 7px; }.daily-rule-card p { color:var(--paper-ink-soft); font-size:16px; line-height:1.85; margin-top:8px; }.daily-rule-card small { display:block; color:var(--paper-ink-soft); font-size:13px; margin-top:13px; font-weight:700; }.daily-prediction { background:#fff8e5; border:1px solid #ead59d; border-radius:4px; padding:12px 14px; }.daily-search { margin-top:12px; }.icon-button { display:inline-flex; align-items:center; justify-content:center; border:1px solid var(--paper-border); border-radius:4px; padding:8px; color:var(--paper-ink-soft); background:#fff; }.icon-button.danger:hover { color:#9c3025; border-color:#d58a82; }
+@media(max-width:900px){.review-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.daily-form-grid{grid-template-columns:1fr}.daily-form-grid .daily-wide{grid-column:auto}.daily-form-actions{align-items:flex-end;flex-direction:column}}
+@media(max-width:560px){.review-stats{grid-template-columns:1fr 1fr}.daily-rule-card h3{font-size:19px}.daily-rule-card p{font-size:14px}.daily-form-actions .muted{font-size:12px}}
