@@ -837,3 +837,19 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
  .nifty-sbc-list td::before { content:attr(data-label); color:#243a29; font-weight:800; text-align:left; flex:0 0 42%; }
  .nifty-sbc-list td small { font-size:10px; }
 }
+
+/* D1/D9 and detailed NIFTY share readability. */
+.d1-d9-strip { display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:center; padding:18px; background:#162440; border:1px solid #394b78; border-radius:6px; }
+.d1-d9-strip div:not(.d1-d9-arrow) { display:flex; flex-direction:column; gap:5px; }
+.d1-d9-strip strong { color:#f4d98b; font-size:16px; }
+.d1-d9-strip span { color:#f7f2df; font-size:20px; font-weight:800; }
+.d1-d9-arrow { color:#e7c66b; font-size:28px; font-weight:800; }
+.nifty-detail { margin-top:20px; }
+.nifty-detail-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:15px 0; }
+.nifty-detail-grid div { display:flex; flex-direction:column; gap:5px; padding:12px; background:#162440; border:1px solid #394b78; border-radius:5px; }
+.nifty-detail-grid strong { color:#f4d98b; font-size:13px; }
+.nifty-detail-grid span { color:#f7f2df; font-size:13px; overflow-wrap:anywhere; }
+.nifty-detail table { table-layout:fixed; width:100%; }
+.nifty-detail th,.nifty-detail td { white-space:normal; overflow-wrap:anywhere; }
+@media(max-width:760px){.nifty-detail-grid{grid-template-columns:1fr 1fr}.d1-d9-strip{gap:8px;padding:12px}.d1-d9-strip span{font-size:15px}.d1-d9-strip strong{font-size:13px}.d1-d9-arrow{font-size:20px}}
+@media(max-width:560px){.nifty-detail-grid{grid-template-columns:1fr}.d1-d9-strip{grid-template-columns:1fr;}.d1-d9-arrow{transform:rotate(90deg);justify-self:center}}
