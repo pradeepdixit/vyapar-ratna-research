@@ -789,3 +789,29 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
 .nifty-signal-bear { color:#1e5d3b; font-weight:800; }
 .nifty-signal-mixed { color:#8a6514; font-weight:800; }
 @media print { .sbc-exact-pdf .sbc-pdf-template { opacity:.10; } .nifty-sbc-list { display:none; } }
+
+/* Live screen uses the readable vector plate; the supplied scan is not placed over the data. */
+.sbc-exact-pdf { aspect-ratio:auto; padding:12px; overflow:hidden; background:#fffef9; }
+.sbc-exact-pdf .sbc-pdf-template { display:none; }
+.sbc-exact-pdf .sbc-frame-title { display:flex; position:relative; z-index:4; }
+.sbc-exact-pdf .sbc-frame-band { display:grid; position:relative; z-index:4; }
+.sbc-exact-pdf .sbc-frame-top,.sbc-exact-pdf .sbc-frame-bottom { grid-template-columns:repeat(8,minmax(0,1fr)); gap:2px; }
+.sbc-exact-pdf .sbc-frame-middle { position:relative; inset:auto; display:grid; grid-template-columns:64px minmax(0,1fr) 64px; gap:2px; z-index:1; }
+.sbc-exact-pdf .sbc-frame-side { display:flex; flex-direction:column; }
+.sbc-exact-pdf .sbc-board { position:relative; left:auto; top:auto; width:100%; height:auto; min-width:0; padding:0; overflow:hidden; }
+.sbc-exact-pdf .sbc-grid { height:auto; min-width:0; }
+.sbc-exact-pdf .sbc-cell { min-height:46px; }
+@media(max-width:650px){
+ .sbc-exact-pdf { padding:5px; }
+ .sbc-exact-pdf .sbc-frame-middle { grid-template-columns:34px minmax(0,1fr) 34px; }
+ .sbc-exact-pdf .sbc-cell { min-height:34px; }
+}
+@media print {
+ .sbc-exact-pdf { aspect-ratio:auto; width:100%; padding:5mm; }
+ .sbc-exact-pdf .sbc-pdf-template { display:none; }
+ .sbc-exact-pdf .sbc-frame-title,.sbc-exact-pdf .sbc-frame-band { display:flex; }
+ .sbc-exact-pdf .sbc-frame-top,.sbc-exact-pdf .sbc-frame-bottom { display:grid; }
+ .sbc-exact-pdf .sbc-frame-middle { display:grid; position:relative; inset:auto; grid-template-columns:45px minmax(0,1fr) 45px; }
+ .sbc-exact-pdf .sbc-frame-side { display:flex; }
+ .sbc-exact-pdf .sbc-board { position:relative; width:100%; height:auto; left:auto; top:auto; }
+}
