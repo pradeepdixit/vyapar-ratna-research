@@ -1,6 +1,6 @@
 
-## NIFTY 50 mobile card table
+## Selected-time SBC calculation
 
-- [x] NIFTY research page की आठ-column ranking table को 760px से नीचे labelled cards में बदला गया।
-- [x] अब Share, Official industry, Research group/तत्व, Specific rules, Total rules, Current rule state और Matched book tags अलग readable rows में दिखते हैं।
-- [x] अक्षर-अक्षर टूटना और column overlap हटाया गया; horizontal scroll की जगह सामान्य ऊपर-नीचे page scroll रहेगा।
+- [x] SBC current geometry, planet positions, padas, active encoded book rules, market/share filters और 2/24-hour forward samples selected `snapshot.iso` से calculate होते हैं।
+- [x] User द्वारा date-time बदलकर `लागू करें` दबाने पर नया AstroSnapshot बनता है; SBC stale previous result हटाकर उसी selected time पर research recompute करता है।
+- [x] SBC result panel में स्पष्ट dark-blue `गणना का समय` badge जोड़ा गया है, जिसमें local time, location और selected snapshot basis लिखा है।

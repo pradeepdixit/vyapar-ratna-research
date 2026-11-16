@@ -1023,3 +1023,10 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
   .nifty-table-scroll td { grid-template-columns:96px minmax(0,1fr); font-size:14px !important; gap:7px; }
   .nifty-table-scroll td::before { font-size:13px; }
 }
+
+/* Make the SBC calculation timestamp unmissable and tie it visually to the result. */
+.sbc-calculation-time { margin:0 0 14px; padding:14px 16px; border:2px solid #1d3f80; border-left:7px solid #16356f; border-radius:8px; background:#eef4ff; color:#102b60; box-shadow:0 3px 12px rgba(24,55,111,.12); display:grid; grid-template-columns:auto auto; align-items:baseline; gap:5px 12px; }
+.sbc-calculation-time span { grid-column:1/-1; color:#123b83; font-size:17px; font-weight:900; letter-spacing:.02em; }
+.sbc-calculation-time strong { color:#0b2d70; font-size:24px; font-weight:950; }
+.sbc-calculation-time em { color:#234a87; font-size:15px; font-style:normal; font-weight:700; }
+@media(max-width:760px){ .sbc-calculation-time { grid-template-columns:1fr; gap:5px; padding:12px; } .sbc-calculation-time span{font-size:16px}.sbc-calculation-time strong{font-size:21px}.sbc-calculation-time em{font-size:14px;line-height:1.5} }
