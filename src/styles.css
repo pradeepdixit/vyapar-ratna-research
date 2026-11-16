@@ -489,3 +489,27 @@ table { color: var(--paper-ink); } th { background: #e3e8f5; color: var(--paper-
 .special-rule-grid article { background: #f4f6fb; border-color: var(--paper-border); border-left-color: var(--paper-gold); }.special-rule-grid strong { color: var(--paper-indigo); }.archive-file strong { color: var(--paper-ink); }.archive-file small { color: var(--paper-muted); }.archive-file:hover { background: #e8ecfa; border-color: #7d91c6; }.pdf-plate-link { background: #f4f5f7; border-color: #aab4c6; }
 input:focus, select:focus, button:focus-visible, a:focus-visible, summary:focus-visible { outline-color: var(--paper-gold); }
 html, body, #root { overflow-x: hidden; }
+
+/* Large desktop labels for the table and commodity outcome areas. */
+@media (min-width: 1101px) {
+  .stats-grid .stat > span { font-size: 20px; line-height: 1.45; }
+  .stats-grid .stat > small { font-size: 18px; line-height: 1.6; }
+  .table-prediction-guide h2, .table-forecast h3 { font-size: 30px; }
+  .table-prediction-guide > p, .table-forecast > .note { font-size: 18px; line-height: 2; }
+}
+.table-prediction-grid, .table-forecast-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:18px; }
+.table-prediction-grid > div { background:#f3f5f8; border:1px solid #cbd3df; border-left:4px solid #8a5b08; border-radius:5px; padding:16px; }
+.table-prediction-grid strong, .table-prediction-grid span { display:block; color:#101827; font-weight:800; }
+.table-prediction-grid strong { font-size:18px; color:#202d68; }.table-prediction-grid span { font-size:14px; margin-top:5px; }
+.table-forecast { margin-top:20px; padding:18px; border:1px solid #aebbd2; border-radius:5px; background:#f7f9fc; }
+.table-forecast-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.table-forecast-card { padding:15px; border:1px solid #cbd3df; border-left:5px solid #8a5b08; border-radius:5px; background:#fff; }
+.table-forecast-card.benefic { border-left-color:#12643f; }.table-forecast-card.malefic { border-left-color:#9a2929; }
+.table-forecast-card > div { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }.table-forecast-card strong { color:#101827; font-size:17px; }.table-forecast-card p { color:#263449; font-size:14px; margin-top:8px; line-height:1.8; }.table-forecast-card small { display:block; color:#43536b; font-size:13px; margin-top:7px; line-height:1.7; }.forecast-signal { color:#202d68; font-size:12px; font-weight:800; text-align:right; }
+@media(max-width:760px){.table-prediction-grid,.table-forecast-grid{grid-template-columns:1fr 1fr}.table-prediction-guide h2,.table-forecast h3{font-size:22px}.table-prediction-guide>p,.table-forecast>.note{font-size:15px}}
+@media(max-width:560px){.table-prediction-grid,.table-forecast-grid{grid-template-columns:1fr}}
+
+.table-score { margin-top: 10px; padding: 9px 11px; background: #eef2fa; border: 1px solid #b7c4dc; border-radius: 4px; color: #202d68; font-size: 14px; line-height: 1.7; font-weight: 750; }
+.table-score strong { color: #8a5b08; }
+.table-forecast-card small { font-weight: 700; }
+@media (min-width: 1101px) { .table-score { font-size: 16px; } .table-forecast-card strong { font-size: 19px; } .table-forecast-card p { font-size: 16px; } .table-forecast-card small { font-size: 15px; } }

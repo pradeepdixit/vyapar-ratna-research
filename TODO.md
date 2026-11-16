@@ -1,12 +1,8 @@
 
-## Royal Jyotish Observatory theme
+## Table-driven prediction and desktop readability
 
-- [x] Original working component CSS को restore करके उसके ऊपर नया Royal Jyotish Observatory visual layer लगाया गया; navigation, cards, charts और spacing सुरक्षित हैं।
-- [x] Royal indigo/cosmic background, antique-gold headings and buttons, moon-cream readable text, blue research surfaces और green/red/gold vedha signals लागू किये गये।
-- [x] Build में complete restored stylesheet शामिल है; broken preview वाली temporary CSS replacement हटाई गई।
-
-## White research-paper theme
-
-- [x] Dark theme के ऊपर clean white/ivory research-paper background लागू किया गया; component layout सुरक्षित रखा गया।
-- [x] सभी मुख्य headings, body text, labels, tables, cards, filters, buttons, SBC cells और archive text को dark और bold किया गया।
-- [x] SBC, Panchang, D9, rules और research tables के लिए हल्के panel backgrounds तथा स्पष्ट green/red/gold/blue signals रखे गये।
+- [x] “स्रोत / सारणी आवश्यक — गणना में नहीं लगाए गए” को user-facing negative label से बदलकर “स्रोत / सारणी फल-संकेत — सारणी से जाँच योग्य entries” किया गया।
+- [x] Review page पर “पदार्थों के परीक्षित योग” panel जोड़ा गया, जिसमें क्षेत्रबल, नवांश-बल, विंशोपक और पदार्थ-योग sections स्पष्ट हैं।
+- [x] SBC live वेध panel में target पाद अनुपात, पाद-विंशोपक संकेत, वेध वर्ग, दिशा और संबंधित पदार्थ-योग जोड़े गये।
+- [x] अगले 2/24 घंटे की future table और CSV में सारणी फल-संकेत तथा पाद-विंशोपक fields जोड़े गये।
+- [x] Desktop पर संबंधित headings, stats, prediction text और forecast cards का font लगभग दोगुना किया गया।
