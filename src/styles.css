@@ -684,3 +684,11 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
 .floating-copy:hover { background:#eaf4f7; color:#7d1f1f; border-color:#7d1f1f; }
 .global-copy { min-width:150px; justify-content:center; font-size:16px; }
 @media(max-width:760px){.floating-copy{right:14px;bottom:14px;padding:11px 14px;font-size:15px}.floating-copy span{display:none}.global-copy{min-width:0}}
+
+/* PDF-style SBC overlay: arrows must remain visible without covering the cell text. */
+.sbc-rays { pointer-events:none; z-index:4; overflow:visible; }
+.sbc-rays line { vector-effect:non-scaling-stroke; }
+.sbc-rays marker path { stroke-width:0; }
+.sbc-board .sbc-cell { position:relative; z-index:5; }
+.sbc-board .sbc-cell > span, .sbc-board .sbc-cell > strong, .sbc-board .sbc-cell > small { position:relative; z-index:6; text-shadow:0 0 2px #fff, 0 0 4px #fff; }
+.market-arrow-legend { color:#145e8c !important; font-weight:900; }
