@@ -1,7 +1,6 @@
 
-## Selected-time calculation and period ranking
+## Analysis ↔ My Stock Selection linking
 
-- [x] Page पर calculation banner जोड़ा गया: चुना हुआ date/time, “इस समय की गणना पूरी” और LIVE SNAPSHOT status स्पष्ट दिखता है।
-- [x] Global “गणना का समय → लागू करें” के बाद AstroSnapshot से NIFTY 200 के computable rules दोबारा calculate होते हैं; पुराने snapshot का भ्रम नहीं रखा गया।
-- [x] दैनिक, साप्ताहिक, मासिक, मिनट/क्षणिक, पाक्षिक, वार्षिक और ऋतु-आधारित अवधि चुनने पर उसी अवधि के active rule count से descending ranking होती है।
-- [x] केवल active filter भी चुनी हुई अवधि के active rules के अनुसार काम करता है; card में उसी अवधि के लागू rules और उनका timeframe दिखता है।
+- [x] Analysis page heading से My Stock Selection का direct link और My Stock page heading से समय-सीमा Analysis का direct link जोड़ा गया।
+- [x] Analysis range पूरी होने के बाद “इस calculation से My Stock देखें” button आखिरी calculated AstroSnapshot को shared App state में रखकर stock page खोलता है।
+- [x] Stock page उसी selected calculation time, location और ग्रह snapshot से active rule ranking चलाता है; अलग या पुराने snapshot का उपयोग नहीं करता।
