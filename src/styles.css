@@ -1102,3 +1102,49 @@ input[type="datetime-local"], input[type="time"] { color:#082d74 !important; fon
   .sbc-calculation-time strong { font-size:18px !important; }
   .sbc-calculation-time em, .angle-calculation-time, .rule-timing, .prediction-timing-note { font-size:14px !important; }
 }
+
+/* Active rules are always the first visual priority. */
+.rule-card.active-rule {
+  position:relative;
+  background:linear-gradient(135deg,#173d2b 0%,#1e5138 58%,#245f42 100%) !important;
+  border:2px solid #52c98b !important;
+  box-shadow:0 9px 24px #06160d99, inset 0 1px 0 #b7f2cf33 !important;
+  transform:translateY(-1px);
+}
+.rule-card.active-rule::before {
+  content:'सक्रिय';
+  position:absolute;
+  top:12px;
+  right:14px;
+  background:#b9f3d0;
+  color:#073c23;
+  border:1px solid #6be0a2;
+  border-radius:999px;
+  padding:3px 9px;
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.2px;
+}
+.rule-card.active-rule .rule-meta,
+.rule-card.active-rule h3,
+.rule-card.active-rule > p,
+.rule-card.active-rule .rule-bottom .text-button,
+.rule-card.active-rule .status,
+.rule-card.active-rule .rule-timing,
+.rule-card.active-rule .tag,
+.rule-card.active-rule .tag.commodity { color:#f0fff5 !important; }
+.rule-card.active-rule .rule-meta { padding-right:76px; }
+.rule-card.active-rule h3 { font-size:18px; font-weight:900; }
+.rule-card.active-rule > p { font-size:14px; line-height:1.85; }
+.rule-card.active-rule .rule-bottom { border-top-color:#77dba633; }
+.rule-card.active-rule .rule-timing { background:#eaf1ff !important; border-left-color:#164a9c !important; color:#082d74 !important; }
+.rule-card.active-rule .rule-timing strong,
+.rule-card.active-rule .rule-timing span { color:#082d74 !important; }
+.rule-card.active-rule .signal-up { background:#b9f3d0 !important; color:#073c23 !important; }
+.rule-card.active-rule .signal-down { background:#ffd3c9 !important; color:#732014 !important; }
+.rule-card.active-rule .signal-neutral { background:#f6e4a8 !important; color:#5f4500 !important; }
+@media(max-width:760px){
+  .rule-card.active-rule::before { top:9px; right:9px; font-size:11px; }
+  .rule-card.active-rule h3 { font-size:17px; }
+  .rule-card.active-rule > p { font-size:13px; }
+}
