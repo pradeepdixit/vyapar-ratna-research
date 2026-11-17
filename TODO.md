@@ -1,7 +1,5 @@
 
-## Explicit selected-time calculation button
+## Manual old-date verification
 
-- [x] “गणना का समय” के सामने अब स्पष्ट “गणना करें” button है; click handler सीधे selected `at` value को `loadAstro(at)` में भेजता है।
-- [x] Button calculation के दौरान disabled/spinner दिखाता है और auto-current mode में disabled रहता है, इसलिए गलत या पुराने समय से ranking नहीं बनती।
-- [x] My Stock banner अब calculated snapshot का date/time और LIVE SNAPSHOT दिखाता है; calculation न होने पर स्पष्ट instruction दिखती है।
-- [x] Typecheck, unit tests, D9 tests, Panchang tests, production build और source-level selected-time handler checks पास हुए।
+- [x] Mobile-style preview में 15 Jan 2020 · 09:15 input करके “गणना करें” चलाया गया। Banner ने 15 Jan 2020 · 03:45 IST calculation दिखाया, active shares 45 से 44 हुए और शीर्ष shares के ग्रह-rule/signals बदले।
+- [x] Ref-based handler अब input DOM की selected value सीधे पढ़ता है; इसलिए mobile date picker/controlled-input mismatch के कारण current snapshot दोबारा उपयोग नहीं होगा।
