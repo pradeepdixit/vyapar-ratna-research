@@ -1,5 +1,5 @@
 
-## Manual old-date verification
+## Local timezone display correction
 
-- [x] Mobile-style preview में 15 Jan 2020 · 09:15 input करके “गणना करें” चलाया गया। Banner ने 15 Jan 2020 · 03:45 IST calculation दिखाया, active shares 45 से 44 हुए और शीर्ष shares के ग्रह-rule/signals बदले।
-- [x] Ref-based handler अब input DOM की selected value सीधे पढ़ता है; इसलिए mobile date picker/controlled-input mismatch के कारण current snapshot दोबारा उपयोग नहीं होगा।
+- [x] My Stock calculation banner अब snapshot ISO को selected location zone में convert करके दिखाता है; Mumbai IST में 09:15 input अब 09:15 ही दिखता है, UTC 03:45 नहीं।
+- [x] Live preview में 15 Jan 2020 · 09:15 Asia/Kolkata banner, 44 active shares और बदले हुए ग्रह-rule signals के साथ verify किया गया।
