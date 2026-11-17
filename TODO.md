@@ -1,6 +1,6 @@
 
-## Active rule priority and card styling
+## Final color contrast pass
 
-- [x] नियम संग्रह में selected snapshot से matching active rules निकाले जाते हैं और result list के सबसे ऊपर sort होते हैं।
-- [x] Active cards को हरे gradient background, bright border, shadow, बड़ा text और `सक्रिय` badge दिया गया है।
-- [x] Active card में selected calculation time और timing panel भी बना रहता है; inactive/reference rules नीचे सामान्य styling में रहते हैं।
+- [x] सामान्य text, notes, labels, muted text, tables, inputs, legends और source content के faded colors हटाकर readable high-contrast palette लागू की गयी।
+- [x] Active cards के ग्रह tags और commodity tags अब अलग bright backgrounds में दिखते हैं; `रक्त चन्दन`, `लाल मिर्च`, `वस्त्र`, `ताँबा`, `चाँदी` जैसे labels fade नहीं होंगे।
+- [x] तेजी, मंदी, मिश्र, computable, reference और missing statuses के लिए अलग high-contrast colors रखे गये।

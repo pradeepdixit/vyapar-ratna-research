@@ -1148,3 +1148,39 @@ input[type="datetime-local"], input[type="time"] { color:#082d74 !important; fon
   .rule-card.active-rule h3 { font-size:17px; }
   .rule-card.active-rule > p { font-size:13px; }
 }
+
+/* Final contrast pass: readable research text and active commodity tags. */
+:root { --muted:#c7dbcd; }
+body, p, .note, .section-explainer, .page-heading p, .dashboard-intro p,
+.rule-card > p, .source-reader article p, .source-expand blockquote,
+.review-intro p, .section-reviews details > p, .limitation, .empty p,
+.market-input, .sbc-controls label, .panchang dt, .panchang dd,
+.chart-caption, .mini-chart-caption, .angle-grid > div, .angle-grid strong,
+.table-caption, .source-heading, .source-heading .mono { color:#e0eee4 !important; opacity:1 !important; }
+.muted, .eyebrow, .rule-meta, .status, .source-expand small, .source-expand .reason,
+.app-footer, .app-footer p, .app-footer a, .app-footer span, .timeline-time,
+.timeline-time small, .range-fields label, .range-mode, .results-line, .pagination,
+.sidebar-label, .sidebar-footer, .sidebar-footer small, .stat > span, .stat > small,
+.brand span, .edition, .breadcrumb, .breadcrumb strong, .location-pill span { color:#c7dbcd !important; opacity:1 !important; }
+.tag { background:#244836 !important; border-color:#56856a !important; color:#f0fff3 !important; font-weight:800 !important; }
+.tag.commodity { background:#5a481d !important; border-color:#c09a43 !important; color:#fff0b5 !important; }
+.signal-up { background:#b9f3d0 !important; color:#073c23 !important; }
+.signal-down { background:#ffd3c9 !important; color:#732014 !important; }
+.signal-neutral { background:#f6e4a8 !important; color:#5f4500 !important; }
+.status.computable { color:#8ff0b5 !important; }
+.status.missing { color:#ffd98b !important; }
+.status.reference { color:#c7dbff !important; }
+.table-panel th, .table-panel td, th, td { color:#e0eee4 !important; }
+input, select, .multi-select, .search-field input, .market-input input { color:#f1fff4 !important; }
+input::placeholder, .search-field input::placeholder { color:#bcd1c2 !important; opacity:1 !important; }
+.rule-card.active-rule .tag { background:#dff7e8 !important; border-color:#9dddb6 !important; color:#0b3d25 !important; }
+.rule-card.active-rule .tag.commodity { background:#fff0bf !important; border-color:#e6bd54 !important; color:#593d00 !important; }
+.rule-card.active-rule .status { color:#d8ffe5 !important; }
+.rule-card.active-rule .rule-meta { color:#d8ffe5 !important; }
+.rule-card.active-rule .rule-bottom .text-button { color:#e3fff0 !important; }
+.sbc-legend, .market-highlight, .market-arrow-legend { color:#d9eee0 !important; opacity:1 !important; }
+.vedha-pada { color:#ffd36e !important; }
+@media(max-width:760px){
+  .tag, .tag.commodity { font-size:12px !important; }
+  .rule-card.active-rule .tag { font-size:12px !important; padding:5px 8px !important; }
+}
