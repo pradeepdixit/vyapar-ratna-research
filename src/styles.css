@@ -1184,3 +1184,73 @@ input::placeholder, .search-field input::placeholder { color:#bcd1c2 !important;
   .tag, .tag.commodity { font-size:12px !important; }
   .rule-card.active-rule .tag { font-size:12px !important; padding:5px 8px !important; }
 }
+
+/* User-requested final paper mode: white surfaces and solid black text everywhere. */
+html, body, #root, .app-shell, .workspace, main, .topbar, .sidebar { background:#ffffff !important; color:#000000 !important; }
+.sidebar, .topbar, main, .panel, .rule-card, .stats-grid, .source-reader,
+.multi-select, .filters, .location-panel, .range-panel, .table-panel, .mini-chart,
+.coverage-note, .review-intro, .hero-book, .search-field, .source-expand,
+.notice, .empty, .planet-subgroup, .pasted-rule, .archive-file, .limb-card,
+.period-card, .table-caption, .market-context, .pdf-plate-link { background:#ffffff !important; color:#000000 !important; border-color:#000000 !important; }
+body, p, h1, h2, h3, h4, h5, h6, label, span, strong, small, em, dt, dd,
+th, td, li, blockquote, pre, summary, button, a, input, select, option,
+.muted, .note, .eyebrow, .rule-meta, .status, .source-heading,
+.source-heading .mono, .source-expand small, .source-expand .reason,
+.app-footer, .app-footer p, .app-footer a, .app-footer span,
+.sidebar-label, .sidebar-footer, .sidebar-footer small, .brand span,
+.edition, .breadcrumb, .breadcrumb strong, .location-pill span,
+.timeline-time, .timeline-time .mono, .timeline-time small,
+.range-fields label, .range-mode, .results-line, .pagination,
+.stat > span, .stat > small, .market-input, .sbc-controls label,
+.panchang dt, .panchang dd, .chart-caption, .mini-chart-caption,
+.angle-grid > div, .angle-grid strong, .table-caption,
+.source-reader article p, .source-expand blockquote, .rule-card > p,
+.section-explainer, .page-heading p, .dashboard-intro p,
+.review-intro p, .section-reviews details > p, .limitation, .empty p,
+.market-context, .market-context p, .sbc-legend, .multi-options label,
+.pasted-rule p, .pasted-rule h3, .archive-file strong, .archive-file small,
+.limb-card p, .period-card p, .period-card h3, .market-input small,
+.prediction-timing-note, .rule-timing, .angle-calculation-time,
+.sbc-calculation-time, .sbc-calculation-time em { color:#000000 !important; opacity:1 !important; text-shadow:none !important; }
+h1, h2, h3, h4, h5, h6, .rule-card h3, .section-title h2, .dashboard-intro h1,
+.dashboard-intro h1 em, .page-heading h1 { color:#000000 !important; font-weight:900 !important; }
+input, select, textarea, .search-field input, .market-input input,
+.multi-select-body > input { background:#ffffff !important; color:#000000 !important; border:2px solid #000000 !important; opacity:1 !important; font-weight:800 !important; }
+input::placeholder, .search-field input::placeholder { color:#000000 !important; opacity:1 !important; }
+button, .text-button, .button.quiet, .button.secondary, .global-copy, .floating-copy { color:#000000 !important; opacity:1 !important; }
+.button.primary { background:#000000 !important; color:#ffffff !important; border-color:#000000 !important; }
+.button.secondary, .button.quiet, .text-button { background:#ffffff !important; border-color:#000000 !important; }
+.sidebar nav a, .sidebar nav a:hover, .sidebar nav a.nav-active { color:#000000 !important; background:#ffffff !important; font-weight:900 !important; }
+.sidebar nav a.nav-active { border-left:5px solid #000000 !important; }
+.brand strong, .brand span, .sidebar-note p, .sidebar-note span { color:#000000 !important; }
+.panel, .rule-card, .stats-grid, .source-reader, .table-panel { box-shadow:none !important; }
+.rule-card { border:2px solid #000000 !important; }
+.rule-card.active-rule { background:#e7f6ec !important; border:3px solid #000000 !important; box-shadow:4px 4px 0 #000000 !important; transform:none !important; }
+.rule-card.active-rule::before { background:#000000 !important; color:#ffffff !important; border-color:#000000 !important; }
+.rule-card.active-rule .rule-meta, .rule-card.active-rule h3, .rule-card.active-rule > p,
+.rule-card.active-rule .rule-bottom .text-button, .rule-card.active-rule .status,
+.rule-card.active-rule .tag, .rule-card.active-rule .tag.commodity { color:#000000 !important; }
+.rule-card.active-rule .tag { background:#ffffff !important; border:2px solid #000000 !important; }
+.rule-card.active-rule .tag.commodity { background:#fff4bd !important; border:2px solid #000000 !important; }
+.rule-card.active-rule .rule-timing, .prediction-timing-note, .angle-calculation-time,
+.sbc-calculation-time { background:#ffffff !important; border:2px solid #000000 !important; color:#000000 !important; }
+.rule-card.active-rule .rule-timing strong, .rule-card.active-rule .rule-timing span,
+.sbc-calculation-time strong, .sbc-calculation-time em,
+.angle-calculation-time strong { color:#000000 !important; }
+.tag, .tag.commodity, .signal-up, .signal-down, .signal-neutral,
+.status.computable, .status.missing, .status.reference, .tag.retro { color:#000000 !important; border:2px solid #000000 !important; background:#ffffff !important; }
+.tag.commodity, .signal-down { background:#fff4bd !important; }
+.signal-up { background:#d9f2df !important; }
+.signal-neutral { background:#eeeeee !important; }
+.table-panel th, th { background:#eeeeee !important; color:#000000 !important; border:2px solid #000000 !important; }
+.table-panel td, td { background:#ffffff !important; color:#000000 !important; border-bottom:2px solid #000000 !important; }
+.sbc-grid, .sbc-cell, .sbc-cell.inner, .sbc-cell.occupied, .sbc-cell.target,
+.sbc-cell.occupied.target { color:#000000 !important; background:#ffffff !important; border-color:#000000 !important; }
+.sbc-cell strong, .sbc-cell .sbc-planet, .sbc-planet small, .vedha-pada { color:#000000 !important; }
+.sbc-cell.occupied { background:#e7f6ec !important; }
+.sbc-cell.target { background:#fff4bd !important; }
+.sbc-cell.occupied.target { background:#d9f2df !important; }
+svg text { fill:#000000 !important; }
+.rule-card.active-rule .signal-up, .rule-card.active-rule .signal-down,
+.rule-card.active-rule .signal-neutral { color:#000000 !important; background:#ffffff !important; border:2px solid #000000 !important; }
+@media(max-width:760px){ .tag, .tag.commodity { font-size:12px !important; } }

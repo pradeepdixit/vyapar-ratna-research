@@ -1,6 +1,6 @@
 
-## Final color contrast pass
+## Final white paper / black text mode
 
-- [x] सामान्य text, notes, labels, muted text, tables, inputs, legends और source content के faded colors हटाकर readable high-contrast palette लागू की गयी।
-- [x] Active cards के ग्रह tags और commodity tags अब अलग bright backgrounds में दिखते हैं; `रक्त चन्दन`, `लाल मिर्च`, `वस्त्र`, `ताँबा`, `चाँदी` जैसे labels fade नहीं होंगे।
-- [x] तेजी, मंदी, मिश्र, computable, reference और missing statuses के लिए अलग high-contrast colors रखे गये।
+- [x] पूरी website के backgrounds सफेद और मुख्य text solid black किया गया; dark/faded theme overrides को अंतिम CSS layer ने हटाया।
+- [x] मूल कथन, source blocks, शर्तों की lines, tables, labels, active/inactive timing और calculation badges black, bold और opaque हैं।
+- [x] Active cards हल्के green/cream background से अलग हैं, लेकिन उनका text black ही रहता है; tags और signals भी black high-contrast हैं।
