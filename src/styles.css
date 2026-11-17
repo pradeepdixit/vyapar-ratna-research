@@ -1289,3 +1289,12 @@ svg text { fill:#000000 !important; }
 .stock-rule > span { text-align:right; font-size:12px; font-weight:950; min-width:130px; }
 @media(max-width:900px){ .stock-filters{grid-template-columns:1fr 1fr}.stock-selection-grid{grid-template-columns:1fr}.stock-list-intro{display:block} }
 @media(max-width:600px){ .stock-filters{grid-template-columns:1fr}.stock-card-head{grid-template-columns:auto minmax(0,1fr)} .stock-signal{grid-column:2; justify-self:start}.stock-period-grid{grid-template-columns:repeat(3,1fr)} .stock-rule{display:block}.stock-rule > span{display:block;text-align:left;margin-top:6px}.stock-meta{grid-template-columns:1fr}.stock-selection-card{padding:13px;box-shadow:3px 3px 0 #000} }
+
+/* Calculation state and period-ranked stock list */
+.stock-calc-banner { display:flex; align-items:center; justify-content:space-between; gap:18px; border:3px solid #000; background:#eef5ff; }
+.stock-calc-banner.calculated { background:#dff4e5; }
+.stock-calc-banner.pending { background:#fff4c2; }
+.stock-calc-banner strong { color:#003b78; font-size:19px; }
+.stock-calc-banner p { margin:5px 0 0; color:#000 !important; font-weight:800; }
+.stock-calc-banner > span { border:2px solid #000; padding:8px 10px; color:#000; font-weight:950; white-space:nowrap; }
+@media(max-width:600px){ .stock-calc-banner{display:block}.stock-calc-banner>span{display:inline-block;margin-top:10px} }

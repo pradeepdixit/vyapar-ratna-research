@@ -1,13 +1,7 @@
 
-## Final white paper / black text mode
+## Selected-time calculation and period ranking
 
-- [x] पूरी website के backgrounds सफेद और मुख्य text solid black किया गया; dark/faded theme overrides को अंतिम CSS layer ने हटाया।
-- [x] मूल कथन, source blocks, शर्तों की lines, tables, labels, active/inactive timing और calculation badges black, bold और opaque हैं।
-- [x] Active cards हल्के green/cream background से अलग हैं, लेकिन उनका text black ही रहता है; tags और signals भी black high-contrast हैं।
-
-## My Stock Selection List — NIFTY 200
-
-- [x] Official NSE/Nifty Indices snapshot से 200 constituents, company name, symbol, industry, series और ISIN जोड़कर अलग `My Stock Selection List` page बनाया गया।
-- [x] Company/industry के आधार पर material tags जोड़े गये: धातु, लोहा, सीमेंट, तेल, गैस, बिजली, केबल/ताँबा, औषधि, वस्त्र, खाद्य, वाहन, सोना/रत्न और अन्य पुस्तक-संबंधित पदार्थ। Explicit product overrides और industry-level fallback अलग रखे गये हैं।
-- [x] प्रत्येक card में minute/क्षणिक, daily, weekly, fortnightly, monthly और yearly rule counts, matched rules, तेजी/मंदी/मिश्र signal और active rule timing दिखते हैं। Selected date/time बदलने पर active stock ranking फिर calculate होती है।
-- [x] Active shares ऊपर sort होते हैं; Copy list, Download, search, research-group filter, period filter और केवल active filter उपलब्ध हैं।
+- [x] Page पर calculation banner जोड़ा गया: चुना हुआ date/time, “इस समय की गणना पूरी” और LIVE SNAPSHOT status स्पष्ट दिखता है।
+- [x] Global “गणना का समय → लागू करें” के बाद AstroSnapshot से NIFTY 200 के computable rules दोबारा calculate होते हैं; पुराने snapshot का भ्रम नहीं रखा गया।
+- [x] दैनिक, साप्ताहिक, मासिक, मिनट/क्षणिक, पाक्षिक, वार्षिक और ऋतु-आधारित अवधि चुनने पर उसी अवधि के active rule count से descending ranking होती है।
+- [x] केवल active filter भी चुनी हुई अवधि के active rules के अनुसार काम करता है; card में उसी अवधि के लागू rules और उनका timeframe दिखता है।
