@@ -269,6 +269,11 @@
       "path": "validation.md",
       "size": 4509,
       "kind": "md"
+    },
+    {
+      "path": "NIFTY200_MAPPING.md",
+      "size": 1054,
+      "kind": "md"
     }
   ]
 }

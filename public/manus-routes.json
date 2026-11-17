@@ -43,6 +43,10 @@
     {
       "path": "/daily",
       "title": "दैनिक शोध / नये नियम"
+    },
+    {
+      "path": "/my-stocks",
+      "title": "My Stock Selection List"
     }
   ]
 }
