@@ -1044,3 +1044,61 @@ main .tag, main .status, main .eyebrow, main .mono { opacity:1 !important; }
 @media(max-width:760px){ .rule-timing{font-size:13px;display:grid;grid-template-columns:1fr;gap:3px} }
 .prediction-timing-note { margin:10px 0; padding:10px 12px; border-left:4px solid #1f4f8f; background:#f1f6ff; color:#173c73; font-weight:700; line-height:1.6; }
 .prediction-timing-note strong { color:#0b2d70; font-weight:950; }
+
+/* Final date/time readability: no faded timestamps anywhere in the workspace. */
+.time-strip > label,
+.time-strip input[type="datetime-local"],
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-text,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-month-field,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-day-field,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-year-field,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-hour-field,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-minute-field,
+.time-strip input[type="datetime-local"]::-webkit-datetime-edit-ampm-field {
+  color:#082d74 !important;
+  font-weight:850 !important;
+  font-size:15px !important;
+  opacity:1 !important;
+}
+.time-strip input[type="datetime-local"] { color-scheme:light; min-width:225px; }
+.time-strip .live-toggle,
+.time-strip .live-toggle span,
+.time-strip .text-button { color:#082d74 !important; font-weight:850 !important; font-size:14px !important; }
+.sbc-calculation-time,
+.sbc-calculation-time span,
+.sbc-calculation-time strong,
+.sbc-calculation-time em,
+.angle-calculation-time,
+.angle-calculation-time strong,
+.prediction-timing-note,
+.prediction-timing-note strong,
+.rule-timing,
+.rule-timing strong,
+.timeline-time,
+.timeline-time .mono,
+.timeline-time small,
+.results-line,
+.results-line strong,
+.active-filter > .muted,
+.muted {
+  color:#082d74 !important;
+  opacity:1 !important;
+  font-weight:800 !important;
+}
+.sbc-calculation-time { background:#eaf1ff !important; border-left:5px solid #164a9c !important; padding:13px 15px !important; font-size:16px !important; line-height:1.7 !important; }
+.sbc-calculation-time strong { display:block; font-size:21px !important; font-weight:950 !important; }
+.sbc-calculation-time em { display:block; font-style:normal; font-size:14px !important; }
+.angle-calculation-time { font-size:15px !important; line-height:1.6 !important; }
+.angle-calculation-time strong { font-size:18px !important; font-weight:950 !important; }
+.rule-timing, .prediction-timing-note { background:#edf3ff !important; border-left-color:#164a9c !important; font-size:15px !important; }
+.timeline-time .mono, .timeline-time small { font-size:14px !important; }
+.results-line { font-size:14px !important; }
+.muted { font-size:13px !important; }
+input[type="datetime-local"], input[type="time"] { color:#082d74 !important; font-weight:850 !important; opacity:1 !important; color-scheme:light; }
+@media(max-width:760px){
+  .time-strip input[type="datetime-local"] { min-width:205px; font-size:14px !important; }
+  .sbc-calculation-time strong { font-size:18px !important; }
+  .sbc-calculation-time em, .angle-calculation-time, .rule-timing, .prediction-timing-note { font-size:14px !important; }
+}

@@ -1,6 +1,6 @@
 
-## Planet status and NIFTY refresh timestamp
+## Global date/time no-fade readability
 
-- [x] ग्रह स्थिति table में selected local calculation date-time और उसी समय के निरयन ग्रह-अंश का स्पष्ट label जोड़ा गया।
-- [x] NIFTY 50 SBC Market View में refreshed timestamp जोड़ा गया और `niftyVedhaRows` को snapshot ISO dependency के साथ explicit re-computation से बाँधा गया।
-- [x] Date/time बदलकर ऊपर लागू करने पर 50 shares की vedha count, शुभ/क्रूर count और तेजी-मंदी signal list फिर calculate होती है।
+- [x] `गणना का समय`, `वर्तमान समय`, datetime input और `अभी` controls को गहरे नीले, bold और बड़े text में बदला गया।
+- [x] SBC calculation badge, ग्रह कोण/युति, ग्रह स्थिति, NIFTY refreshed time, prediction timing, analysis timeline और table timestamps पर global no-fade styles लागू हैं।
+- [x] Browser datetime controls के internal date/month/year/hour/minute fields को भी dark-blue high-contrast color दिया गया; mobile sizing अलग से सुरक्षित है।
