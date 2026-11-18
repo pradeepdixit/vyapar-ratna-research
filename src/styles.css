@@ -1400,3 +1400,7 @@ svg text { fill:#000000 !important; }
   .movement-controls label, .movement-next { width:100%; }
   .movement-controls .button { width:100%; }
 }
+
+.movement-controls label input { margin-top:2px; width:100%; }
+.movement-input-help { margin-top:14px; padding:10px 12px; border-top:2px solid #000; color:#000; font-size:14px; font-weight:800; }
+@media(max-width:600px){ .movement-input-help { font-size:13px; line-height:1.7; } }
