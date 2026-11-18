@@ -1,5 +1,6 @@
 
-## Local timezone display correction
+## Scrollable navigation menu
 
-- [x] My Stock calculation banner अब snapshot ISO को selected location zone में convert करके दिखाता है; Mumbai IST में 09:15 input अब 09:15 ही दिखता है, UTC 03:45 नहीं।
-- [x] Live preview में 15 Jan 2020 · 09:15 Asia/Kolkata banner, 44 active shares और बदले हुए ग्रह-rule signals के साथ verify किया गया।
+- [x] Desktop और mobile sidebar में brand/footer को स्थिर रखते हुए navigation links के लिए स्वतंत्र vertical scroll area जोड़ा गया।
+- [x] Mobile menu को `100dvh` height, touch scrolling, overscroll containment और visible thin scrollbar दिया गया; अब नीचे के menu items कटेंगे नहीं।
+- [x] Typecheck, production build और diff check सफल रहे।
