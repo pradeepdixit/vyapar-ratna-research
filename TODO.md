@@ -1,8 +1,8 @@
 
-## Movement time-window clarity
+## Movement rollback and dual wheel
 
-- [x] ऊपर स्पष्ट banner जोड़ा गया: समय-1 से समय-2 तक का exact interval।
-- [x] Banner अब बताता है कि interval बीता हुआ/वर्तमान है या आने वाला।
-- [x] ग्रह table में प्रत्येक row के लिए कब से और कब तक columns जोड़े गये।
-- [x] Angle section और बड़े movement summary में भी वही exact अवधि लिखी गयी।
-- [x] Tests और production build सफल रहे।
+- [x] नया time-window banner, “कब से/कब तक” table columns और past/future status हटाकर previous clean Movement layout लौटाया गया।
+- [x] एक wheel को दो अलग wheels में बदला गया: सामान्य ग्रह गति और अलग चंद्रमा-मुख्य angle wheel।
+- [x] चंद्रमा wheel में चंद्रमा केंद्र में है और सूर्य, मंगल, बुध, गुरु, शुक्र, शनि, राहु तथा केतु के angles अलग lines/degree labels में दिखते हैं।
+- [x] दोनों wheels अलग containers में हैं; desktop पर side-by-side और mobile पर एक के नीचे एक आते हैं, जिससे labels overlap न हों।
+- [x] Typecheck, tests और production build सफल रहे।

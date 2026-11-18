@@ -1417,11 +1417,8 @@ svg text { fill:#000000 !important; }
 .movement-dot-after { background:#a22820; }
 @media(max-width:600px){ .movement-size-control { grid-template-columns:1fr auto; font-size:13px; } .movement-size-control input { grid-column:1/-1; grid-row:2; width:100%; } .movement-wheel-legend { font-size:11px; } }
 
-.movement-window-banner { display:grid; grid-template-columns:1fr auto; gap:6px 18px; margin:0 0 18px; padding:16px 18px; border:3px solid #000; background:#eef4ff; color:#000; }
-.movement-window-banner strong, .movement-window-banner span { display:block; }
-.movement-window-banner strong { font-size:18px; color:#202d68; }
-.movement-window-banner span { margin-top:5px; font-size:17px; font-weight:900; }
-.movement-window-banner > b { align-self:center; padding:8px 12px; border:2px solid #000; background:#fff4bd; font-size:14px; white-space:nowrap; }
-.movement-window-banner p { grid-column:1/-1; margin-top:4px; font-size:14px; line-height:1.7; }
-.movement-period-line { margin-top:7px; color:#202d68 !important; font-size:15px !important; font-weight:900 !important; line-height:1.6 !important; }
-@media(max-width:600px){ .movement-window-banner { grid-template-columns:1fr; } .movement-window-banner > b { justify-self:start; } .movement-window-banner span { font-size:15px; } .movement-window-banner p { font-size:13px; } .movement-period-line { font-size:13px !important; } }
+.movement-wheel-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; width:100%; }
+.movement-wheel-pair > div { min-width:0; text-align:center; }
+.movement-wheel-pair h3 { margin:0 0 8px; color:#000; font-size:18px; font-weight:950; }
+.moon-angle-wheel { background:#fff; }
+@media(max-width:900px){ .movement-wheel-pair { grid-template-columns:1fr; } }
