@@ -1,8 +1,6 @@
 
-## Planetary Movement / Angle Movement page
+## Movement wheel readability
 
-- [x] अलग `#movement` page जोड़ा गया; अब user समय-1 और समय-2 दोनों पूरी date-time inputs में भरता है और fixed 15 मिनट/1 घंटा विकल्प नहीं हैं।
-- [x] हर ग्रह का पहला/बाद का निरयन longitude, signed movement, राशि, वक्री/मार्गी स्थिति और movement class दिखता है; सबसे बड़े movement पहले आते हैं।
-- [x] आपसी ग्रह कोणों का before/after comparison, बड़े angle changes की ranking और हल्का wheel visualization जोड़ा गया।
-- [x] बड़े movement के लिए अलग summary, संभावित volatility research संकेत, Excel export और mobile-responsive cards/layout जोड़े गये। यह market-price prediction नहीं है।
-- [x] Typecheck, tests, D9 tests, production build और route manifest verification सफल रहे।
+- [x] Wheel size slider जोड़ा गया; user chart को छोटा या बड़ा कर सकता है।
+- [x] Wheel की lines मोटी और गहरी की गयीं; Hindi ग्रह labels, 0°–330° degree marks, बाद के longitude labels और समय-1 → समय-2 legend जोड़े गये।
+- [x] Angle comparison cards में before → after degrees और बड़े angle changes का स्पष्ट highlight बना रहा।
