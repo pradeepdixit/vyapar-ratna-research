@@ -1,6 +1,8 @@
 
-## Movement wheel readability
+## Movement time-window clarity
 
-- [x] Wheel size slider जोड़ा गया; user chart को छोटा या बड़ा कर सकता है।
-- [x] Wheel की lines मोटी और गहरी की गयीं; Hindi ग्रह labels, 0°–330° degree marks, बाद के longitude labels और समय-1 → समय-2 legend जोड़े गये।
-- [x] Angle comparison cards में before → after degrees और बड़े angle changes का स्पष्ट highlight बना रहा।
+- [x] ऊपर स्पष्ट banner जोड़ा गया: समय-1 से समय-2 तक का exact interval।
+- [x] Banner अब बताता है कि interval बीता हुआ/वर्तमान है या आने वाला।
+- [x] ग्रह table में प्रत्येक row के लिए कब से और कब तक columns जोड़े गये।
+- [x] Angle section और बड़े movement summary में भी वही exact अवधि लिखी गयी।
+- [x] Tests और production build सफल रहे।
