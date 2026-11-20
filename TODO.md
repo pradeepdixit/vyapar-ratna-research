@@ -1,8 +1,6 @@
 
-## 361-candle full-session trajectory
+## Clock-time movement chart
 
-- [x] 10-candle window को 361 real historical 1-minute candles तक बढ़ाया गया।
-- [x] Historical chunk boundaries पर 361-row carry रखा गया ताकि quarter/year chunk के बीच future candles न टूटें।
-- [x] Top nearest matches का average close movement green-up/red-down line chart में दिखता है।
-- [x] +1, +5, +10, +30, +60, +120, +180, +240, +300 और +361 minute checkpoints अलग तेजी/मंदी ratios के साथ दिखते हैं।
-- [x] प्रत्येक historical match में +60, +180 और +361 candle के वास्तविक close movement का evidence दिखता है।
+- [x] +1/+180/+361 labels को वास्तविक historical clock time में बदला गया, जैसे 09:15 AM, 12:30 PM, 03:15 PM।
+- [x] Green background/line तेजी zone, red background/line मंदी zone और yellow sideways band जोड़े गये।
+- [x] Key checkpoints में भी actual candle clock time दिखता है, केवल minute number नहीं।

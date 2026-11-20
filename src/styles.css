@@ -1524,3 +1524,9 @@ svg text { fill:#000000 !important; }
 .prediction-match-summary .bull { color:#087a3b; }
 .prediction-match-summary .bear { color:#b00020; }
 @media(max-width:700px){ .trajectory-chart { min-height:220px; } .trajectory-chart .chart-label { font-size:20px; } }
+
+.chart-zone { font-size:16px; font-weight:950; }
+.green-zone { fill:#075d2f; }
+.red-zone { fill:#980018; }
+.side-zone { fill:#765900; }
+.sideways-key { color:#765900; font-weight:950; }
