@@ -1510,3 +1510,7 @@ svg text { fill:#000000 !important; }
 .user-rule-card p { margin:8px 0; color:#000; font-weight:700; line-height:1.55; }
 .user-rule-treatment { display:flex; gap:6px; align-items:flex-start; padding-top:8px; border-top:1px solid #777; }
 @media(max-width:800px){ .user-rule-grid { grid-template-columns:1fr; } }
+
+.notice.warning { display:flex; gap:10px; align-items:flex-start; margin:14px 0; padding:12px; border:2px solid #8b5a00; background:#fff2bf; color:#000; }
+.notice.warning strong, .notice.warning div { color:#000; font-weight:850; }
+.prediction-match > div:first-child span { display:block; margin-top:4px; font-size:13px; }
