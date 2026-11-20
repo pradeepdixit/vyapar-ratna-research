@@ -1,7 +1,7 @@
 
-## Online NIFTY minute data viewer
+## Full dataset Excel-style filtering
 
-- [x] Supplied `NIFTY_50_1MIN_2015_2026_panchang_updated.xlsx` को browser-friendly 45 quarterly gzip chunks में बदला गया; original 1.2GB CSV/Excel browser में एक साथ नहीं खुलता।
-- [x] Online viewer में 10,20,592 records, सभी 105 columns, NIFTY Data sheet, Methodology और Color Legend शामिल हैं।
-- [x] User year/quarter चुन सकता है; केवल चुना chunk load होता है। Search, date/time filter, sticky headers, 100-row pagination और responsive table मौजूद हैं।
-- [x] Chunk integrity, row counts, column counts, typecheck, tests और production build सफल रहे।
+- [x] Filter panel अब table के ऊपर स्पष्ट दिखाई देता है; केवल horizontal table header के अंदर छिपा नहीं है।
+- [x] सभी 105 columns के नाम और अलग filter inputs panel में उपलब्ध हैं।
+- [x] “पूरे 10,20,592 records में filter चलाएँ” button सभी 45 quarter chunks को क्रम से scan करता है।
+- [x] Matching count पूरे 2015–2026 dataset का आता है; browser में memory बचाने के लिए अधिकतम पहले 5,000 matching rows दिखाई जाती हैं।
