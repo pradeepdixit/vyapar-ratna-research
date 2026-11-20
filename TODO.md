@@ -1,8 +1,7 @@
 
-## Movement rollback and dual wheel
+## Online NIFTY minute data viewer
 
-- [x] नया time-window banner, “कब से/कब तक” table columns और past/future status हटाकर previous clean Movement layout लौटाया गया।
-- [x] एक wheel को दो अलग wheels में बदला गया: सामान्य ग्रह गति और अलग चंद्रमा-मुख्य angle wheel।
-- [x] चंद्रमा wheel में चंद्रमा केंद्र में है और सूर्य, मंगल, बुध, गुरु, शुक्र, शनि, राहु तथा केतु के angles अलग lines/degree labels में दिखते हैं।
-- [x] दोनों wheels अलग containers में हैं; desktop पर side-by-side और mobile पर एक के नीचे एक आते हैं, जिससे labels overlap न हों।
-- [x] Typecheck, tests और production build सफल रहे।
+- [x] Supplied `NIFTY_50_1MIN_2015_2026_panchang_updated.xlsx` को browser-friendly 45 quarterly gzip chunks में बदला गया; original 1.2GB CSV/Excel browser में एक साथ नहीं खुलता।
+- [x] Online viewer में 10,20,592 records, सभी 105 columns, NIFTY Data sheet, Methodology और Color Legend शामिल हैं।
+- [x] User year/quarter चुन सकता है; केवल चुना chunk load होता है। Search, date/time filter, sticky headers, 100-row pagination और responsive table मौजूद हैं।
+- [x] Chunk integrity, row counts, column counts, typecheck, tests और production build सफल रहे।

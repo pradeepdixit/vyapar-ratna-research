@@ -1,0 +1,681 @@
+{
+  "title": "NIFTY 50 1-minute Panchang Data 2015–2026",
+  "sourceFile": "NIFTY_50_1MIN_2015_2026_panchang_updated.xlsx",
+  "totalRows": 1020592,
+  "columns": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "timestamp_IST",
+    "local_date",
+    "local_time",
+    "year",
+    "month",
+    "day",
+    "vara",
+    "vara_hi",
+    "paksha",
+    "tithi",
+    "tithi_no",
+    "moon_nakshatra",
+    "moon_nakshatra_hi",
+    "moon_nakshatra_pada",
+    "yoga",
+    "karana",
+    "moon_rashi",
+    "moon_rashi_hi",
+    "Sun_longitude_sidereal_deg",
+    "Sun_rashi",
+    "Sun_rashi_hi",
+    "Sun_nakshatra",
+    "Sun_nakshatra_hi",
+    "Sun_nakshatra_pada",
+    "Moon_longitude_sidereal_deg",
+    "Moon_rashi",
+    "Moon_rashi_hi",
+    "Moon_nakshatra",
+    "Moon_nakshatra_hi",
+    "Moon_nakshatra_pada",
+    "Mars_longitude_sidereal_deg",
+    "Mars_rashi",
+    "Mars_rashi_hi",
+    "Mars_nakshatra",
+    "Mars_nakshatra_hi",
+    "Mars_nakshatra_pada",
+    "Mercury_longitude_sidereal_deg",
+    "Mercury_rashi",
+    "Mercury_rashi_hi",
+    "Mercury_nakshatra",
+    "Mercury_nakshatra_hi",
+    "Mercury_nakshatra_pada",
+    "Jupiter_longitude_sidereal_deg",
+    "Jupiter_rashi",
+    "Jupiter_rashi_hi",
+    "Jupiter_nakshatra",
+    "Jupiter_nakshatra_hi",
+    "Jupiter_nakshatra_pada",
+    "Venus_longitude_sidereal_deg",
+    "Venus_rashi",
+    "Venus_rashi_hi",
+    "Venus_nakshatra",
+    "Venus_nakshatra_hi",
+    "Venus_nakshatra_pada",
+    "Saturn_longitude_sidereal_deg",
+    "Saturn_rashi",
+    "Saturn_rashi_hi",
+    "Saturn_nakshatra",
+    "Saturn_nakshatra_hi",
+    "Saturn_nakshatra_pada",
+    "Rahu_longitude_sidereal_deg",
+    "Rahu_rashi",
+    "Rahu_rashi_hi",
+    "Rahu_nakshatra",
+    "Rahu_nakshatra_hi",
+    "Rahu_nakshatra_pada",
+    "Ketu_longitude_sidereal_deg",
+    "Ketu_rashi",
+    "Ketu_rashi_hi",
+    "Ketu_nakshatra",
+    "Ketu_nakshatra_hi",
+    "Ketu_nakshatra_pada",
+    "sunrise_IST",
+    "sunset_IST",
+    "hora_no",
+    "hora_graha",
+    "hora_graha_hi",
+    "hora_start_IST",
+    "hora_end_IST",
+    "ohlc_move_close_open",
+    "ohlc_move_close_open_pct",
+    "ohlc_move_high_low",
+    "ohlc_move_high_low_pct",
+    "close_to_previous_1min_move",
+    "close_to_previous_1min_move_pct",
+    "candle_direction",
+    "candle_direction_hi",
+    "moon_yuti_graha",
+    "moon_yuti_graha_hi",
+    "moon_yuti_distance_deg",
+    "moon_yuti_status",
+    "moon_yuti_status_hi",
+    "Moon_to_Sun_distance_deg",
+    "Moon_to_Mars_distance_deg",
+    "Moon_to_Mercury_distance_deg",
+    "Moon_to_Jupiter_distance_deg",
+    "Moon_to_Venus_distance_deg",
+    "Moon_to_Saturn_distance_deg",
+    "Moon_to_Rahu_distance_deg",
+    "Moon_to_Ketu_distance_deg"
+  ],
+  "years": [
+    {
+      "year": "2015-Q1",
+      "path": "online-data/2015-Q1.json.gz",
+      "rows": 20574,
+      "first": "2015-01-09 09:15:00+0530",
+      "last": "2015-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2015-Q2",
+      "path": "online-data/2015-Q2.json.gz",
+      "rows": 22876,
+      "first": "2015-04-01 09:15:00+0530",
+      "last": "2015-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2015-Q3",
+      "path": "online-data/2015-Q3.json.gz",
+      "rows": 23974,
+      "first": "2015-07-01 09:15:00+0530",
+      "last": "2015-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2015-Q4",
+      "path": "online-data/2015-Q4.json.gz",
+      "rows": 22554,
+      "first": "2015-10-01 09:15:00+0530",
+      "last": "2015-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2016-Q1",
+      "path": "online-data/2016-Q1.json.gz",
+      "rows": 22875,
+      "first": "2016-01-01 09:15:00+0530",
+      "last": "2016-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2016-Q2",
+      "path": "online-data/2016-Q2.json.gz",
+      "rows": 23250,
+      "first": "2016-04-01 09:15:00+0530",
+      "last": "2016-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2016-Q3",
+      "path": "online-data/2016-Q3.json.gz",
+      "rows": 23250,
+      "first": "2016-07-01 09:15:00+0530",
+      "last": "2016-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2016-Q4",
+      "path": "online-data/2016-Q4.json.gz",
+      "rows": 22935,
+      "first": "2016-10-03 09:15:00+0530",
+      "last": "2016-12-30 15:29:00+0530"
+    },
+    {
+      "year": "2017-Q1",
+      "path": "online-data/2017-Q1.json.gz",
+      "rows": 23211,
+      "first": "2017-01-02 09:15:00+0530",
+      "last": "2017-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2017-Q2",
+      "path": "online-data/2017-Q2.json.gz",
+      "rows": 22875,
+      "first": "2017-04-03 09:15:00+0530",
+      "last": "2017-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2017-Q3",
+      "path": "online-data/2017-Q3.json.gz",
+      "rows": 23625,
+      "first": "2017-07-03 09:15:00+0530",
+      "last": "2017-09-29 15:29:00+0530"
+    },
+    {
+      "year": "2017-Q4",
+      "path": "online-data/2017-Q4.json.gz",
+      "rows": 22935,
+      "first": "2017-10-03 09:15:00+0530",
+      "last": "2017-12-29 15:29:00+0530"
+    },
+    {
+      "year": "2018-Q1",
+      "path": "online-data/2018-Q1.json.gz",
+      "rows": 22500,
+      "first": "2018-01-01 09:15:00+0530",
+      "last": "2018-03-28 15:29:00+0530"
+    },
+    {
+      "year": "2018-Q2",
+      "path": "online-data/2018-Q2.json.gz",
+      "rows": 24000,
+      "first": "2018-04-02 09:15:00+0530",
+      "last": "2018-06-29 15:29:00+0530"
+    },
+    {
+      "year": "2018-Q3",
+      "path": "online-data/2018-Q3.json.gz",
+      "rows": 22875,
+      "first": "2018-07-02 09:15:00+0530",
+      "last": "2018-09-28 15:29:00+0530"
+    },
+    {
+      "year": "2018-Q4",
+      "path": "online-data/2018-Q4.json.gz",
+      "rows": 22560,
+      "first": "2018-10-01 09:15:00+0530",
+      "last": "2018-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2019-Q1",
+      "path": "online-data/2019-Q1.json.gz",
+      "rows": 23250,
+      "first": "2019-01-01 09:15:00+0530",
+      "last": "2019-03-29 15:29:00+0530"
+    },
+    {
+      "year": "2019-Q2",
+      "path": "online-data/2019-Q2.json.gz",
+      "rows": 22497,
+      "first": "2019-04-01 09:15:00+0530",
+      "last": "2019-06-28 15:29:00+0530"
+    },
+    {
+      "year": "2019-Q3",
+      "path": "online-data/2019-Q3.json.gz",
+      "rows": 23234,
+      "first": "2019-07-01 09:15:00+0530",
+      "last": "2019-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2019-Q4",
+      "path": "online-data/2019-Q4.json.gz",
+      "rows": 22560,
+      "first": "2019-10-01 09:15:00+0530",
+      "last": "2019-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2020-Q1",
+      "path": "online-data/2020-Q1.json.gz",
+      "rows": 23998,
+      "first": "2020-01-01 09:15:00+0530",
+      "last": "2020-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2020-Q2",
+      "path": "online-data/2020-Q2.json.gz",
+      "rows": 22125,
+      "first": "2020-04-01 09:15:00+0530",
+      "last": "2020-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2020-Q3",
+      "path": "online-data/2020-Q3.json.gz",
+      "rows": 24748,
+      "first": "2020-07-01 09:15:00+0530",
+      "last": "2020-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2020-Q4",
+      "path": "online-data/2020-Q4.json.gz",
+      "rows": 23309,
+      "first": "2020-10-01 09:15:00+0530",
+      "last": "2020-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2021-Q1",
+      "path": "online-data/2021-Q1.json.gz",
+      "rows": 22554,
+      "first": "2021-01-01 09:15:00+0530",
+      "last": "2021-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2021-Q2",
+      "path": "online-data/2021-Q2.json.gz",
+      "rows": 22875,
+      "first": "2021-04-01 09:15:00+0530",
+      "last": "2021-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2021-Q3",
+      "path": "online-data/2021-Q3.json.gz",
+      "rows": 23625,
+      "first": "2021-07-01 09:15:00+0530",
+      "last": "2021-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2021-Q4",
+      "path": "online-data/2021-Q4.json.gz",
+      "rows": 23309,
+      "first": "2021-10-01 09:15:00+0530",
+      "last": "2021-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2022-Q1",
+      "path": "online-data/2022-Q1.json.gz",
+      "rows": 22872,
+      "first": "2022-01-03 09:15:00+0530",
+      "last": "2022-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2022-Q2",
+      "path": "online-data/2022-Q2.json.gz",
+      "rows": 23250,
+      "first": "2022-04-01 09:15:00+0530",
+      "last": "2022-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2022-Q3",
+      "path": "online-data/2022-Q3.json.gz",
+      "rows": 23625,
+      "first": "2022-07-01 09:15:00+0530",
+      "last": "2022-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2022-Q4",
+      "path": "online-data/2022-Q4.json.gz",
+      "rows": 22935,
+      "first": "2022-10-03 09:15:00+0530",
+      "last": "2022-12-30 15:29:00+0530"
+    },
+    {
+      "year": "2023-Q1",
+      "path": "online-data/2023-Q1.json.gz",
+      "rows": 23250,
+      "first": "2023-01-02 09:15:00+0530",
+      "last": "2023-03-31 15:29:00+0530"
+    },
+    {
+      "year": "2023-Q2",
+      "path": "online-data/2023-Q2.json.gz",
+      "rows": 22492,
+      "first": "2023-04-03 09:15:00+0530",
+      "last": "2023-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2023-Q3",
+      "path": "online-data/2023-Q3.json.gz",
+      "rows": 23620,
+      "first": "2023-07-03 09:15:00+0530",
+      "last": "2023-09-29 15:29:00+0530"
+    },
+    {
+      "year": "2023-Q4",
+      "path": "online-data/2023-Q4.json.gz",
+      "rows": 22560,
+      "first": "2023-10-03 09:15:00+0530",
+      "last": "2023-12-29 15:29:00+0530"
+    },
+    {
+      "year": "2024-Q1",
+      "path": "online-data/2024-Q1.json.gz",
+      "rows": 22980,
+      "first": "2024-01-01 09:15:00+0530",
+      "last": "2024-03-28 15:29:00+0530"
+    },
+    {
+      "year": "2024-Q2",
+      "path": "online-data/2024-Q2.json.gz",
+      "rows": 22599,
+      "first": "2024-04-01 09:15:00+0530",
+      "last": "2024-06-28 15:29:00+0530"
+    },
+    {
+      "year": "2024-Q3",
+      "path": "online-data/2024-Q3.json.gz",
+      "rows": 24000,
+      "first": "2024-07-01 09:15:00+0530",
+      "last": "2024-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2024-Q4",
+      "path": "online-data/2024-Q4.json.gz",
+      "rows": 22935,
+      "first": "2024-10-01 09:15:00+0530",
+      "last": "2024-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2025-Q1",
+      "path": "online-data/2025-Q1.json.gz",
+      "rows": 23250,
+      "first": "2025-01-01 09:15:00+0530",
+      "last": "2025-03-28 15:29:00+0530"
+    },
+    {
+      "year": "2025-Q2",
+      "path": "online-data/2025-Q2.json.gz",
+      "rows": 22875,
+      "first": "2025-04-01 09:15:00+0530",
+      "last": "2025-06-30 15:29:00+0530"
+    },
+    {
+      "year": "2025-Q3",
+      "path": "online-data/2025-Q3.json.gz",
+      "rows": 24000,
+      "first": "2025-07-01 09:15:00+0530",
+      "last": "2025-09-30 15:29:00+0530"
+    },
+    {
+      "year": "2025-Q4",
+      "path": "online-data/2025-Q4.json.gz",
+      "rows": 22935,
+      "first": "2025-10-01 09:15:00+0530",
+      "last": "2025-12-31 15:29:00+0530"
+    },
+    {
+      "year": "2026-Q1",
+      "path": "online-data/2026-Q1.json.gz",
+      "rows": 5461,
+      "first": "2026-01-01 09:15:00+0530",
+      "last": "2026-01-22 12:45:00+0530"
+    }
+  ],
+  "sheets": [
+    {
+      "name": "Methodology",
+      "rows": [
+        [
+          "Field / मद",
+          "Value / definition / विवरण"
+        ],
+        [
+          "Workbook",
+          "NIFTY 50 1-minute Panchang workbook — original 77 columns preserved; 28 new columns appended."
+        ],
+        [
+          "Rows",
+          "1,020,592 data rows; no original row removed."
+        ],
+        [
+          "Hindi font",
+          "Noto Sans Devanagari applied to all workbook cells and headers."
+        ],
+        [
+          "Hora",
+          "Vedic planetary hora using Mumbai sunrise/sunset, 12 day horas + 12 night horas, weekday lord sequence."
+        ],
+        [
+          "Location",
+          "Mumbai, India; latitude 19.0728 N, longitude 72.8826 E, elevation 8 m."
+        ],
+        [
+          "Move columns",
+          "close-open, close-open %, high-low, high-low %, previous 1-minute close move and candle direction."
+        ],
+        [
+          "Chandra yuti",
+          "Nearest graha to Moon by sidereal angular distance. Yuti flag = nearest graha within 8 degrees; all eight Moon-to-graha gaps are also included."
+        ],
+        [
+          "Color scale",
+          "All sidereal longitude columns use a 0–360 degree three-color scale. Rashi, nakshatra, pada, Hora, yuti and candle columns use categorical fills."
+        ],
+        [
+          "Planetary basis",
+          "Geocentric apparent ecliptic longitude, Lahiri sidereal zodiac, Swiss Ephemeris 2.10."
+        ],
+        [
+          "Important",
+          "Astronomical/astrological enrichment is deterministic and is not investment advice."
+        ]
+      ]
+    },
+    {
+      "name": "Color Legend",
+      "rows": [
+        [
+          "Color group",
+          "Meaning",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Mesha",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Vrishabha",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Mithuna",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Karka",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Simha",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Kanya",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Tula",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Vrishchika",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Dhanu",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Makara",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Kumbha",
+          "Sidereal rashi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Rashi: Meena",
+          "Sidereal rashi",
+          null,
+          "Nakshatra: Uttara Phalguni",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Hasta",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Chitra",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Swati",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Vishakha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Anuradha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Jyeshtha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Mula",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Purva Ashadha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Uttara Ashadha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Shravana",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Dhanishtha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Shatabhisha",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Purva Bhadrapada",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Uttara Bhadrapada",
+          "Moon/graha nakshatra"
+        ],
+        [
+          null,
+          null,
+          null,
+          "Nakshatra: Revati",
+          "Moon/graha nakshatra"
+        ]
+      ]
+    }
+  ]
+}
