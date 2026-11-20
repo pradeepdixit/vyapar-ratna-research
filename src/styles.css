@@ -1495,3 +1495,18 @@ svg text { fill:#000000 !important; }
 @media(max-width:700px){ .prediction-control-grid, .prediction-summary-grid { grid-template-columns:1fr; } .prediction-horizon-grid { grid-template-columns:1fr 1fr; } .prediction-contract { flex-direction:column; } }
 @media(max-width:900px){ .online-column-filter-panel { grid-template-columns:repeat(2,minmax(160px,1fr)); } }
 @media(max-width:600px){ .online-column-filter-panel { grid-template-columns:1fr; max-height:420px; } .online-global-actions .button { width:100%; justify-content:center; } }
+
+.user-provided-rules { margin:18px 0; border:2px solid #111; background:#f7faf7; }
+.user-rule-warning { display:flex; gap:10px; align-items:flex-start; margin:12px 0; padding:12px; border:2px solid #8b5a00; background:#fff2bf; color:#000; }
+.user-rule-warning p { margin:0; color:#000; font-weight:800; line-height:1.6; }
+.user-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.user-rule-card { border:2px solid #111; padding:14px; background:#fff; color:#000; }
+.user-rule-card.historical-check { border-left:7px solid #064b8d; }
+.user-rule-card.reference-only { border-left:7px solid #7a5200; }
+.user-rule-head { display:flex; justify-content:space-between; gap:10px; align-items:center; }
+.user-rule-head strong { color:#000; font-size:18px; }
+.user-rule-head span { color:#000; background:#fff0ac; border:1px solid #111; padding:4px 7px; font-size:12px; font-weight:950; }
+.user-rule-card h3 { margin:8px 0; color:#000; font-size:19px; }
+.user-rule-card p { margin:8px 0; color:#000; font-weight:700; line-height:1.55; }
+.user-rule-treatment { display:flex; gap:6px; align-items:flex-start; padding-top:8px; border-top:1px solid #777; }
+@media(max-width:800px){ .user-rule-grid { grid-template-columns:1fr; } }

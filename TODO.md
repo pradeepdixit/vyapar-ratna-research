@@ -1,9 +1,7 @@
 
-## File-only NEXT 10 CANDLE PREDICTION
+## User-provided BR-99 research rules
 
-- [x] Prediction page current AstroSnapshot को uploaded NIFTY minute file के historical rows से match करता है।
-- [x] Candidate historical row current selected time से पहले की ही ली जाती है; future rows input नहीं बनतीं।
-- [x] हर valid match के बाद की वास्तविक 1–10 minute OHLC rows से अलग-अलग तेजी/मंदी/सम परिणाम निकाले जाते हैं।
-- [x] Match count, similarity percentage, historical evidence और प्रत्येक horizon का bullish/bearish ratio दिखता है।
-- [x] पर्याप्त matches न होने पर `INSUFFICIENT HISTORICAL MATCH` दिखता है।
-- [x] External market data, fabricated OHLC, RSI, MACD और technical indicators शामिल नहीं हैं।
+- [x] BR-99, BR-99-A, BR-99-B, BR-99-C और BR-99-D को detailed cards के रूप में dashboard और NEXT 10 prediction page में जोड़ा गया।
+- [x] Dual-Saturn alignment, Mercury +0.80°/day hypothesis, Jupiter +4.5 field-strength hypothesis और Rahu Kaal/Mars Hora override claim के trigger, claimed effect, evidence और engine treatment अलग-अलग लिखे गये।
+- [x] Original pasted note और methodology public research archive में रखे गये।
+- [x] Rules को reference-only/historical-check label दिया गया; वे file-only prediction को override नहीं करते। केवल historical file के actual next-10 OHLC outcomes final evidence हैं।
