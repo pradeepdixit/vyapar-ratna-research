@@ -1,7 +1,8 @@
 
-## Nearest-match prediction fallback
+## 361-candle full-session trajectory
 
-- [x] Degree tolerance अब hard stop नहीं है; engine सभी valid historical rows में से nearest matches rank करता है।
-- [x] सबसे कम mean circular planetary difference वाला historical match #1 दिखता है।
-- [x] हर result पर similarity, mean degree difference और `within tolerance`/`nearest fallback` label दिखता है।
-- [x] Tolerance के अंदर matches कम हों तो prediction खाली नहीं रहती; low-confidence warning के साथ nearest historical result दिखता है।
+- [x] 10-candle window को 361 real historical 1-minute candles तक बढ़ाया गया।
+- [x] Historical chunk boundaries पर 361-row carry रखा गया ताकि quarter/year chunk के बीच future candles न टूटें।
+- [x] Top nearest matches का average close movement green-up/red-down line chart में दिखता है।
+- [x] +1, +5, +10, +30, +60, +120, +180, +240, +300 और +361 minute checkpoints अलग तेजी/मंदी ratios के साथ दिखते हैं।
+- [x] प्रत्येक historical match में +60, +180 और +361 candle के वास्तविक close movement का evidence दिखता है।

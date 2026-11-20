@@ -1514,3 +1514,13 @@ svg text { fill:#000000 !important; }
 .notice.warning { display:flex; gap:10px; align-items:flex-start; margin:14px 0; padding:12px; border:2px solid #8b5a00; background:#fff2bf; color:#000; }
 .notice.warning strong, .notice.warning div { color:#000; font-weight:850; }
 .prediction-match > div:first-child span { display:block; margin-top:4px; font-size:13px; }
+
+.trajectory-chart { display:block; width:100%; min-height:280px; border:2px solid #111; background:#fff; margin:12px 0; }
+.trajectory-chart .chart-label { fill:#000; font-size:16px; font-weight:900; }
+.chart-legend { display:flex; flex-wrap:wrap; gap:14px; color:#000; font-weight:900; }
+.chart-legend .bull { color:#087a3b; }
+.chart-legend .bear { color:#b00020; }
+.prediction-match-summary { margin-top:10px; color:#000; font-weight:900; font-size:16px; }
+.prediction-match-summary .bull { color:#087a3b; }
+.prediction-match-summary .bear { color:#b00020; }
+@media(max-width:700px){ .trajectory-chart { min-height:220px; } .trajectory-chart .chart-label { font-size:20px; } }
