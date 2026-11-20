@@ -1447,3 +1447,11 @@ svg text { fill:#000000 !important; }
 .online-small-table td { border:1px solid #777; padding:8px 10px; font-weight:700; }
 @media(max-width:900px){ .online-data-stats { grid-template-columns:repeat(2,1fr); } .online-filter-grid { grid-template-columns:1fr 1fr; } }
 @media(max-width:600px){ .online-data-stats { grid-template-columns:1fr 1fr; gap:8px; } .online-data-stats > div { padding:10px; } .online-data-stats strong { font-size:20px; } .online-filter-grid { grid-template-columns:1fr; } .online-pagination { flex-wrap:wrap; justify-content:center; } .online-table-wrap { max-height:62vh; } }
+
+.online-filter-help { margin:14px 0 0; color:#000; font-size:15px; font-weight:800; line-height:1.7; }
+.online-data-table .online-column-names th { top:0; }
+.online-data-table .online-column-filters th { top:43px; z-index:2; padding:5px; background:#fff8d5; border-bottom:2px solid #111; }
+.online-data-table .online-column-filters input { width:108px; min-width:108px; height:30px; border:1px solid #555; border-radius:2px; padding:4px 6px; color:#000; background:#fff; font-size:12px; font-weight:700; }
+.online-data-table .online-column-filters input:focus { outline:2px solid #173f78; }
+.online-data-table th:first-child, .online-data-table td:first-child { position:sticky; left:0; z-index:3; min-width:42px; width:42px; text-align:center; background:#eef2f7; }
+.online-data-table .online-column-filters th:first-child { z-index:4; }
