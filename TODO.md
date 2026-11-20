@@ -1,7 +1,9 @@
 
-## Full dataset Excel-style filtering
+## File-only NEXT 10 CANDLE PREDICTION
 
-- [x] Filter panel अब table के ऊपर स्पष्ट दिखाई देता है; केवल horizontal table header के अंदर छिपा नहीं है।
-- [x] सभी 105 columns के नाम और अलग filter inputs panel में उपलब्ध हैं।
-- [x] “पूरे 10,20,592 records में filter चलाएँ” button सभी 45 quarter chunks को क्रम से scan करता है।
-- [x] Matching count पूरे 2015–2026 dataset का आता है; browser में memory बचाने के लिए अधिकतम पहले 5,000 matching rows दिखाई जाती हैं।
+- [x] Prediction page current AstroSnapshot को uploaded NIFTY minute file के historical rows से match करता है।
+- [x] Candidate historical row current selected time से पहले की ही ली जाती है; future rows input नहीं बनतीं।
+- [x] हर valid match के बाद की वास्तविक 1–10 minute OHLC rows से अलग-अलग तेजी/मंदी/सम परिणाम निकाले जाते हैं।
+- [x] Match count, similarity percentage, historical evidence और प्रत्येक horizon का bullish/bearish ratio दिखता है।
+- [x] पर्याप्त matches न होने पर `INSUFFICIENT HISTORICAL MATCH` दिखता है।
+- [x] External market data, fabricated OHLC, RSI, MACD और technical indicators शामिल नहीं हैं।

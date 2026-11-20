@@ -25,6 +25,10 @@
       "title": "NIFTY minute data viewer"
     },
     {
+      "path": "/#prediction",
+      "title": "NEXT 10 CANDLE PREDICTION"
+    },
+    {
       "path": "/#source",
       "title": "मूल पुस्तक"
     },
