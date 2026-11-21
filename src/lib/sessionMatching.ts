@@ -21,6 +21,19 @@ export function circularDifference(a: number, b: number): number {
 export function nakshatraPada(longitude: number): number {
   return Math.floor((longitude % 360) / (360 / 108));
 }
+function filterKey(target: number[], row: number[]): number[] {
+  // Moon longitude is compared separately and first. Then each remaining
+  // planet is checked in sequence: sign, nakshatra, pada.
+  return [0, 2, 3, 4, 5, 6, 7, 8].flatMap(p => [
+    Math.floor(target[p] / 30) === Math.floor(row[p] / 30) ? 1 : 0,
+    Math.floor(target[p] / (360 / 27)) === Math.floor(row[p] / (360 / 27)) ? 1 : 0,
+    nakshatraPada(target[p]) === nakshatraPada(row[p]) ? 1 : 0,
+  ]);
+}
+function compareFilterKey(a: number[], b: number[]): number {
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return a[i] - b[i];
+  return 0;
+}
 export function minuteClock(index: number): string {
   const m = SESSION_START + index;
   return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
@@ -36,27 +49,27 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
   const minutes: SessionMinute[] = [];
   const minuteDifferences: number[] = [];
   const moonDifferences: number[] = [];
-  const padaMatchesByMinute: number[] = [];
+  const filterKeysByMinute: number[][] = [];
   let bestTargetIndex = 0;
   for (let i = 0; i < SESSION_COUNT; i++) {
     if (target[i].length !== 9 || target[i].some(v => !Number.isFinite(v))) throw new Error('Target नौ ग्रह invalid');
-    let bestSum = Infinity, bestMoonDifference = Infinity, bestPadaMatches = -1, bestRow = historicalMinutes[0];
+    let bestSum = Infinity, bestMoonDifference = Infinity, bestFilterKey: number[] = [], bestRow = historicalMinutes[0];
     for (const row of historicalMinutes) {
       const moonDifference = circularDifference(target[i][1], row.degrees[1]);
       if (moonDifference > bestMoonDifference) continue;
       let sum = 0;
       for (let p = 0; p < 9; p++) sum += circularDifference(target[i][p], row.degrees[p]);
-      // Moon longitude is the anchor. Once it is equally close, prefer rows
-      // whose other planets retain the target nakshatra/pada; the all-nine
-      // sum is only the final tie-breaker. No longitude is altered or averaged.
-      const padaMatches = target[i].reduce((count, value, p) => p === 1 ? count : count + (nakshatraPada(value) === nakshatraPada(row.degrees[p]) ? 1 : 0), 0);
-      if (moonDifference < bestMoonDifference || (moonDifference === bestMoonDifference && (padaMatches > bestPadaMatches || (padaMatches === bestPadaMatches && sum < bestSum)))) {
-        bestMoonDifference = moonDifference; bestPadaMatches = padaMatches; bestSum = sum; bestRow = row;
+      // Moon longitude is the anchor. Once equally close, compare Sun,
+      // Mercury, Jupiter and the remaining planets in sign/nakshatra/pada
+      // order. The all-nine sum is only the final tie-breaker.
+      const candidateKey = filterKey(target[i], row.degrees);
+      if (moonDifference < bestMoonDifference || (moonDifference === bestMoonDifference && (compareFilterKey(candidateKey, bestFilterKey) > 0 || (compareFilterKey(candidateKey, bestFilterKey) === 0 && sum < bestSum)))) {
+        bestMoonDifference = moonDifference; bestFilterKey = candidateKey; bestSum = sum; bestRow = row;
       }
     }
     minutes.push(bestRow); minuteDifferences.push(bestSum / 9);
-    moonDifferences.push(bestMoonDifference); padaMatchesByMinute.push(bestPadaMatches);
-    if (moonDifferences[i] < moonDifferences[bestTargetIndex] || (moonDifferences[i] === moonDifferences[bestTargetIndex] && (padaMatchesByMinute[i] > padaMatchesByMinute[bestTargetIndex] || (padaMatchesByMinute[i] === padaMatchesByMinute[bestTargetIndex] && minuteDifferences[i] < minuteDifferences[bestTargetIndex])))) bestTargetIndex = i;
+    moonDifferences.push(bestMoonDifference); filterKeysByMinute.push(bestFilterKey);
+    if (moonDifferences[i] < moonDifferences[bestTargetIndex] || (moonDifferences[i] === moonDifferences[bestTargetIndex] && (compareFilterKey(filterKeysByMinute[i], filterKeysByMinute[bestTargetIndex]) > 0 || (compareFilterKey(filterKeysByMinute[i], filterKeysByMinute[bestTargetIndex]) === 0 && minuteDifferences[i] < minuteDifferences[bestTargetIndex])))) bestTargetIndex = i;
   }
   const meanDifference = minuteDifferences[bestTargetIndex];
   const moonDifference = moonDifferences[bestTargetIndex];
