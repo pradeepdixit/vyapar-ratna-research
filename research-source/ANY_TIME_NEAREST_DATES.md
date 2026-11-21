@@ -10,7 +10,7 @@
 
 Target का 09:15 केवल historical 09:15 तक सीमित नहीं है। वह file के उस दिन के 09:16, 11:40, 15:29 या किसी अन्य उपलब्ध valid minute से मिल सकता है। सभी नौ ग्रह हमेशा उसी एक वास्तविक historical row से लिए जाते हैं। ग्रहों को अलग-अलग तारीखों या समयों से लेकर कोई मिश्रित नकली स्थिति नहीं बनाई जाती।
 
-प्रत्येक target मिनट पर पहले चंद्रमा की circular degree दूरी `min(|a−b| mod 360, 360−(|a−b| mod 360))` को primary anchor बनाया जाता है। चंद्रमा की degree में कोई adjustment, averaging या fabrication नहीं होती। केवल ऐसे date matches valid हैं जिनका best lunar difference अधिकतम 1° है। समान/निकट lunar candidates में सूर्य, बुध, गुरु और बाकी ग्रहों के nakshatra–pada match को filter की तरह प्राथमिकता मिलती है; सभी नौ ग्रहों का औसत अंतर अंतिम tie-breaker है।
+प्रत्येक target मिनट पर पहले चंद्रमा की circular degree दूरी `min(|a−b| mod 360, 360−(|a−b| mod 360))` को primary anchor बनाया जाता है। चंद्रमा की degree में कोई adjustment, averaging या fabrication नहीं होती। समान/निकट lunar candidates में क्रमशः सूर्य, बुध, गुरु, मंगल, शुक्र, शनि, राहु और केतु की राशि → नक्षत्र → पाद तुलना होती है; सभी नौ ग्रहों का औसत अंतर अंतिम tie-breaker है। केवल ऐसे date matches valid हैं जिनका best lunar difference अधिकतम 1° है।
 
 हर historical तारीख पर सभी target मिनटों और सभी historical rows का मिलान किया जाता है। हर target मिनट का lunar-anchor वाला nearest historical row रखा जाता है। Date card में target और historical दोनों समय दिखते हैं; 1° से अधिक best lunar difference वाले dates को दिखाया ही नहीं जाता। valid dates में नौ-ग्रह mean error से आगे ranking होती है और बराबर scores पर तारीख chronological रहती है।
 
