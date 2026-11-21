@@ -26,7 +26,7 @@
     },
     {
       "path": "/#prediction",
-      "title": "NEXT 10 CANDLE PREDICTION"
+      "title": "Nearest 10 Historical Dates"
     },
     {
       "path": "/#source",

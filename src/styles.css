@@ -1530,3 +1530,26 @@ svg text { fill:#000000 !important; }
 .red-zone { fill:#980018; }
 .side-zone { fill:#765900; }
 .sideways-key { color:#765900; font-weight:950; }
+
+/* Isolated nearest-day matching view: readable paper theme, no global overrides. */
+.nearest-session-controls { display:flex; flex-wrap:wrap; align-items:center; gap:18px; }
+.nearest-session-controls label { display:flex; flex-direction:column; gap:8px; font-size:20px; color:#000; }
+.nearest-session-controls input { min-height:48px; border:2px solid #111; color:#000; background:#fff; padding:8px; font-weight:800; }
+.nearest-session-page p { color:#000 !important; opacity:1 !important; line-height:1.7; }
+.nearest-session-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.nearest-date-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.nearest-date-card { display:flex; flex-direction:column; gap:8px; padding:20px; border:2px solid #222; background:#fff; color:#000; text-align:left; cursor:pointer; }
+.nearest-date-card strong { font-size:24px; color:#000 !important; }
+.nearest-date-card span, .nearest-date-card small { font-size:18px; color:#000 !important; }
+.nearest-date-card.selected { background:#e6f3e9; border:3px solid #006b32; }
+.nearest-date-card:focus-visible { outline:3px solid #005aa5; outline-offset:2px; }
+.nearest-session-chart { width:100%; height:auto; display:block; margin:15px 0; background:#fff; border:1px solid #aaa; }
+.nearest-session-chart text { font-size:17px; font-weight:800; fill:#000; }
+.nearest-planet-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.nearest-planet-summary > div { display:flex; flex-direction:column; gap:5px; padding:14px; border:1px solid #333; }
+.nearest-minute-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-bottom:15px; }
+.nearest-minute-grid article { padding:14px; border:1px solid #333; color:#000; }
+.nearest-minute-grid h3 { color:#000 !important; font-size:23px; margin:0 0 10px; }
+.nearest-minute-grid p { font-size:18px !important; overflow-wrap:normal; word-break:normal; }
+.nearest-session-page label select { min-height:48px; color:#000 !important; background:#fff !important; font-size:20px; }
+@media(max-width:700px) { .nearest-date-list, .nearest-minute-grid { grid-template-columns:1fr; } .nearest-planet-summary { grid-template-columns:repeat(2,minmax(0,1fr)); } .nearest-session-controls > * { max-width:100%; } }
