@@ -287,17 +287,17 @@
     },
     {
       "path": "ANY_TIME_NEAREST_DATES.md",
-      "size": 5037,
+      "size": 5536,
       "kind": "md"
     },
     {
       "path": "any-time-match-2026-11-21.json",
-      "size": 5471,
+      "size": 6048,
       "kind": "json"
     },
     {
       "path": "any-time-match-2015-03-31.json",
-      "size": 5503,
+      "size": 6053,
       "kind": "json"
     }
   ]
