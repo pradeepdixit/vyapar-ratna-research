@@ -20,9 +20,9 @@ m.addChunk({columns,rows:rows('2020-01-03',0).slice(1)});
 const missing = rows('2020-01-04',0); for (const row of missing) row[3] = '';m.addChunk({columns,rows:missing});
 m.addChunk({columns,rows:rows('2020-01-20',0)});
 const result=m.finish();assert.equal(result.matches[0].date,'2020-01-03'); assert.equal(result.matches[0].meanDifference,0);assert.equal(result.eligibleDays,3);assert.equal(result.incompleteDays,1);assert.equal(result.excludedDays,1);
-const many=new SessionMatcher('2021-01-01',target);
-for(let d=1;d<=15;d++)many.addChunk({columns,rows:rows(`2020-01-${String(d).padStart(2,'0')}`,16-d)});
-const top=many.finish();assert.equal(top.matches.length,10);assert.equal(new Set(top.matches.map(x=>x.date)).size,10);assert.equal(top.matches[0].date,'2020-01-15');
+const manyStrict=new SessionMatcher('2021-01-01',target);
+for(let d=1;d<=15;d++)manyStrict.addChunk({columns,rows:rows(`2020-02-${String(d).padStart(2,'0')}`,0)});
+const top=manyStrict.finish();assert.equal(top.matches.length,10);assert.equal(new Set(top.matches.map(x=>x.date)).size,10);assert.equal(top.matches[0].date,'2020-02-01');
 const identity=scoreDay('2020-01-01',target.map((degrees,i)=>({time:minuteClock(i),degrees,close:null})),target);assert.equal(identity.meanDifference,0);assert.equal(identity.similarity,100);
 const anyTime=new SessionMatcher('2020-01-20',target);anyTime.addChunk({columns,rows:[['2020-01-01','14:45:00',100,...target[0]]]});const unrestricted=anyTime.finish();assert.equal(unrestricted.matches[0].minutes[0].time,'14:45');assert.equal(unrestricted.matches[0].meanDifference,0);assert.equal(unrestricted.matches[0].minutes.length,361);console.log('PASS unit: 361 targets/all-nine identity, ANY historical time, wraparound, missing value exclusion, chunk carry, cutoff, 10 unique ascending dates');
 
@@ -52,7 +52,7 @@ if(process.argv.includes('--full')){
   const a=actualResult.matches[i];assert(a.date<date);assert.equal(a.minutes.length,361);
   if(i)assert(actualResult.matches[i-1].meanDifference<=a.meanDifference);
  }
- const report={date,window:'09:15–15:15 IST targets; any historical time',rule:'Date ranked by minimum nine-planet error across all target/historical minute pairs',scannedRows:actualResult.scannedRows,eligibleDays:actualResult.eligibleDays,incompleteDays:actualResult.incompleteDays,excludedDays:actualResult.excludedDays,top10:actualResult.matches.map(m=>({date:m.date,meanDifference:m.meanDifference,similarity:m.similarity,planetDifferences:m.planetDifferences,targetTime:minuteClock(m.bestTargetIndex),historicalTime:m.minutes[m.bestTargetIndex].time})),firstMinuteTarget:degrees[0],lastMinuteTarget:degrees[360]};
+ const report={date,window:'09:15–15:15 IST targets; any historical time',rule:'Moon degree is the primary anchor; dates with best lunar difference above 1° are rejected; nakshatra-pada then nine-planet mean are tie-breakers',moonMaxDifference:1,scannedRows:actualResult.scannedRows,eligibleDays:actualResult.eligibleDays,incompleteDays:actualResult.incompleteDays,excludedDays:actualResult.excludedDays,moonRejectedDays:actualResult.moonRejectedDays,top10:actualResult.matches.map(m=>({date:m.date,moonDifference:m.moonDifference,meanDifference:m.meanDifference,similarity:m.similarity,planetDifferences:m.planetDifferences,targetTime:minuteClock(m.bestTargetIndex),historicalTime:m.minutes[m.bestTargetIndex].time})),firstMinuteTarget:degrees[0],lastMinuteTarget:degrees[360]};
  await writeFile(`research/any-time-match-${date}.json`,JSON.stringify(report,null,2)+'\n');
  console.log('REAL FULL-DATA RESULT',JSON.stringify(report));
 }

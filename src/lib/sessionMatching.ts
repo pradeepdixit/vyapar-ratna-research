@@ -1,13 +1,14 @@
 export const SESSION_START = 9 * 60 + 15;
 export const SESSION_COUNT = 361;
+export const MAX_MOON_DIFFERENCE = 1;
 export const MATCH_PLANETS = [
   ['सूर्य', 'Sun'], ['चंद्रमा', 'Moon'], ['बुध', 'Mercury'], ['गुरु', 'Jupiter'],
   ['मंगल', 'Mars'], ['शुक्र', 'Venus'], ['शनि', 'Saturn'], ['राहु', 'Rahu'], ['केतु', 'Ketu'],
 ] as const;
 export type SessionMinute = { time: string; degrees: number[]; close: number | null; open?: number | null; high?: number | null; low?: number | null };
 export type PlanetNearest = { time: string; degrees: number[]; difference: number };
-export type SessionMatch = { date: string; meanDifference: number; similarity: number; planetDifferences: number[]; planetNearest: PlanetNearest[]; minutes: SessionMinute[]; historicalMinutes: SessionMinute[]; bestTargetIndex: number; minuteDifferences: number[] };
-export type SessionResults = { matches: SessionMatch[]; eligibleDays: number; incompleteDays: number; excludedDays: number; scannedRows: number };
+export type SessionMatch = { date: string; meanDifference: number; similarity: number; moonDifference: number; planetDifferences: number[]; planetNearest: PlanetNearest[]; minutes: SessionMinute[]; historicalMinutes: SessionMinute[]; bestTargetIndex: number; minuteDifferences: number[] };
+export type SessionResults = { matches: SessionMatch[]; eligibleDays: number; incompleteDays: number; excludedDays: number; moonRejectedDays: number; scannedRows: number };
 export type HistoricalChunk = { columns: string[]; rows: unknown[][] };
 export type OnlineManifest = { totalRows: number; years: { path: string; rows: number; first: string; last: string }[] };
 export function numberValue(v: unknown): number | null {
@@ -34,6 +35,8 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
   if (historicalMinutes.some(m => m.degrees.length !== 9 || m.degrees.some(v => !Number.isFinite(v)))) throw new Error('हर historical row में नौ ग्रह अनिवार्य हैं।');
   const minutes: SessionMinute[] = [];
   const minuteDifferences: number[] = [];
+  const moonDifferences: number[] = [];
+  const padaMatchesByMinute: number[] = [];
   let bestTargetIndex = 0;
   for (let i = 0; i < SESSION_COUNT; i++) {
     if (target[i].length !== 9 || target[i].some(v => !Number.isFinite(v))) throw new Error('Target नौ ग्रह invalid');
@@ -52,9 +55,11 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
       }
     }
     minutes.push(bestRow); minuteDifferences.push(bestSum / 9);
-    if (minuteDifferences[i] < minuteDifferences[bestTargetIndex]) bestTargetIndex = i;
+    moonDifferences.push(bestMoonDifference); padaMatchesByMinute.push(bestPadaMatches);
+    if (moonDifferences[i] < moonDifferences[bestTargetIndex] || (moonDifferences[i] === moonDifferences[bestTargetIndex] && (padaMatchesByMinute[i] > padaMatchesByMinute[bestTargetIndex] || (padaMatchesByMinute[i] === padaMatchesByMinute[bestTargetIndex] && minuteDifferences[i] < minuteDifferences[bestTargetIndex])))) bestTargetIndex = i;
   }
   const meanDifference = minuteDifferences[bestTargetIndex];
+  const moonDifference = moonDifferences[bestTargetIndex];
   const planetDifferences = target[bestTargetIndex].map((v,p) => circularDifference(v,minutes[bestTargetIndex].degrees[p]));
   // Transparent planet-wise diagnostics. Date ranking above still uses one
   // same-row match containing all nine planets; rows are never combined.
@@ -67,13 +72,13 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
     }
     return { time: nearest.time, degrees: nearest.degrees, difference };
   });
-  return { date, meanDifference, similarity: 100 * (1 - meanDifference / 180), planetDifferences, planetNearest, minutes, historicalMinutes, bestTargetIndex, minuteDifferences };
+  return { date, meanDifference, similarity: 100 * (1 - meanDifference / 180), moonDifference, planetDifferences, planetNearest, minutes, historicalMinutes, bestTargetIndex, minuteDifferences };
 }
 
 export class SessionMatcher {
   private date = '';
   private minutes: SessionMinute[] = [];
-  readonly result: SessionResults = { matches: [], eligibleDays: 0, incompleteDays: 0, excludedDays: 0, scannedRows: 0 };
+  readonly result: SessionResults = { matches: [], eligibleDays: 0, incompleteDays: 0, excludedDays: 0, moonRejectedDays: 0, scannedRows: 0 };
   constructor(private targetDate: string, private target: number[][]) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(targetDate) || target.length !== SESSION_COUNT || target.some(r => r.length !== 9 || r.some(v => !Number.isFinite(v)))) throw new Error('Target date/361-minute degrees invalid');
   }
@@ -107,6 +112,7 @@ export class SessionMatcher {
     this.result.eligibleDays++;
     this.minutes.sort((a,b)=>a.time.localeCompare(b.time));
     const score = scoreDay(this.date, this.minutes, this.target);
+    if (score.moonDifference > MAX_MOON_DIFFERENCE) { this.result.moonRejectedDays++; return; }
     const best = this.result.matches;
     if (best.length === 10 && (score.meanDifference > best[9].meanDifference || (score.meanDifference === best[9].meanDifference && score.date > best[9].date))) return;
     best.push(score);
