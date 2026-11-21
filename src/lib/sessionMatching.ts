@@ -1,11 +1,12 @@
 export const SESSION_START = 9 * 60 + 15;
 export const SESSION_COUNT = 361;
 export const MATCH_PLANETS = [
-  ['सूर्य', 'Sun'], ['चंद्रमा', 'Moon'], ['मंगल', 'Mars'], ['बुध', 'Mercury'],
-  ['गुरु', 'Jupiter'], ['शुक्र', 'Venus'], ['शनि', 'Saturn'], ['राहु', 'Rahu'], ['केतु', 'Ketu'],
+  ['सूर्य', 'Sun'], ['चंद्रमा', 'Moon'], ['बुध', 'Mercury'], ['गुरु', 'Jupiter'],
+  ['मंगल', 'Mars'], ['शुक्र', 'Venus'], ['शनि', 'Saturn'], ['राहु', 'Rahu'], ['केतु', 'Ketu'],
 ] as const;
 export type SessionMinute = { time: string; degrees: number[]; close: number | null; open?: number | null; high?: number | null; low?: number | null };
-export type SessionMatch = { date: string; meanDifference: number; similarity: number; planetDifferences: number[]; minutes: SessionMinute[]; historicalMinutes: SessionMinute[]; bestTargetIndex: number; minuteDifferences: number[] };
+export type PlanetNearest = { time: string; degrees: number[]; difference: number };
+export type SessionMatch = { date: string; meanDifference: number; similarity: number; planetDifferences: number[]; planetNearest: PlanetNearest[]; minutes: SessionMinute[]; historicalMinutes: SessionMinute[]; bestTargetIndex: number; minuteDifferences: number[] };
 export type SessionResults = { matches: SessionMatch[]; eligibleDays: number; incompleteDays: number; excludedDays: number; scannedRows: number };
 export type HistoricalChunk = { columns: string[]; rows: unknown[][] };
 export type OnlineManifest = { totalRows: number; years: { path: string; rows: number; first: string; last: string }[] };
@@ -45,7 +46,18 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
   }
   const meanDifference = minuteDifferences[bestTargetIndex];
   const planetDifferences = target[bestTargetIndex].map((v,p) => circularDifference(v,minutes[bestTargetIndex].degrees[p]));
-  return { date, meanDifference, similarity: 100 * (1 - meanDifference / 180), planetDifferences, minutes, historicalMinutes, bestTargetIndex, minuteDifferences };
+  // Transparent planet-wise diagnostics. Date ranking above still uses one
+  // same-row match containing all nine planets; rows are never combined.
+  const planetNearest = target[bestTargetIndex].map((value, p) => {
+    let nearest = historicalMinutes[0];
+    let difference = circularDifference(value, nearest.degrees[p]);
+    for (const row of historicalMinutes.slice(1)) {
+      const candidate = circularDifference(value, row.degrees[p]);
+      if (candidate < difference || (candidate === difference && row.time < nearest.time)) { nearest = row; difference = candidate; }
+    }
+    return { time: nearest.time, degrees: nearest.degrees, difference };
+  });
+  return { date, meanDifference, similarity: 100 * (1 - meanDifference / 180), planetDifferences, planetNearest, minutes, historicalMinutes, bestTargetIndex, minuteDifferences };
 }
 
 export class SessionMatcher {
