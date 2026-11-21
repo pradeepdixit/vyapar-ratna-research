@@ -17,6 +17,9 @@ export function numberValue(v: unknown): number | null {
 export function circularDifference(a: number, b: number): number {
   const d = Math.abs(a - b) % 360; return Math.min(d, 360 - d);
 }
+export function nakshatraPada(longitude: number): number {
+  return Math.floor((longitude % 360) / (360 / 108));
+}
 export function minuteClock(index: number): string {
   const m = SESSION_START + index;
   return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
@@ -34,12 +37,19 @@ export function scoreDay(date: string, historicalMinutes: SessionMinute[], targe
   let bestTargetIndex = 0;
   for (let i = 0; i < SESSION_COUNT; i++) {
     if (target[i].length !== 9 || target[i].some(v => !Number.isFinite(v))) throw new Error('Target नौ ग्रह invalid');
-    let bestSum = Infinity, bestRow = historicalMinutes[0];
+    let bestSum = Infinity, bestMoonDifference = Infinity, bestPadaMatches = -1, bestRow = historicalMinutes[0];
     for (const row of historicalMinutes) {
+      const moonDifference = circularDifference(target[i][1], row.degrees[1]);
+      if (moonDifference > bestMoonDifference) continue;
       let sum = 0;
-      // All differences are nonnegative: pruning cannot hide a better candidate.
-      for (let p = 0; p < 9; p++) { sum += circularDifference(target[i][p], row.degrees[p]); if (sum > bestSum) break; }
-      if (sum < bestSum) { bestSum = sum; bestRow = row; }
+      for (let p = 0; p < 9; p++) sum += circularDifference(target[i][p], row.degrees[p]);
+      // Moon longitude is the anchor. Once it is equally close, prefer rows
+      // whose other planets retain the target nakshatra/pada; the all-nine
+      // sum is only the final tie-breaker. No longitude is altered or averaged.
+      const padaMatches = target[i].reduce((count, value, p) => p === 1 ? count : count + (nakshatraPada(value) === nakshatraPada(row.degrees[p]) ? 1 : 0), 0);
+      if (moonDifference < bestMoonDifference || (moonDifference === bestMoonDifference && (padaMatches > bestPadaMatches || (padaMatches === bestPadaMatches && sum < bestSum)))) {
+        bestMoonDifference = moonDifference; bestPadaMatches = padaMatches; bestSum = sum; bestRow = row;
+      }
     }
     minutes.push(bestRow); minuteDifferences.push(bestSum / 9);
     if (minuteDifferences[i] < minuteDifferences[bestTargetIndex]) bestTargetIndex = i;
