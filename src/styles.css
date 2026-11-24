@@ -1589,3 +1589,12 @@ svg text { fill:#000000 !important; }
   .forecast-rule-count { min-width: 0; }
   .forecast-reason { white-space: normal !important; overflow: visible !important; line-height: 1.4; }
 }
+
+/* Explicit left/right slider for the wide actual validation tables. */
+.actual-table-scroll { width:100%; min-width:0; overflow-x:scroll; overflow-y:hidden; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; scrollbar-color:#244f43 #dfe9df; scrollbar-width:auto; padding-bottom:8px; }
+.actual-table-scroll::-webkit-scrollbar { height:14px; }
+.actual-table-scroll::-webkit-scrollbar-track { background:#dfe9df; border:1px solid #a8bda8; border-radius:8px; }
+.actual-table-scroll::-webkit-scrollbar-thumb { background:#244f43; border-radius:8px; border:2px solid #dfe9df; }
+.actual-table-scroll table { display:table; width:max-content; min-width:760px; max-width:none; overflow:visible; }
+.table-scroll-hint { display:block; color:#244f43; font-size:11px; font-weight:800; padding:0 0 6px; text-align:right; }
+@media (max-width:560px) { .actual-table-scroll { padding-bottom:10px; } .table-scroll-hint { text-align:left; font-size:10px; } }
