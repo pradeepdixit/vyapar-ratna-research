@@ -1,0 +1,1253 @@
+{
+  "source": "pasted_content_5.txt",
+  "title": "व्यापार रत्न — मुख्य विषय सूची",
+  "description": "व्यापारिक सफलता, ग्रह-दृष्टि, सर्वतोभद्रचक्र और परिशिष्ट के सभी supplied विषयों का संरचित index।",
+  "sourceLineCount": 260,
+  "sectionCount": 3,
+  "chapterCount": 16,
+  "subjectCount": 216,
+  "sections": [
+    {
+      "id": "S01",
+      "section": "प्रथम खण्ड",
+      "chapter": "पहला प्रकरण",
+      "title": "व्यापारिक सफलता और ज्योतिष",
+      "pages": "पृष्ठ १७–२८",
+      "sourceLine": 3,
+      "items": [
+        {
+          "title": "वायदा व्यापार का प्रचलन",
+          "sourceLine": 6,
+          "kind": "subject"
+        },
+        {
+          "title": "व्यापार करने में ध्यान रखने योग्य आवश्यक नियम",
+          "sourceLine": 7,
+          "kind": "subject"
+        },
+        {
+          "title": "वायदा व्यापार की विशेषताएँ",
+          "sourceLine": 8,
+          "kind": "subject"
+        },
+        {
+          "title": "वायदा व्यापार के साथ ज्योतिष विद्या का घनिष्ठ सम्बन्ध",
+          "sourceLine": 9,
+          "kind": "subject"
+        },
+        {
+          "title": "वायदा बाज़ार में घटा-बढ़ी होने का मूल आधार",
+          "sourceLine": 10,
+          "kind": "subject"
+        },
+        {
+          "title": "निर्णयकर्ता व ज्योतिषी की योग्यता",
+          "sourceLine": 11,
+          "kind": "subject"
+        },
+        {
+          "title": "पंचांग कैसा हो? किन पंचांगों पर भरोसा करें",
+          "sourceLine": 12,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "section": "प्रथम खण्ड",
+      "chapter": "दूसरा प्रकरण",
+      "title": "सर्वतोभद्र की वेध-पद्धति द्वारा व्यापारिक भविष्य ज्ञान",
+      "pages": "पृष्ठ २९–५२",
+      "sourceLine": 13,
+      "items": [
+        {
+          "title": "सर्वतोभद्र चक्र की सर्वांगपूर्ण वेध पद्धति",
+          "sourceLine": 16,
+          "kind": "subject"
+        },
+        {
+          "title": "चक्र-निर्माण की कारणसहित उपयोगिता",
+          "sourceLine": 17,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों की गति के द्वारा वेध दिशा का ज्ञान",
+          "sourceLine": 18,
+          "kind": "subject"
+        },
+        {
+          "title": "कोणवेध",
+          "sourceLine": 19,
+          "kind": "subject"
+        },
+        {
+          "title": "अनुक्तवर्णों के वेध का ज्ञान",
+          "sourceLine": 20,
+          "kind": "subject"
+        },
+        {
+          "title": "नाम के विषय में आवश्यक नियम",
+          "sourceLine": 21,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों की वक्रादि गतियों के भेद",
+          "sourceLine": 22,
+          "kind": "subject"
+        },
+        {
+          "title": "देश, काल तथा पण्य के वर्णादि पंचक का ज्ञान",
+          "sourceLine": 23,
+          "kind": "subject"
+        },
+        {
+          "title": "नरपति आचार्य के मतानुसार ग्रहों के मित्र-सम-शत्रु जानने का चक्र",
+          "sourceLine": 24,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के स्वमित्र-समशत्रु क्षेत्रों का ज्ञान",
+          "sourceLine": 25,
+          "kind": "subject"
+        },
+        {
+          "title": "देश, काल तथा पण्य का विवेचन",
+          "sourceLine": 26,
+          "kind": "subject"
+        },
+        {
+          "title": "देश, काल तथा पण्य के स्वामी ग्रह",
+          "sourceLine": 27,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के परम उच्चांश तथा नीचांश",
+          "sourceLine": 28,
+          "kind": "subject"
+        },
+        {
+          "title": "सौम्य तथा क्रूर ग्रहों का ज्ञान",
+          "sourceLine": 29,
+          "kind": "subject"
+        },
+        {
+          "title": "स्वामी निर्णय",
+          "sourceLine": 30,
+          "kind": "subject"
+        },
+        {
+          "title": "क्षेत्रादि बल विचार",
+          "sourceLine": 31,
+          "kind": "subject"
+        },
+        {
+          "title": "स्वामी आदि वेधक ग्रह की दृष्टि के आधार पर वेध फल",
+          "sourceLine": 32,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के दृष्टि-पादों का बोधक चक्र",
+          "sourceLine": 33,
+          "kind": "subject"
+        },
+        {
+          "title": "वेध-फल का विश्वानिर्णय तथा उसका चक्र",
+          "sourceLine": 34,
+          "kind": "subject"
+        },
+        {
+          "title": "टकेवार तेजी-मंदी जानने की वास्तविक युक्ति",
+          "sourceLine": 35,
+          "kind": "subject"
+        },
+        {
+          "title": "नक्षत्रों पर ग्रहों के वेध से तेजी-मंदी ज्ञान",
+          "sourceLine": 36,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "section": "प्रथम खण्ड",
+      "chapter": "तीसरा प्रकरण",
+      "title": "अनुभव-सिद्ध अचूक चांसों के साधन",
+      "pages": "पृष्ठ ५३–१०१",
+      "sourceLine": 37,
+      "items": [
+        {
+          "title": "सूर्यादि नौ ग्रहों तथा मेषादि बारह राशियों के व्यापारिक पदार्थों का विवरण",
+          "sourceLine": 40,
+          "kind": "subject"
+        },
+        {
+          "title": "तेजी-मंदी जानने की सच्ची कुंजी",
+          "sourceLine": 41,
+          "kind": "subject"
+        },
+        {
+          "title": "बन्द बाज़ार के भाव से अगले दिन की बन्द बाज़ार की तेजी-मंदी जानने की अनूठी युक्ति",
+          "sourceLine": 42,
+          "kind": "subject"
+        },
+        {
+          "title": "दृष्टि-सम्बन्धों का फल और उसका उदाहरण",
+          "sourceLine": 43,
+          "kind": "subject"
+        },
+        {
+          "title": "महीने में कितनी तेजी-मंदी होगी?",
+          "sourceLine": 44,
+          "kind": "subject"
+        },
+        {
+          "title": "पंचक के दिनों में होने वाले ऊँचे-से-ऊँचे और नीचे-से-नीचे भावों के आधार पर महीने की तेजी-मंदी का उदाहरण सहित अनुमान",
+          "sourceLine": 45,
+          "kind": "subject"
+        },
+        {
+          "title": "घबाड़-मुहूर्त से उदाहरण सहित दैनिक तेजी-मंदी का ज्ञान",
+          "sourceLine": 46,
+          "kind": "subject"
+        },
+        {
+          "title": "तिथि की घट-बढ़ तथा स्वर्ग-पाताल, मृत्युलोक की भद्रा से वस्तु के भावों में घटा-बढ़ी",
+          "sourceLine": 47,
+          "kind": "subject"
+        },
+        {
+          "title": "राहुकाल के द्वारा दैनिक तेजी-मंदी",
+          "sourceLine": 48,
+          "kind": "subject"
+        },
+        {
+          "title": "तेजी-मंदी जानने के मूल साधन",
+          "sourceLine": 49,
+          "kind": "subject"
+        },
+        {
+          "title": "वार, तिथि, मास-शकुन, वर्ष के राजा, मन्त्री, सस्येश, धान्येश, मेघेश, रसेश, नीरसेश, फलेश, धनेश, दुर्गेश के द्वारा तेजी-मंदी का विस्तृत विचार",
+          "sourceLine": 50,
+          "kind": "subject"
+        },
+        {
+          "title": "वर्ष के स्तम्भों तथा सूर्य-चन्द्र के नक्षत्रों द्वारा विचार",
+          "sourceLine": 51,
+          "kind": "subject"
+        },
+        {
+          "title": "पंचक के द्वारा विचार",
+          "sourceLine": 52,
+          "kind": "subject"
+        },
+        {
+          "title": "ध्रुवांक सारिणी से तेजी-मंदी विचार",
+          "sourceLine": 53,
+          "kind": "subject"
+        },
+        {
+          "title": "तेजी-मंदी ज्ञात करने की अन्य विधि",
+          "sourceLine": 54,
+          "kind": "subject"
+        },
+        {
+          "title": "दिन-भर के भावों में होने वाले उतार-चढ़ाव का ज्ञान",
+          "sourceLine": 55,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "section": "प्रथम खण्ड",
+      "chapter": "चौथा प्रकरण",
+      "title": "संक्रान्ति तथा चन्द्र-दर्शन द्वारा तेजी-मंदी विचार",
+      "pages": "पृष्ठ १०२–१३७",
+      "sourceLine": 56,
+      "items": [
+        {
+          "title": "संक्रान्ति के दिनों की अवधि – 15, 20, 45 मुहूर्त",
+          "sourceLine": 59,
+          "kind": "subject"
+        },
+        {
+          "title": "खड़ी, बैठी, सोई हुई आदि लक्षणों से वस्तुओं के उतार-चढ़ाव का विवरण",
+          "sourceLine": 60,
+          "kind": "subject"
+        },
+        {
+          "title": "संक्रान्ति के मुहूर्त, गमन दिशा, दृष्टि दिशा द्वारा पदार्थों पर प्रभाव",
+          "sourceLine": 61,
+          "kind": "subject"
+        },
+        {
+          "title": "वार और नक्षत्र से संक्रान्ति का नाम व फल",
+          "sourceLine": 62,
+          "kind": "subject"
+        },
+        {
+          "title": "करणों से संक्रान्ति के वाहनादि जानने का कोष्ठक",
+          "sourceLine": 63,
+          "kind": "subject"
+        },
+        {
+          "title": "विभिन्न संक्रान्तियों के प्रवेशकाल में मेषादि-राशिगत चन्द्रफल",
+          "sourceLine": 64,
+          "kind": "subject"
+        },
+        {
+          "title": "चन्द्रदर्शन का बाजारों पर प्रभाव",
+          "sourceLine": 65,
+          "kind": "subject"
+        },
+        {
+          "title": "चन्द्र की शृङ्गनति द्वारा विचार",
+          "sourceLine": 66,
+          "kind": "subject"
+        },
+        {
+          "title": "वारगत मेषादि संक्रान्तियों द्वारा विचार",
+          "sourceLine": 67,
+          "kind": "subject"
+        },
+        {
+          "title": "अमावस्या व पूर्णिमा की संक्रान्ति प्रवेश-फल विचार",
+          "sourceLine": 68,
+          "kind": "subject"
+        },
+        {
+          "title": "मेषादि राशियों में होने वाले चन्द्रदर्शन का फल",
+          "sourceLine": 69,
+          "kind": "subject"
+        },
+        {
+          "title": "सूर्यादि ग्रहों तथा अश्विनी आदि नक्षत्रों विभिन्न दिशाओं में होने वाले चन्द्र-दर्शन द्वारा विचार",
+          "sourceLine": 70,
+          "kind": "subject"
+        },
+        {
+          "title": "चन्द्रोदय जानने की सारिणी",
+          "sourceLine": 71,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "section": "प्रथम खण्ड",
+      "chapter": "पांचवाँ प्रकरण",
+      "title": "ग्रहणों का बाज़ारों पर प्रभाव",
+      "pages": "पृष्ठ १३८–१४६",
+      "sourceLine": 72,
+      "items": [
+        {
+          "title": "ग्रहण की परिभाषा",
+          "sourceLine": 75,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहण के विषय में गणित सिद्धान्त और पौराणिक मत",
+          "sourceLine": 76,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहणों का प्रभाव कब तक रहता है",
+          "sourceLine": 77,
+          "kind": "subject"
+        },
+        {
+          "title": "रवि आदि सात वार तथा चैत्र आदि बारह महीनों में होने वाले ग्रहणों का फल",
+          "sourceLine": 78,
+          "kind": "subject"
+        },
+        {
+          "title": "मेषादि बारह राशियों व अश्विनी आदि सत्ताईस नक्षत्रों में सूर्य, चन्द्र-ग्रहण का प्रभाव",
+          "sourceLine": 79,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रस्तोदय या ग्रस्तास्त ग्रहण का बाज़ारों पर विशेष प्रभाव",
+          "sourceLine": 80,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "section": "प्रथम खण्ड",
+      "chapter": "छठा प्रकरण",
+      "title": "सूर्यादि ग्रहों के राशि-नक्षत्र भ्रमण से भावों में उतार-चढ़ाव",
+      "pages": "पृष्ठ १४७–२१४",
+      "sourceLine": 81,
+      "items": [
+        {
+          "title": "सूर्य, चन्द्र, मंगल, बुध, गुरु, शुक्र, शनि, राहु और केतु मेषादि बारह राशियों तथा अश्विनी आदि सत्ताईस नक्षत्रों में भ्रमण करने से व्यापारी पदार्थों की तेजी-मंदी",
+          "sourceLine": 84,
+          "kind": "subject"
+        },
+        {
+          "title": "मंगल, बुध, गुरु, शुक्र और शनि के उदय-अस्त, वक्री-मार्गी होने से बाज़ारों में उथल-पुथल",
+          "sourceLine": 85,
+          "kind": "subject"
+        },
+        {
+          "title": "अकेला बुधास्त भी धनी बना सकता है",
+          "sourceLine": 86,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "section": "प्रथम खण्ड",
+      "chapter": "सातवाँ प्रकरण",
+      "title": "सोना, चांदी, रूई, गुड़, ग्वार, मटर, सरसों आदि पदार्थों के परीक्षित व अचूक योग",
+      "pages": "पृष्ठ २१५–२४९",
+      "sourceLine": 87,
+      "items": [
+        {
+          "title": "घटा-बढ़ी के मिश्रित योग",
+          "sourceLine": 90,
+          "kind": "subject"
+        },
+        {
+          "title": "रूई, सोना, चांदी, गुड़, खांड, मूँगफली, अलसी, अरण्डी, सरसों, आर्डिनरी व आयरन शेयर्स तथा गेहूँ, जौ, चना आदि अन्नों में तेजी-मंदी के योग",
+          "sourceLine": 91,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "section": "प्रथम खण्ड",
+      "chapter": "आठवाँ प्रकरण",
+      "title": "भाग्योदय तथा इच्छित धन-प्राप्ति के सिद्ध प्रयोग",
+      "pages": "पृष्ठ २५०–२५६",
+      "sourceLine": 92,
+      "items": [
+        {
+          "title": "घाटे से पीड़ित व्यक्तियों के भाग्य को जगाने का यन्त्र",
+          "sourceLine": 95,
+          "kind": "subject"
+        },
+        {
+          "title": "दरिद्रता-नाशक मुद्रिका",
+          "sourceLine": 96,
+          "kind": "subject"
+        },
+        {
+          "title": "तुलसीकृत रामायण से कार्य-सिद्धि",
+          "sourceLine": 97,
+          "kind": "subject"
+        },
+        {
+          "title": "ऋणमोचन प्रयोग",
+          "sourceLine": 98,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रह-पीड़ा निवारक यंत्र",
+          "sourceLine": 99,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रह-शान्ति के लिए रत्नधारण",
+          "sourceLine": 100,
+          "kind": "subject"
+        },
+        {
+          "title": "जड़ी-बूटियों से अनिष्ट ग्रहों की शान्ति",
+          "sourceLine": 101,
+          "kind": "subject"
+        },
+        {
+          "title": "शनि-पीड़ा निवारक इक्कीस-यंत्र",
+          "sourceLine": 102,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "section": "प्रथम खण्ड",
+      "chapter": "नवाँ प्रकरण",
+      "title": "परिशिष्ट",
+      "pages": "पृष्ठ २५७–२७२",
+      "sourceLine": 103,
+      "items": [
+        {
+          "title": "अनायास धन-प्राप्ति के अनुभूत योग",
+          "sourceLine": 106,
+          "kind": "subject"
+        },
+        {
+          "title": "कौन व्यक्ति किस वस्तु के व्यापार से महान् धनी होगा",
+          "sourceLine": 107,
+          "kind": "subject"
+        },
+        {
+          "title": "सट्टे के व्यापार से अचानक धन प्राप्ति",
+          "sourceLine": 108,
+          "kind": "subject"
+        },
+        {
+          "title": "शेयर मार्केट के घटा-बढ़ी",
+          "sourceLine": 109,
+          "kind": "subject"
+        },
+        {
+          "title": "शेयर कब खरीदें और कब बेचें",
+          "sourceLine": 110,
+          "kind": "subject"
+        },
+        {
+          "title": "वायदे के सौदे में लाभ-हानि कब होगी",
+          "sourceLine": 111,
+          "kind": "subject"
+        },
+        {
+          "title": "दैनिक लग्नों से तेजी-मंदी का ज्ञान",
+          "sourceLine": 112,
+          "kind": "subject"
+        },
+        {
+          "title": "लग्न से तेजी-मंदी जानने की युक्ति",
+          "sourceLine": 113,
+          "kind": "subject"
+        },
+        {
+          "title": "गुरू फल विचार",
+          "sourceLine": 114,
+          "kind": "subject"
+        },
+        {
+          "title": "वायदा और तैयार माल के भावों में अन्तर कब और क्यों होता है",
+          "sourceLine": 115,
+          "kind": "subject"
+        },
+        {
+          "title": "पाक्षिक या साप्ताहिक भावों की घटा-बढ़ी जानने की शास्त्रीय एवं वैज्ञानिक युक्ति",
+          "sourceLine": 116,
+          "kind": "subject"
+        },
+        {
+          "title": "द्वितीय खण्डग्रहों के परस्पर २५०० दृष्टि-योगों द्वारा तेजी-मंदी विचार",
+          "sourceLine": 117,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "section": "द्वितीय खण्ड (नवीन परिपाटी)",
+      "chapter": "पहला प्रकरण",
+      "title": "ग्रहों की दूरी और व्यापारिक फलादेश",
+      "pages": "पृष्ठ २७३–२८६",
+      "sourceLine": 119,
+      "items": [
+        {
+          "title": "सायन और निरयन गणना",
+          "sourceLine": 122,
+          "kind": "subject"
+        },
+        {
+          "title": "निरयन ग्रहों को सायन बनाने का प्रकार",
+          "sourceLine": 123,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों की दृष्टि",
+          "sourceLine": 124,
+          "kind": "subject"
+        },
+        {
+          "title": "अंशात्मक दृष्टियों के भेद",
+          "sourceLine": 125,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के अंशात्मक अन्तर",
+          "sourceLine": 126,
+          "kind": "subject"
+        },
+        {
+          "title": "संकेत चिन्ह और दृष्टि का नाम",
+          "sourceLine": 127,
+          "kind": "subject"
+        },
+        {
+          "title": "दृष्टियों के दीप्तांश",
+          "sourceLine": 128,
+          "kind": "subject"
+        },
+        {
+          "title": "दीप्तांशों के विषय में विभिन्न मत",
+          "sourceLine": 129,
+          "kind": "subject"
+        },
+        {
+          "title": "दृष्टि दीप्तांशों का प्रभाव-काल",
+          "sourceLine": 130,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों तथा राशियों का तेजी-मंदी का साधारण स्वभाव",
+          "sourceLine": 131,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "section": "द्वितीय खण्ड (नवीन परिपाटी)",
+      "chapter": "दूसरा प्रकरण",
+      "title": "ग्रहों और वस्तुओं का सम्बन्ध",
+      "pages": "पृष्ठ २८७–३००",
+      "sourceLine": 132,
+      "items": [
+        {
+          "title": "अन्न, अलसी, आर्डिनरी शेयर्स, ऊन, काँच के पदार्थ, कागज, कपड़ा, किराना, काली मिर्च, कपास, खाँड, गुड़, गेहूँ, घी, चांदी, चावल, चाय, चीनी, चना, चमड़ा, जौ, जवाहरात, जस्ता, जूट, जूट का सामान, टीन, तिलहन, तेल, तम्बाकू, तांबा, वारदाना, बिजली का सामान, मशीनरी, मूंगफली, रूई, रबड़, रांगा, लोहा, शेयर, सोना, सरसों, सीमेण्ट, सूत, सीसा, हल्दी आदि वस्तुओं का भिन्न-भिन्न ग्रहों से विस्तृत सम्बन्ध",
+          "sourceLine": 134,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "section": "द्वितीय खण्ड (नवीन परिपाटी)",
+      "chapter": "तीसरा प्रकरण",
+      "title": "ग्रहों की पारस्परिक युति का फल",
+      "pages": "पृष्ठ ३००–३११",
+      "sourceLine": 135,
+      "items": [
+        {
+          "title": "सूर्य से सम्बन्धित वस्तुएँ तथा सूर्य की अन्य ग्रहों से युति का सम्बन्ध",
+          "sourceLine": 137,
+          "kind": "subject"
+        },
+        {
+          "title": "चन्द्रमा से सम्बन्धित वस्तुएँ तथा चन्द्रमा की अन्य ग्रहों से युति का फल",
+          "sourceLine": 138,
+          "kind": "subject"
+        },
+        {
+          "title": "मंगल के आधिपत्य की वस्तुएँ तथा मंगल की विविध ग्रहों से युति का फल",
+          "sourceLine": 139,
+          "kind": "subject"
+        },
+        {
+          "title": "बुध के वर्ग की वस्तुएँ तथा बुध का अन्य ग्रहों से युति का प्रभाव",
+          "sourceLine": 140,
+          "kind": "subject"
+        },
+        {
+          "title": "बृहस्पति से सम्बन्धित पदार्थ एवं बृहस्पति का अन्य ग्रहों से युति का व्यापारिक जगत् पर प्रभाव",
+          "sourceLine": 141,
+          "kind": "subject"
+        },
+        {
+          "title": "शुक्र-संबंधित वस्तुएँ एवं शुक्र का अन्य ग्रहों से युति प्रभाव",
+          "sourceLine": 142,
+          "kind": "subject"
+        },
+        {
+          "title": "शनि-संबंधित वस्तुएँ एवं शनि का हर्शल, नेपच्यून, प्लूटो, राहु-केतु से युति का प्रभाव",
+          "sourceLine": 143,
+          "kind": "subject"
+        },
+        {
+          "title": "राहु-केतु का अन्य ग्रहों से युति का प्रभाव",
+          "sourceLine": 144,
+          "kind": "subject"
+        },
+        {
+          "title": "हर्शल का नेपच्यून तथा प्लूटो से युति का प्रभाव",
+          "sourceLine": 145,
+          "kind": "subject"
+        },
+        {
+          "title": "नेपच्यून-प्लूटो युति",
+          "sourceLine": 146,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "section": "द्वितीय खण्ड (नवीन परिपाटी)",
+      "chapter": "चतुर्थ प्रकरण",
+      "title": "शर और क्रान्ति-साभ्य",
+      "pages": "पृष्ठ ३२०–३२७",
+      "sourceLine": 147,
+      "items": [
+        {
+          "title": "शर किसे कहते हैं",
+          "sourceLine": 150,
+          "kind": "subject"
+        },
+        {
+          "title": "क्रान्ति की परिभाषा",
+          "sourceLine": 151,
+          "kind": "subject"
+        },
+        {
+          "title": "आकाश का चित्र",
+          "sourceLine": 152,
+          "kind": "subject"
+        },
+        {
+          "title": "शर और क्रान्ति में अन्तर का उदाहरण",
+          "sourceLine": 153,
+          "kind": "subject"
+        },
+        {
+          "title": "सायन मेष राशि का चित्र",
+          "sourceLine": 154,
+          "kind": "subject"
+        },
+        {
+          "title": "सायन तुला राशि का चित्र",
+          "sourceLine": 155,
+          "kind": "subject"
+        },
+        {
+          "title": "शर का नाम ही क्षेप है",
+          "sourceLine": 156,
+          "kind": "subject"
+        },
+        {
+          "title": "शरों की परमावधि",
+          "sourceLine": 157,
+          "kind": "subject"
+        },
+        {
+          "title": "क्रान्ति-साभ्य का व्यापारिक जगत् पर प्रभाव",
+          "sourceLine": 158,
+          "kind": "subject"
+        },
+        {
+          "title": "शर-परिवर्तन का बाज़ार पर सबसे अधिक प्रभाव",
+          "sourceLine": 159,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के उत्तर शर का मध्यम मान",
+          "sourceLine": 160,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के दक्षिण शर मध्यम मान",
+          "sourceLine": 161,
+          "kind": "subject"
+        },
+        {
+          "title": "प्रभाव-काल जानने की युक्ति उदाहरण सहित",
+          "sourceLine": 162,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "section": "द्वितीय खण्ड (नवीन परिपाटी)",
+      "chapter": "पांचवा प्रकरण",
+      "title": "तेज़ीकारक भिन्न-भिन्न दृष्टियाँ और उनका महत्व",
+      "pages": "पृष्ठ ३२८–३३७",
+      "sourceLine": 163,
+      "items": [
+        {
+          "title": "120° अंशात्मक दृष्टि",
+          "sourceLine": 166,
+          "kind": "subject"
+        },
+        {
+          "title": "60° अंश की दृष्टि",
+          "sourceLine": 167,
+          "kind": "subject"
+        },
+        {
+          "title": "30 अंशात्मक दृष्टि",
+          "sourceLine": 168,
+          "kind": "subject"
+        },
+        {
+          "title": "जब ग्रहों में 150° अंश का अन्तर हो",
+          "sourceLine": 169,
+          "kind": "subject"
+        },
+        {
+          "title": "36° अंश का अन्तर",
+          "sourceLine": 170,
+          "kind": "subject"
+        },
+        {
+          "title": "72 अंशात्मक दृष्टि",
+          "sourceLine": 171,
+          "kind": "subject"
+        },
+        {
+          "title": "यदि 144 अंशों का अन्तर हो",
+          "sourceLine": 172,
+          "kind": "subject"
+        },
+        {
+          "title": "यदि दो भिन्न-भिन्न दिशाओं में क्रान्ति-साभ्य हो",
+          "sourceLine": 173,
+          "kind": "subject"
+        },
+        {
+          "title": "एक दिशा की क्रांतियाँ",
+          "sourceLine": 174,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांश युति",
+          "sourceLine": 175,
+          "kind": "subject"
+        },
+        {
+          "title": "भिन्न ग्रहों की नवांश युति का प्रभाव",
+          "sourceLine": 176,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "section": "तृतीय खण्ड",
+      "chapter": "मुख्य प्रकरण",
+      "title": "सर्वतोभद्रचक्र",
+      "pages": "पृष्ठ ३५३–३९८",
+      "sourceLine": 177,
+      "items": [
+        {
+          "title": "ग्रन्थकार की प्रतिज्ञा",
+          "sourceLine": 180,
+          "kind": "subject"
+        },
+        {
+          "title": "व्याख्याकार का मङ्गलाचरण",
+          "sourceLine": 181,
+          "kind": "subject"
+        },
+        {
+          "title": "सर्वतोभद्रचक्र के निर्माण का सविस्तार विधान",
+          "sourceLine": 182,
+          "kind": "subject"
+        },
+        {
+          "title": "प्रक्षिप्त दो वचनों पर प्रासङ्गिक शास्त्रीय विचार",
+          "sourceLine": 183,
+          "kind": "subject"
+        },
+        {
+          "title": "चक्र में ग्रहों की दृष्टियों के द्वारा वेध का विधान",
+          "sourceLine": 184,
+          "kind": "subject"
+        },
+        {
+          "title": "भौमादि पांच तारा-ग्रहों की दृष्टि-व्यवस्था",
+          "sourceLine": 185,
+          "kind": "subject"
+        },
+        {
+          "title": "शेष चार ग्रहों की दृष्टि-व्यवस्था",
+          "sourceLine": 186,
+          "kind": "subject"
+        },
+        {
+          "title": "दृष्टि और वेध में क्या अन्तर है?",
+          "sourceLine": 187,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के उदय और वक्रशीघ्रसमत्व का ज्ञान",
+          "sourceLine": 188,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों की गतियों के भेद",
+          "sourceLine": 189,
+          "kind": "subject"
+        },
+        {
+          "title": "भौमादि पांच ग्रहों की मध्यम-गति का कलादि मान",
+          "sourceLine": 190,
+          "kind": "subject"
+        },
+        {
+          "title": "भौमादि पांच ग्रहों की परम शीघ्र-गति का कलादि स्थूल मान",
+          "sourceLine": 191,
+          "kind": "subject"
+        },
+        {
+          "title": "मध्यवेध के संबंध में शास्त्रीय विचार",
+          "sourceLine": 192,
+          "kind": "subject"
+        },
+        {
+          "title": "चक्रस्थित कोणगत स्वरों के वेध का विशेष नियम",
+          "sourceLine": 193,
+          "kind": "subject"
+        },
+        {
+          "title": "चक्र में अनुक्त घ, ड, छ आदि वर्णों के वेध का ज्ञान",
+          "sourceLine": 194,
+          "kind": "subject"
+        },
+        {
+          "title": "प्रान्तीय भाषाओं में उच्चारण किये जाने वाले वर्णों के वेध का ज्ञान",
+          "sourceLine": 195,
+          "kind": "subject"
+        },
+        {
+          "title": "वेधविचारार्थ कौन-कौन वेध्य लिये जायँ?",
+          "sourceLine": 196,
+          "kind": "subject"
+        },
+        {
+          "title": "देश के भेद, काल के भेद, पण्य के भेद",
+          "sourceLine": 197,
+          "kind": "subject"
+        },
+        {
+          "title": "देश वर्णादि-पञ्चक का ज्ञान",
+          "sourceLine": 198,
+          "kind": "subject"
+        },
+        {
+          "title": "पण्य के वर्णादि-पञ्चक का ज्ञान",
+          "sourceLine": 199,
+          "kind": "subject"
+        },
+        {
+          "title": "काल के वर्णादि-पञ्चक का ज्ञान",
+          "sourceLine": 200,
+          "kind": "subject"
+        },
+        {
+          "title": "नाम के विषय में कुछ आवश्यक नियम",
+          "sourceLine": 201,
+          "kind": "subject"
+        },
+        {
+          "title": "वर्ण के नक्षत्र का ज्ञान",
+          "sourceLine": 202,
+          "kind": "subject"
+        },
+        {
+          "title": "वर्णस्वरचक्र",
+          "sourceLine": 203,
+          "kind": "subject"
+        },
+        {
+          "title": "तिथिवर्णस्वरचक्र",
+          "sourceLine": 204,
+          "kind": "subject"
+        },
+        {
+          "title": "देशत्रिक के स्वामी ग्रह",
+          "sourceLine": 205,
+          "kind": "subject"
+        },
+        {
+          "title": "कालत्रिक के स्वामी ग्रह",
+          "sourceLine": 206,
+          "kind": "subject"
+        },
+        {
+          "title": "पण्यत्रिक के स्वामी ग्रह",
+          "sourceLine": 207,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों की स्त्री-पुरुषादि संज्ञा",
+          "sourceLine": 208,
+          "kind": "subject"
+        },
+        {
+          "title": "रंग के स्वामी ग्रह",
+          "sourceLine": 209,
+          "kind": "subject"
+        },
+        {
+          "title": "स्वामिनिर्णय का विधान",
+          "sourceLine": 210,
+          "kind": "subject"
+        },
+        {
+          "title": "वक्रादि बलों की पूर्णता का अवधिस्थान",
+          "sourceLine": 211,
+          "kind": "subject"
+        },
+        {
+          "title": "उक्त बलों से उच्च-बल के परिमाण और अवधिस्थान में भेद",
+          "sourceLine": 212,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों का क्षेत्रबल",
+          "sourceLine": 213,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के स्वक्षेत्र का ज्ञान",
+          "sourceLine": 214,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रह-मित्र-सम-शत्रुओं का ज्ञान",
+          "sourceLine": 215,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रह-मैत्रीचक्र",
+          "sourceLine": 216,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रहों के परम उच्चांश तथा नीचांश",
+          "sourceLine": 217,
+          "kind": "subject"
+        },
+        {
+          "title": "निश्चित किये हुए देशादि-स्वामियों का प्रयोजन",
+          "sourceLine": 218,
+          "kind": "subject"
+        },
+        {
+          "title": "शुभ ग्रह के वेधफल का परिमाण",
+          "sourceLine": 219,
+          "kind": "subject"
+        },
+        {
+          "title": "पाप ग्रह के वेधफल का परिमाण",
+          "sourceLine": 220,
+          "kind": "subject"
+        },
+        {
+          "title": "पूर्वोक्त शुभाशुभ वेधफल की दृष्टि के द्वारा सार्थकता",
+          "sourceLine": 221,
+          "kind": "subject"
+        },
+        {
+          "title": "मतान्तर",
+          "sourceLine": 222,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांशवेध की भी दृष्टि के द्वारा सार्थकता",
+          "sourceLine": 223,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांश-वेध-ज्ञान",
+          "sourceLine": 224,
+          "kind": "subject"
+        },
+        {
+          "title": "तिथि पर दृष्टि का विधान",
+          "sourceLine": 225,
+          "kind": "subject"
+        },
+        {
+          "title": "शुक्ल एवं कृष्ण पक्ष में तिथिवेध का फलभेद",
+          "sourceLine": 226,
+          "kind": "subject"
+        },
+        {
+          "title": "स्थितिज वेध में दृष्टि की व्यवस्था",
+          "sourceLine": 227,
+          "kind": "subject"
+        },
+        {
+          "title": "मूल्य-निर्णायक प्रकरण की पूर्ति",
+          "sourceLine": 228,
+          "kind": "subject"
+        },
+        {
+          "title": "वेध और दृष्टि के द्वारा शुभाशुभ ग्रह फल विशेषकों का ज्ञान",
+          "sourceLine": 229,
+          "kind": "subject"
+        },
+        {
+          "title": "पूर्णवेध और पूर्ण दृष्टि के अभाव में फल-विशेषकों के जानने की युक्ति",
+          "sourceLine": 230,
+          "kind": "subject"
+        },
+        {
+          "title": "दृष्टि विचार",
+          "sourceLine": 231,
+          "kind": "subject"
+        },
+        {
+          "title": "शेष फल-विशेषकों के निर्माण का विधान और आगे की कर्तव्यता",
+          "sourceLine": 232,
+          "kind": "subject"
+        },
+        {
+          "title": "घटा-बढ़ी जानने की वास्तविक युक्ति",
+          "sourceLine": 233,
+          "kind": "subject"
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "section": "तृतीय खण्ड",
+      "chapter": "परिशिष्ट",
+      "title": "परिशिष्ट",
+      "pages": "पृष्ठ ३९९–४४४",
+      "sourceLine": 234,
+      "items": [
+        {
+          "title": "फलादेश के लिये पञ्चाङ्ग कैसा हो?",
+          "sourceLine": 235,
+          "kind": "subject"
+        },
+        {
+          "title": "क्षेत्रबल सारिणी",
+          "sourceLine": 236,
+          "kind": "subject"
+        },
+        {
+          "title": "अंशफल, कलाफल",
+          "sourceLine": 237,
+          "kind": "subject"
+        },
+        {
+          "title": "क्षेत्रबल साधन की विधि",
+          "sourceLine": 238,
+          "kind": "subject"
+        },
+        {
+          "title": "क्षेत्रबल का उदाहरण",
+          "sourceLine": 239,
+          "kind": "subject"
+        },
+        {
+          "title": "क्षेत्रफल साधन की सुगम रीति",
+          "sourceLine": 240,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांशबलसारिणी",
+          "sourceLine": 241,
+          "kind": "subject"
+        },
+        {
+          "title": "कलाफल, विकलाफल",
+          "sourceLine": 242,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांशबलसाधन की विधि",
+          "sourceLine": 243,
+          "kind": "subject"
+        },
+        {
+          "title": "नवांशबल का उदाहरण",
+          "sourceLine": 244,
+          "kind": "subject"
+        },
+        {
+          "title": "उच्चबल साधन का प्रकार",
+          "sourceLine": 245,
+          "kind": "subject"
+        },
+        {
+          "title": "उदाहरण",
+          "sourceLine": 246,
+          "kind": "subject"
+        },
+        {
+          "title": "वक्रबल तथा उदयबल साधन",
+          "sourceLine": 247,
+          "kind": "subject"
+        },
+        {
+          "title": "वक्रबल का उदाहरण",
+          "sourceLine": 248,
+          "kind": "subject"
+        },
+        {
+          "title": "उदयबल का उदाहरण",
+          "sourceLine": 249,
+          "kind": "subject"
+        },
+        {
+          "title": "वेध-संबंधी विशेष विचार",
+          "sourceLine": 250,
+          "kind": "subject"
+        },
+        {
+          "title": "बल-संबंधी विशेष विचार",
+          "sourceLine": 251,
+          "kind": "subject"
+        },
+        {
+          "title": "वेधविषयक आवश्यक संकेत",
+          "sourceLine": 252,
+          "kind": "subject"
+        },
+        {
+          "title": "शुभ ग्रह की विशेषांकसारिणी",
+          "sourceLine": 253,
+          "kind": "subject"
+        },
+        {
+          "title": "क्रूर ग्रह की विशेषांकसारिणी",
+          "sourceLine": 254,
+          "kind": "subject"
+        },
+        {
+          "title": "तेज़ी-मंदी जानने की पद्धति का स्वरूप",
+          "sourceLine": 255,
+          "kind": "subject"
+        },
+        {
+          "title": "ता. १२/५/५१ से ता. १९/५/५१ तक सात दिन की बंबई के चांदी-बाज़ार की तेज़ी-मंदी के विवेचन सहित उदाहरण",
+          "sourceLine": 256,
+          "kind": "subject"
+        },
+        {
+          "title": "ग्रन्थ-समाप्ति",
+          "sourceLine": 257,
+          "kind": "subject"
+        },
+        {
+          "title": "अन्य महत्वपूर्ण भाग",
+          "sourceLine": 258,
+          "kind": "subject"
+        },
+        {
+          "title": "सर्वतोभद्रचक्र की कुंजी  (पृष्ठ ४४५–४६६)",
+          "sourceLine": 259,
+          "kind": "subject"
+        },
+        {
+          "title": "वाणिज्य सर्वस्व  (पृष्ठ ४६७–५४२)",
+          "sourceLine": 260,
+          "kind": "subject"
+        }
+      ]
+    }
+  ],
+  "otherImportantParts": [
+    {
+      "title": "अन्य महत्वपूर्ण भाग",
+      "sourceLine": 258,
+      "kind": "subject"
+    },
+    {
+      "title": "सर्वतोभद्रचक्र की कुंजी  (पृष्ठ ४४५–४६६)",
+      "sourceLine": 259,
+      "kind": "subject"
+    },
+    {
+      "title": "वाणिज्य सर्वस्व  (पृष्ठ ४६७–५४२)",
+      "sourceLine": 260,
+      "kind": "subject"
+    }
+  ]
+}
