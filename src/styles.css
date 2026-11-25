@@ -1587,3 +1587,27 @@ svg text { fill:#000000 !important; }
   .audit-item small { font-size:12px; }
   .protocol-order { font-size:13px; }
 }
+
+/* Pasted content 4: source-linked rule expansion page. */
+.book-rule-search { display:flex; align-items:center; gap:10px; max-width:720px; padding:10px 13px; border:1px solid var(--paper-border); border-radius:8px; background:#fff; color:var(--paper-indigo); }
+.book-rule-search input { width:100%; border:0; outline:0; padding:3px; background:transparent; }
+.book-rule-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.book-rule-tabs button { padding:9px 13px; border:1px solid var(--paper-border); border-radius:6px; background:#f1f3f9; color:var(--paper-indigo); font-weight:800; cursor:pointer; }
+.book-rule-tabs button.active { background:var(--paper-indigo); color:#fff; }
+.book-rule-grid, .active-book-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.book-rule-card { padding:15px; border:1px solid var(--paper-border); border-radius:9px; background:#fff; color:var(--paper-ink); }
+.book-rule-card.active { border:2px solid #1d704f; background:#f0faf4; }
+.book-rule-card h3 { margin:0 0 8px; color:var(--paper-indigo); font-size:18px; }
+.book-rule-card p { margin:8px 0; line-height:1.7; font-size:15px; }
+.book-rule-card small, .classification-card small, .book-workflow small { color:var(--paper-ink-soft); font-size:12px; line-height:1.5; }
+.book-rule-card > div { display:flex; align-items:center; gap:8px; color:var(--paper-indigo); }
+.book-rule-card > div strong { font-size:16px; }
+.classification-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+.classification-card { padding:14px; border:1px solid var(--paper-border); border-radius:8px; background:#f4f6fb; }
+.classification-card strong { color:var(--paper-indigo); font-size:17px; }
+.classification-card p { margin:8px 0; line-height:1.6; }
+.book-workflow { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; padding-left:25px; }
+.book-workflow li { padding:10px 12px; border-left:4px solid #1d477f; background:#f4f6fb; }
+.book-workflow strong { display:block; line-height:1.6; }
+@media (max-width:760px) { .book-rule-grid,.active-book-rule-grid,.book-workflow { grid-template-columns:1fr; } .classification-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .book-rule-card p { font-size:14px; } }
+@media (max-width:420px) { .classification-grid { grid-template-columns:1fr; } }
