@@ -23,4 +23,8 @@ assert.ok(conditionMatches({type:'sign',planet:'सूर्य',values:[0]},s))
 const rule:BookRule={id:'test',title:'',summary:'',source_ids:[],planets:[],commodities:[],timeframe:'',signal:'',status:'reference',reason:'',conditions:[{type:'sign',planet:'सूर्य',values:[0]}],section:'01'};
 assert.ok(!matchesRule(rule,s));assert.ok(matchesRule({...rule,status:'computable'},s));assert.ok(!matchesRule({...rule,status:'computable',conditions:[]},s));
 const row=snapshotRow(s,[]);assert.equal(row['चंद्रमा_निरयन'],20);assert.equal(row['सूर्योदय'],'06:00');
+
+const css=readFileSync('src/styles.css','utf8');assert.ok(css.length>140000&&css.split('\n').length>1500,'src/styles.css must retain the full original stylesheet');assert.ok(!/--side:\s*#/.test(css),'--side must stay a length, not a colour');
+const idxCss=readFileSync('src/components/MainSubjectIndex.css','utf8');assert.ok(!/^\.book-rule-search/m.test(idxCss),'index CSS must not restyle shared book-rule search');
+const appSrc=readFileSync('src/App.tsx','utf8');const navIds=[...appSrc.split('\n').find(l=>l.includes('const nav='))!.matchAll(/id:'([^']*)',name:/g)].map(m=>m[1]).filter(id=>id!=='subject-index');const idxSrc=readFileSync('src/components/MainSubjectIndex.tsx','utf8');const pageNames=idxSrc.split('\n').find(l=>l.includes('const PAGE_NAMES'))!;for(const id of navIds)assert.ok(id===''?pageNames.includes("'': "):pageNames.includes(id.includes('-')?`'${id}':`:`${id}:`),`Main index links to ${id||'dashboard'}`);
 console.log('PASS: ranges, 361/722 inclusive timestamps, IST conversion, limits, source integrity, all commodity/planet aliases, strict supported predicates, false reference/empty conditions and export rows.');

@@ -25,3 +25,10 @@ Evidence: `scripts/session-matching-test.ts` unit cases PASS; 21-Nov-2026 full-f
 
 - [x] Actual Preview button test: 2015-03-31 rendered ten dates from 20,574 rows / 54 earlier dates. First match: 2015-03-30 03:29 PM against target 09:15 AM, error 1.3833°. Nine-planet detail rendered; old chart absent; changing date cleared all old cards.
 - [x] Gzip response handling supports browser-auto-decoded Content-Encoding responses and raw gzip bytes on static hosting. Final typecheck, regression tests, matching unit tests, production build and whitespace checks passed.
+
+## Main विषय-सूची style repair
+
+- [x] बाकी pages पहले जैसे रहें; Main विषय-सूची से मौजूदा pages के links हों।
+- [x] पूरी पुरानी `styles.css` restore रहे; index styles अलग `MainSubjectIndex.css` में scoped रहें।
+- [x] Desktop sidebar content के ऊपर न आए (`--side` width token ठीक किया); mobile/tablet drawer behavior सुरक्षित रहे।
+- [x] Final desktop/mobile screenshot और build verification (subject-index, sbc, book-rules, library)।
