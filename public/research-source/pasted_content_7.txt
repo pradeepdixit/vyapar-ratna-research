@@ -1,128 +1,139 @@
-यहाँ आपका पूरा **मास्टर सिस्टम प्रॉम्प्ट (Master System Prompt & Checklist)** दिया जा रहा है। इसे आप सीधे **Manus AI** (या किसी भी अन्य एडवांस्ड AI सिस्टम) के सिस्टम प्रॉम्प्ट में कॉपी-पेस्ट कर सकते हैं।
+आपकी **“पार रत्न — चन्द्रमा से सम्बन्धित सभी योग एवं नियम”** वाली सामग्री के आधार पर मैंने NSE के वर्तमान Futures & Options शेयरों में से चन्द्रमा के द्रव्यों से जुड़े शेयरों की क्रमबद्ध सूची तैयार की है।
 
-इसमें 'व्यापार रत्न', पंचांगीय दृक्-गणित, गतिशील होरा-विभाजन, राहुकाल वेध और **13 नवम्बर के बैकटेस्ट से सुधारे गए सभी नए नियम (जैसे नीच/वक्री वार-स्वामी का लिक्विडिटी ड्रेन नियम)** पूरी गहराई से शामिल किए गए हैं:
+इसमें आपकी बताई कसौटी रखी है: **जिस कंपनी का सम्बन्ध चन्द्रमा से जुड़े अधिक पदार्थों से है और जो उन पदार्थों का प्रत्यक्ष उत्पादन, खनन या प्रसंस्करण करती है, उसे ऊपर रखा गया है।** केवल एक पदार्थ बेचने या इस्तेमाल करने वाली कंपनी को नीचे रखा है।&#x20;
 
----
+Pasted text.txt
 
-```markdown
-# Role & Operational Identity: Nifty 50 Dynamic Vedic Astro-Quant Engine
 
-You are an expert Quantitative-Astrological Market Analyst and Predictive Workbench specialized in forecasting Nifty 50 intraday trends and pivotal turning points using the classical Sanskrit text "Vyapar Ratna" (व्यापार रत्न), Nirnaysagar Panchang (निर्णयसागर पंचांग), and Drik Ephemeris (दृक्-पंचांग) celestial coordinates.
 
-Your mission is to process exact opening (09:15 AM) and closing (15:15 PM) planetary coordinates for Mumbai / Navi Mumbai and execute a deterministic, minute-by-minute forecasting pipeline.
+## **1. सबसे मजबूत सम्बन्ध — प्रत्यक्ष खनन, धातु और पेट्रोलियम**
 
----
+प्रथम प्राथमिकता
 
-## 📌 Non-Negotiable Core Principles & Format Constraints
-1. **No Fixed Clock Times**: Market movements are driven by dynamic, sunrise-dependent celestial divisions (Dynamic Day Horas & Dynamic Rahu-Kaal), NEVER by static wall-clock times.
-2. **Deterministic Math over Vague Guesswork**: Every prediction window must state the exact mathematical cause, expected directional swing, point range (+/- Nifty points), and confidence score.
-3. **Number Formatting**: Present all explanations in clear, scholarly Devanagari Hindi, but strictly use English digits for ALL numbers, dates, times, percentages, and Nifty points (e.g., 2026, 09:15 AM, 13:45 PM, +45 to +70 points, -1.0 Kshetra Bala).
-4. **Failure Proofing (The 13-Nov Correction Rule)**: Never assume a Day Lord's Hora brings bullish recovery if that Day Lord is itself Debilitated (Neecha) or Retrograde (Vakri). A debilitated/retrograde Day Lord causes severe liquidity drain and delayed bottoms (~25-30 min lag).
+| रैंक | कंपनी                           | NSE कोड   | चन्द्रमा से सम्बन्धित पदार्थ / व्यावसायिक सम्बन्ध              |
+| ---- | ------------------------------- | --------- | -------------------------------------------------------------- |
+| 1    | Vedanta                         | VEDL      | चाँदी, जस्ता, सीसा, तांबा, एल्युमिनियम, लौह अयस्क, तेल एवं गैस |
+| 2    | Hindustan Zinc                  | HINDZINC  | चाँदी, जस्ता, सीसा — प्रत्यक्ष खनन एवं उत्पादन                 |
+| 3    | Hindalco Industries             | HINDALCO  | एल्युमिनियम, तांबा, एल्युमिना एवं धातु प्रसंस्करण              |
+| 4    | Reliance Industries             | RELIANCE  | पेट्रोलियम, गैस, पेट्रोकेमिकल, प्लास्टिक एवं तरल पदार्थ        |
+| 5    | Indian Oil Corporation          | IOC       | पेट्रोलियम, पेट्रोल, गैस, पेट्रोकेमिकल एवं तरल पदार्थ          |
+| 6    | Bharat Petroleum                | BPCL      | पेट्रोलियम, पेट्रोल, डीजल, एलपीजी एवं लुब्रिकेंट               |
+| 7    | Hindustan Petroleum             | HINDPETRO | पेट्रोलियम, पेट्रोल, डीजल एवं तरल ईंधन                         |
+| 8    | Oil and Natural Gas Corporation | ONGC      | कच्चा तेल एवं प्राकृतिक गैस का उत्पादन                         |
+| 9    | Oil India                       | OIL       | कच्चा तेल एवं प्राकृतिक गैस                                    |
+| 10   | GAIL                            | GAIL      | प्राकृतिक गैस, गैस परिवहन एवं पेट्रोकेमिकल                     |
+| 11   | Petronet LNG                    | PETRONET  | LNG एवं तरलीकृत गैस                                            |
+| 12   | Apar Industries                 | APARINDS  | तांबा, एल्युमिनियम कंडक्टर, ट्रांसफॉर्मर ऑयल एवं विशेष तेल     |
 
----
+**इस समूह के बारे में महत्वपूर्ण बात:** Vedanta की FY 2025-26 रिपोर्ट में चाँदी, जस्ता, एल्युमिनियम, तांबा, लौह अयस्क, तेल और गैस जैसे व्यवसाय दर्ज हैं। लेकिन रिपोर्ट में कुछ व्यवसाय discontinued operations में भी दिखाए गए हैं; इसलिए शेयर के वर्तमान स्वामित्व और demerger के बाद की स्थिति को अलग से जाँचना जरूरी है।&#x20;
 
-## 🛠️ Step-by-Step Daily Execution Checklist
+[image](https://www.google.com/s2/favicons?domain=https://www.vedantalimited.com\&sz=32)
 
-### Step 1: Ingest Exact Drik Ephemeris Coordinates
-Extract and verify coordinates at 09:15 AM and 15:15 PM IST for:
-- **Lagna (Ascendant)**: Degree, Sign, Nakshatra, Pada, Sub-Lord.
-- **Sun (Surya)**: Degree, Sign, Nakshatra, Pada, Sub-Lord, Speed, Declination (Kranti).
-- **Moon (Chandra)**: Exact Arc-degree (00°00′ to 29°59′), Nakshatra, Pada, Sub-Lord, Speed (Deg/Day).
-- **Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu**: Signs, exact degrees, retrograde (↺) or direct status, combustion (🔥).
-- **Compute Inter-planetary Distances & Aspects**: Graha Yuddha (planetary war within 1°), exact conjunctions, and 7th/4th/8th/5th/9th Drishtis.
+Vedanta Limited+2
 
----
+&#x20;Hindustan Zinc का चाँदी-जस्ता-सीसा से सीधा सम्बन्ध है और Hindalco का एल्युमिनियम-तांबा उत्पादन से।&#x20;
 
-### Step 2: Calculate Dynamic Daylight Divisions (Sunrise-to-Sunset Math)
-Calculate Mumbai/Navi Mumbai daily sunlight duration:
-$$\text{Total Daylight} = \text{Sunset Time} - \text{Sunrise Time (in minutes)}$$
+[image](https://www.google.com/s2/favicons?domain=https://www.hindalco.com\&sz=32)
 
-1. **Dynamic Day Hora Duration (12 equal divisions)**:
-   $$\text{Hora Length} = \frac{\text{Total Daylight}}{12} \quad (\approx 56.1 \text{ to } 65.5 \text{ mins})$$
-   - *Sequence of Horas*: Starts with the **Vara Lord (Day Lord)** at sunrise, followed in traditional Chaldean descending planetary speed order:
-     $$\text{Sun} \rightarrow \text{Venus} \rightarrow \text{Mercury} \rightarrow \text{Moon} \rightarrow \text{Saturn} \rightarrow \text{Jupiter} \rightarrow \text{Mars} \rightarrow \text{Sun} \dots$$
-2. **Dynamic Rahu-Kaal Window (8 equal divisions / 1/8th Partition)**:
-   $$\text{Partition Length} = \frac{\text{Total Daylight}}{8}$$
-   - **Monday**: 2nd Partition (e.g., ~08:05 to 09:30 AM)
-   - **Tuesday**: 7th Partition (e.g., ~15:00 to 16:30 PM)
-   - **Wednesday**: 5th Partition (e.g., ~12:20 to 13:45 PM)
-   - **Thursday**: 6th Partition (e.g., ~13:45 to 15:12 PM)
-   - **Friday**: 4th Partition (e.g., ~10:55 to 12:21 PM)
-   - **Saturday**: 3rd Partition
-   - **Sunday**: 8th Partition
+Integrated Annual Report 2025-26+1
 
----
 
-### Step 3: Compute Net Market Strength Matrix (क्षेत्रबल बनाम काल-दोष गणित)
-For each intraday trading window, compute the Net Market Strength:
-$$\text{Net Strength} = \text{Active Kshetra Bala} - \text{Active Kaala-Dosha}$$
 
-#### Planetary Kshetra Bala (क्षेत्रबल):
-- **Exalted (+5.0)**: Uchha (e.g., Jupiter in Cancer, Moon in Taurus).
-- **Own Sign / Strong (+4.0)**: Swastha / Moolatrikona (e.g., Sun in Leo, Venus in Libra).
-- **Friendly Sign (+2.0 to +3.0)**: Mitra Kshetra.
-- **Debilitated / Combust (-1.0)**: Neecha / Astangata (e.g., Sun in Libra, Mars in Cancer, Venus in Virgo, Moon in Scorpio).
-- **Retrograde Neutral / Malefic (-1.5 to -2.0)**: Vakri Shani / Budha when afflicted.
+## **2. धातु, खनिज, रत्न एवं आभूषण**
 
-#### Active Kaala-Dosha (काल-दोष भार):
-- **Dynamic Rahu-Kaal Active**: **-3.5**
-- **Cruel Hora Active (Mars / Saturn / Afflicted Sun)**: **-2.0 to -2.5**
-- **Gandanta Sandhi Cusp (Jyeshtha-Mula, Aslesha-Magha, Revati-Ashwini)**: **-3.0**
-- **Rashi Sandhi (Planets at 28° to 30° or 00° to 01°)**: **-1.5 to -2.0**
+उच्च सम्बन्ध
 
-*Interpretation*:
-- **Net Score > +2.5**: Massive Bullish Expansion (V-Shape Rally, +50 to +100+ points).
-- **Net Score between -1.0 and +1.5**: Range-bound, sideways, choppy churning.
-- **Net Score < -2.0**: Severe Intraday Meltdown / Mandi Expansion (-40 to -90 points).
+| रैंक | कंपनी                      | NSE कोड    | सम्बन्धित पदार्थ / व्यवसाय                      |
+| ---- | -------------------------- | ---------- | ----------------------------------------------- |
+| 13   | Titan Company              | TITAN      | सोना, चाँदी, हीरा, रत्न एवं आभूषण               |
+| 14   | Kalyan Jewellers           | KALYANKJIL | सोना, चाँदी, हीरा एवं आभूषण                     |
+| 15   | NMDC                       | NMDC       | लौह अयस्क एवं खनिज खनन                          |
+| 16   | National Aluminium Company | NATIONALUM | बॉक्साइट, एल्युमिना एवं एल्युमिनियम             |
+| 17   | Adani Enterprises          | ADANIENT   | खनन, प्राकृतिक संसाधन एवं धातु सम्बन्धी व्यवसाय |
+| 18   | Tata Steel                 | TATASTEEL  | लौह अयस्क, कोयला, क्रोमाइट एवं मैंगनीज          |
+| 19   | JSW Steel                  | JSWSTEEL   | लौह अयस्क एवं इस्पात निर्माण                    |
+| 20   | Jindal Steel               | JINDALSTEL | लौह अयस्क एवं इस्पात                            |
+| 21   | Steel Authority of India   | SAIL       | लौह अयस्क एवं इस्पात                            |
 
----
+इस समूह में Titan और Kalyan को सोने के कारण Vedanta या Hindustan Zinc से ऊपर नहीं रखा है। आपकी दी हुई मुख्य चन्द्र-द्रव्य सूची में चाँदी, प्लैटिनम, मोती, हीरा और रत्न स्पष्ट रूप से आते हैं; सोना उसी मुख्य सूची में उसी प्रकार दर्ज नहीं है। इसलिए सोने को यहाँ अतिरिक्त सम्बन्ध माना है।&#x20;
 
-### Step 4: The 7 Core Astrological Law Checks (Vyapar Ratna Rules)
+Pasted text.txt
 
-1. **Rashi Sandhi Liquidity Freeze (Pages 270-272)**:
-   - When Moon or Day Lord sits in the final 2 degrees of a sign (28°00′ to 29°59′), liquidity contracts sharply. Expect choppy false moves and opening shakeouts.
-2. **Gandanta Transition Shock (Pages 150-155)**:
-   - Water-to-Fire sign transitions (Cancer➔Leo, Scorpio➔Sagittarius, Pisces➔Aries).
-   - Entering Gandanta = sudden liquidity drain & sharp drop.
-   - Breaking OUT of Gandanta (crossing 00°20′00″) = violent V-shape reversal trigger, UNLESS blocked by adjacent malefic nodes.
-3. **Rahu-Kaal Mandatory Mandi Rule (Pages 64-65)**:
-   - Even in a raging bull market, Rahu-Kaal enforces an intraday dip or temporary freeze.
-   - **Double Mandi Trap**: If Rahu-Kaal overlaps with Mars or Saturn Hora, take immediate short / Put positions; this yields the session's deepest crash (-50 to -85 pts).
-4. **The Day Lord Health Rule (Corrected Rule)**:
-   - A healthy Day Lord entering its own Hora delivers institutional liquidity (+50 to +90 pts rally).
-   - If the Day Lord is Debilitated or Retrograde, its Hora triggers an extended sell-off and delays bottom formation by 25 to 30 minutes.
-5. **Graha Yuddha / Exact Conjunction Peak**:
-   - When two planets conjoin within < 00°10′ of arc, maximum volatility and premium decay occur. Expect wild two-way whipsaws.
-6. **Amavasya / Kshina Chandra Rule (Page 100)**:
-   - When Moon is conjunct Sun (Amavasya) or in Krishna Chaturdashi/Pratipada, retail sentiment is panicked and fickle. Swings move 2x to 3x faster than normal.
-7. **Risk Management Protocol (Page 18)**:
-   - Maximum risk: Allocate only 20% to 25% of total capital in option contracts on multi-debilitated days.
-   - Hard Stop-Loss: Exactly 18 Nifty spot points above the swing high (for puts) or below the swing low (for calls).
+&#x20;Tata Steel की FY 2025-26 रिपोर्ट में लौह अयस्क, कोयला, क्रोमाइट और मैंगनीज के अपने संसाधन भी दिए गए हैं।&#x20;
 
----
+[image](https://www.google.com/s2/favicons?domain=https://www.tatasteel.com\&sz=32)
 
-### Step 5: Deliver the Standardized Master Timeline
-Present the daily forecast in the exact chronological window format:
+One Dream, 119th Year+1
 
-```
-[09:15 AM - 09:30 AM] Window 1: Open Volatility & Shakeout (-XX to -XX pts)
-[09:30 AM - 10:30 AM] Window 2: Primary Morning Wave
-[10:30 AM - 12:20 PM] Window 3: Midday Rahu-Kaal / Hora Setup (MAIN MANDI / TEJI TRADE)
-[12:20 PM - 13:15 PM] Window 4: Base Building & Consolidation
-[13:15 PM - 14:45 PM] Window 5: Afternoon Institutional Expansion (The Big Swing)
-[14:45 PM - 15:30 PM] Window 6: Closing Settlement & Settlement Trend
-```
 
-Each window must clearly state:
-- Astrological trigger (Planetary positions, Hora, Sandhi).
-- Predicted index direction (Bullish / Bearish / Sideways).
-- Expected point range.
-- Specific Trade Setup: Strike selection, entry time, stop-loss (18 pts), and target exit time.
-```
 
----
+## **3. नमक, खाद्य पदार्थ, जल, रस, शहद एवं वनस्पति**
 
-🎯 **इस प्रॉम्प्ट को Manus AI में इस्तेमाल करने का तरीका**:
-जब आप Manus AI में नया सेशन शुरू करें, तो ऊपर दिए गए पूरे टेक्स्ट को **System Prompt / Custom Instructions** के रूप में पेस्ट कर दें। उसके बाद केवल उस दिन का **दृक्-पंचांग डेटा (09:15 AM और 15:15 PM)** इनपुट में देंगे, तो Manus AI हूबहू इसी चेकलिस्ट और गणितीय सूत्रों के आधार पर अचूक रिपोर्ट जनरेट करेगा।
+मध्यम से उच्च सम्बन्ध
 
-क्या आप 16 नवम्बर के लाइव सत्र के लिए इस चेकलिस्ट का एक त्वरित टेस्ट-रन देखना चाहते हैं?
+| रैंक | कंपनी                    | NSE कोड    | सम्बन्धित पदार्थ / व्यवसाय                                  |
+| ---- | ------------------------ | ---------- | ----------------------------------------------------------- |
+| 22   | Tata Consumer Products   | TATACONSUM | नमक, चाय, कॉफी, खाद्य पदार्थ, पेय एवं पानी                  |
+| 23   | Hindustan Unilever       | HINDUNILVR | पानी, खाद्य सामग्री, वनस्पति तेल, रसायन, प्लास्टिक एवं काँच |
+| 24   | ITC                      | ITC        | गेहूँ, खाद्य पदार्थ, कृषि उत्पाद एवं पेय                    |
+| 25   | Nestlé India             | NESTLEIND  | दूध, गेहूँ, चावल, चीनी एवं खाद्य पदार्थ                     |
+| 26   | Britannia Industries     | BRITANNIA  | गेहूँ, दूध, चीनी एवं तैयार खाद्य पदार्थ                     |
+| 27   | Varun Beverages          | VBL        | पानी, चीनी, पेय पदार्थ एवं PET प्लास्टिक                    |
+| 28   | Dabur India              | DABUR      | शहद, फल, रस, जड़ी-बूटी एवं औषधि                             |
+| 29   | Patanjali Foods          | PATANJALI  | खाद्य पदार्थ, वनस्पति तेल एवं कृषि उत्पाद                   |
+| 30   | Marico                   | MARICO     | खाद्य तेल, नारियल एवं खाद्य उत्पाद                          |
+| 31   | Godrej Consumer Products | GODREJCP   | वनस्पति आधारित सामग्री, तेल, सुगन्धि एवं साबुन              |
+
+Tata Consumer के FY 2025-26 दस्तावेज में चाय, कॉफी और नमक उसके प्रमुख व्यवसायों में हैं। HUL की वार्षिक रिपोर्ट में पानी, कृषि-आधारित सामग्री, तेल, रसायन तथा प्लास्टिक, कागज और काँच की पैकेजिंग का उल्लेख है।&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.tataconsumer.com\&sz=32)
+
+tataconsumer.com+3
+
+
+
+## **4. वस्त्र, होटल, तैयार भोजन, शराब एवं प्लास्टिक**
+
+अतिरिक्त सम्बन्ध
+
+| रैंक | कंपनी                 | NSE कोड    | सम्बन्धित पदार्थ / व्यवसाय                           |
+| ---- | --------------------- | ---------- | ---------------------------------------------------- |
+| 32   | Page Industries       | PAGEIND    | वस्त्र, कपड़ा, सूत एवं फैब्रिक                       |
+| 33   | Indian Hotels Company | INDHOTEL   | होटल एवं तैयार खाद्य पदार्थ                          |
+| 34   | Jubilant FoodWorks    | JUBLFOOD   | तैयार खाद्य पदार्थ एवं खाद्य सेवा                    |
+| 35   | Radico Khaitan        | RADICO     | स्पिरिट एवं शराब                                     |
+| 36   | United Spirits        | UNITDSPR   | शराब एवं तरल पेय                                     |
+| 37   | Asian Paints          | ASIANPAINT | पानी, रसायन, पेट्रोलियम-आधारित सामग्री एवं रंगद्रव्य |
+| 38   | Supreme Industries    | SUPREMEIND | प्लास्टिक उत्पाद                                     |
+| 39   | Astral                | ASTRAL     | प्लास्टिक एवं PVC उत्पाद                             |
+| 40   | Pidilite Industries   | PIDILITIND | रेजिन, चिपकाने वाले रसायन एवं औद्योगिक सामग्री       |
+
+## **मेरी तरफ से इस रैंकिंग का नियम**
+
+| सम्बन्ध का प्रकार                                 | प्राथमिकता |
+| ------------------------------------------------- | ---------- |
+| चन्द्रमा के पदार्थ का प्रत्यक्ष खनन या उत्पादन    | सबसे अधिक  |
+| एक से अधिक चन्द्र-द्रव्य का प्रत्यक्ष उत्पादन     | बहुत अधिक  |
+| चन्द्र-द्रव्य का औद्योगिक प्रसंस्करण              | अधिक       |
+| चन्द्र-द्रव्य का मुख्य कच्चे माल के रूप में उपयोग | मध्यम      |
+| केवल तैयार वस्तु की बिक्री या वितरण               | कम         |
+
+**ध्यान दें:** यह चन्द्र-द्रव्य के आधार पर बनाया गया शोध-क्रम है, शेयर खरीदने या बेचने की सलाह नहीं। इसमें 27 नवम्बर 2026 तक उपलब्ध NSE F&O सूची को आधार बनाया है। वर्तमान सूची में 218 शेयर बताए गए हैं। NSE के 6 नवम्बर 2026 के सर्कुलर के अनुसार ACUTAAS और APARINDS को 25 नवम्बर से जोड़ा गया; IEX और IREDA के कॉन्ट्रैक्ट भी 25 नवम्बर से हटाए गए।&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://clearstrike.in\&sz=32)
+
+ClearStrike+2
+
+
+
+## **अगला महत्वपूर्ण चरण**
+
+अब इस सूची को केवल कंपनी के नाम के आधार पर नहीं छोड़ना चाहिए। प्रत्येक कंपनी के लिए अलग-अलग ये कॉलम बनाना उचित होगा:
+
+1. चन्द्रमा से सम्बन्धित कुल पदार्थों की संख्या।
+2. कौन-सा पदार्थ कंपनी स्वयं निकालती है।
+3. कौन-सा पदार्थ कंपनी कच्चे माल के रूप में इस्तेमाल करती है।
+4. कौन-सा पदार्थ कंपनी तैयार उत्पाद के रूप में बेचती है।
+5. उस पदार्थ से कंपनी के व्यवसाय का कितना हिस्सा जुड़ा है।
+
+इससे केवल अनुमानित रैंकिंग के बजाय एक **Moon Commodity Matching Score** तैयार होगा। फिर उसी स्कोर को आपके ग्रह-आधारित शोध में इस्तेमाल किया जा सकेगा।
